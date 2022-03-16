@@ -1,8 +1,8 @@
 # grupo_1_guarderiaParaPerros
 
-Acerca del proyecto:
+**Acerca del proyecto:** El objetivo del sitio es ofrecer un servicio para guarderias de mascotas confiable y transparente.
 
-Acerca del nombre del proyecto:
+Acerca del nombre del proyecto: 
 
 Publico Objetivo:
 
@@ -11,8 +11,20 @@ Los integrantes del equipo son:
   - Analia Ferreyra:
   - Maria Eugenia Campoy:
   - Andrea Guarín Hincapié:
+  - Rodrigo del Castillo:
 
 Wireframes:
 
 Paginas de Referencia:
-  - 
+
+-
+-
+
+Paleta de colores:
+
+Logo:
+
+Fuente Logo:
+Fuente Textos:
+
+Tablero de trabajo:
