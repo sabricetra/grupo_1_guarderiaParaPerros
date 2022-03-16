@@ -8,7 +8,7 @@ Publico Objetivo:
 
 Los integrantes del equipo son:
   - Sabrina Cetra:
-  - Analia Ferreyra:
+  - Analia Ferreyra: Hola
   - Maria Eugenia Campoy:
   - Andrea Guarín Hincapié:
   - Rodrigo del Castillo:
