@@ -1,6 +1,6 @@
 # grupo_1_guarderiaParaPerros
 
-**Acerca del proyecto:** El objetivo del sitio es ofrecer un servicio para guarderias de mascotas confiable y transparente.
+**Acerca del proyecto:** El objetivo del sitio es ofrecer un servicio para guarderias de mascotas confiable y transparente. El cliente puede elegir un abanico de posibilidades que se adapten a sus necesidades y preferencias.
 
 Acerca del nombre del proyecto: 
 
