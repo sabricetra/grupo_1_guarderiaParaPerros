@@ -2,16 +2,17 @@
 
 **Acerca del proyecto:** El objetivo del sitio es ofrecer un servicio para guarderias de mascotas confiable y transparente donde el cliente puede elegir un abanico de posibilidades que se adapten a sus necesidades y preferencias.
 
-Acerca del nombre del proyecto: 
 
-Publico Objetivo: Está dirigido a aquellos clientes con mascotas que buscan un lugar de confianza y seguro donde alojar a sus mascotas. 
+**Acerca del nombre del proyecto: **
+
+Publico Objetivo: Está dirigido a aquellas personas que buscan un lugar de confianza y seguro donde alojar a sus mascotas. 
 
 Los integrantes del equipo son:
   - Sabrina Cetra: Artista plástica
   - Analia Ferreyra:  Licenciada en Genética en la Universidad Nacional de Misiones.
   - Maria Eugenia Campoy:
   - Andrea Guarín Hincapié:
-  - Rodrigo del Castillo:
+  - Rodrigo del Castillo: Licenciado en Administración de Empresas en la Universidad del CEMA.
 
 Wireframes:
 
