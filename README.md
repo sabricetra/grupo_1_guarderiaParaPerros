@@ -3,7 +3,7 @@
 **Acerca del proyecto:** El objetivo del sitio es ofrecer un servicio para guarderias de mascotas confiable y transparente donde el cliente puede elegir un abanico de posibilidades que se adapten a sus necesidades y preferencias.
 
 
-**Acerca del nombre del proyecto: **
+**Acerca del nombre del proyecto:**
 
 Publico Objetivo: Está dirigido a aquellas personas que buscan un lugar de confianza y seguro donde alojar a sus mascotas. 
 
