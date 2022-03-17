@@ -17,8 +17,10 @@ Wireframes:
 
 Paginas de Referencia:
 
--
--
+- http://www.mascotasok.com/servicios/2
+- https://www.doogweb.es/2017/08/01/central-de-mascotas-buscador-residencias-caninas/
+- https://www.paseaperros.com.ar/cities/index/12
+- https://www.trustedhousesitters.com/
 
 Paleta de colores:
 
