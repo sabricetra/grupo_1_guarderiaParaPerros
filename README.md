@@ -7,7 +7,7 @@ Acerca del nombre del proyecto:
 Publico Objetivo:
 
 Los integrantes del equipo son:
-  - Sabrina Cetra:
+  - Sabrina Cetra: Artista plástica
   - Analia Ferreyra: Hola
   - Maria Eugenia Campoy:
   - Andrea Guarín Hincapié:
