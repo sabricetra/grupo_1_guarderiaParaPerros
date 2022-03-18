@@ -20,7 +20,7 @@
 - http://www.mascotasok.com/ : 
 - https://www.doogweb.es/2017/08/01/central-de-mascotas-buscador-residencias-caninas/ : 
 - https://www.paseaperros.com.ar/ --> La opción de busqueda por lugar desde el home y la disposición de resultados con mapa visual nos resulto una idea atractiva.
-- https://www.trustedhousesitters.com/ : 
+- https://www.trustedhousesitters.com/ : Home estetico, no muy cargado y visualmente sencillo, con llamados a la acción claros.
 
 **Paleta de colores:**
 
