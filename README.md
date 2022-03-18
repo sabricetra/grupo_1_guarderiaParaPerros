@@ -17,10 +17,11 @@
 
 **Paginas de Referencia:**
 
-- http://www.mascotasok.com/ : 
-- https://www.doogweb.es/2017/08/01/central-de-mascotas-buscador-residencias-caninas/ : 
+- http://www.mascotasok.com/ : El slider principal del home muestra a la derecha 3 secciones estaticas/links directos que le permiten mas notoriedad a dichas secciones.
 - https://www.paseaperros.com.ar/ --> La opción de busqueda por lugar desde el home y la disposición de resultados con mapa visual nos resulto una idea atractiva.
 - https://www.trustedhousesitters.com/ : Home estetico, no muy cargado y visualmente sencillo, con llamados a la acción claros.
+- https://www.rover.com : Diseño fluido y banner de busqueda de servicios en la página principal. Secciones claras y opción de crear cuenta/registrarse via otras redes (gmail, facebook, apple).
+- https://www.dogtopia.com : Web muy completa y bien distribuida. La inclusión de un 'faq' (preguntas frecuentes) puede resolver dudas de forma rapida. El widget de accesibilidad es una buena pauta para ampliar el posible publico objetivo.
 
 **Paleta de colores:**
 
