@@ -28,7 +28,7 @@
 
 **Logo:**
 
-*Fuente Logo:*
-*Fuente Textos:*
+**Fuente Logo:**
+**Fuente Textos:**
 
-Tablero de trabajo:
+**Tablero de trabajo:** https://trello.com/b/artkF4fF/digital-house-proyecto-integrador
