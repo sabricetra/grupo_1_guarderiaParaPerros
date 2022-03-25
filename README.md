@@ -10,7 +10,7 @@
 **Los integrantes del equipo son:**
   - Sabrina Cetra: Artista plástica
   - Analia Ferreyra:  Licenciada en Genética en la Universidad Nacional de Misiones.
-  - Maria Eugenia Campoy:
+  - Maria Eugenia Campoy: Licenciada en Economia - UBA.
   - Rodrigo del Castillo: Licenciado en Administración de Empresas en la Universidad del CEMA.
 
 **Wireframes:**
