@@ -13,6 +13,8 @@
   - Maria Eugenia Campoy: Licenciada en Economia - UBA.
   - Rodrigo del Castillo: Licenciado en Administración de Empresas en la Universidad del CEMA.
 
+**Presentación**: https://www.figma.com/proto/j5i2ai1lOI9EkNQawayYML/AlojaMascotas?node-id=8%3A27&scaling=scale-down&page-id=0%3A1&starting-point-node-id=8%3A27**
+
 **Wireframes:**
 
 **Paginas de Referencia:**
@@ -29,6 +31,7 @@
 **Logo:**
 
 **Fuente Logo:**
+
 **Fuente Textos:**
 
 **Tablero de trabajo:** https://trello.com/b/artkF4fF/digital-house-proyecto-integrador
