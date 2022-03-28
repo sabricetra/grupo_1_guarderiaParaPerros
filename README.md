@@ -30,7 +30,7 @@
 
 **Paleta de colores:**
 
-**Logo:**
+**Logo:** https://github.com/sabricetra/grupo_1_guarderiaParaPerros/blob/main/design/Logo.svg
 
 **Fuente Logo:**
 
