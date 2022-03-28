@@ -15,7 +15,7 @@
 
 **Presentación**: https://www.figma.com/proto/j5i2ai1lOI9EkNQawayYML/AlojaMascotas?node-id=8%3A27&scaling=scale-down&page-id=0%3A1&starting-point-node-id=8%3A27**
 
-**Tablero**:
+**Tablero**: https://www.figma.com/file/j5i2ai1lOI9EkNQawayYML/AlojaMascotas?node-id=0%3A1
 
 **Wireframes:**
 
@@ -34,6 +34,6 @@
 
 **Fuente Logo:**
 
-**Fuente Textos:**
+**Fuente Textos:** https://fonts.google.com/specimen/Raleway
 
 **Tablero de trabajo:** https://trello.com/b/artkF4fF/digital-house-proyecto-integrador
