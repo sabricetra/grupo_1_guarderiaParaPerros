@@ -1,4 +1,4 @@
-# grupo_1_Aloja_Mascotas
+# grupo_1_Aloha_Mascotas
 
 **Acerca del proyecto:** El objetivo del sitio es ofrecer un servicio para guarderias de mascotas confiable y transparente donde el cliente puede elegir un abanico de posibilidades que se adapten a sus necesidades y preferencias.
 
