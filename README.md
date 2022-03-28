@@ -17,7 +17,7 @@
 
 **Tablero**: https://www.figma.com/file/j5i2ai1lOI9EkNQawayYML/AlojaMascotas?node-id=0%3A1
 
-**Wireframes:**
+**Wireframes:** https://github.com/sabricetra/grupo_1_guarderiaParaPerros/tree/main/wireframes
 
 **Paginas de Referencia:**
 
@@ -31,8 +31,6 @@
 **Paleta de colores:** * Coolors Exported Palette - https://coolors.co/3f7552-3f4e4a-bccfd6-3d6f3b-9fb7bc */
 
 **Logo:** https://github.com/sabricetra/grupo_1_guarderiaParaPerros/blob/main/design/Logo.svg
-
-**Fuente Logo:**
 
 **Fuente Textos:** https://fonts.google.com/specimen/Raleway
 
