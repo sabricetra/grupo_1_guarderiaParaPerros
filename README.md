@@ -1,4 +1,4 @@
-# grupo_1_Aloha_Mascotas
+# grupo_1_Aloja_Mascotas
 
 **Acerca del proyecto:** El objetivo del sitio es ofrecer un servicio para guarderias de mascotas confiable y transparente donde el cliente puede elegir un abanico de posibilidades que se adapten a sus necesidades y preferencias.
 
@@ -14,6 +14,8 @@
   - Rodrigo del Castillo: Licenciado en Administración de Empresas en la Universidad del CEMA.
 
 **Presentación**: https://www.figma.com/proto/j5i2ai1lOI9EkNQawayYML/AlojaMascotas?node-id=8%3A27&scaling=scale-down&page-id=0%3A1&starting-point-node-id=8%3A27**
+
+**Tablero**:
 
 **Wireframes:**
 
