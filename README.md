@@ -28,7 +28,7 @@
 - https://www.dogtopia.com : Web muy completa y bien distribuida. La inclusión de un 'faq' (preguntas frecuentes) puede resolver dudas de forma rapida. El widget de accesibilidad es una buena pauta para ampliar el posible publico objetivo.
 - https://www.deathwishcoffee.com/products/death-wish-coffee: Si bien el rubro no aplica al proyecto, nos gusto la interaccion que brinda la web, la posibilidad de armar planes de suscripcion para aumentar el engagement, y la implementacion del parallax scrolling para darle vida a las distintas secciones.
 
-**Paleta de colores:**
+**Paleta de colores:** * Coolors Exported Palette - https://coolors.co/3f7552-3f4e4a-bccfd6-3d6f3b-9fb7bc */
 
 **Logo:** https://github.com/sabricetra/grupo_1_guarderiaParaPerros/blob/main/design/Logo.svg
 
