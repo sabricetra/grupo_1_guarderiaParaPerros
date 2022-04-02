@@ -25,6 +25,7 @@ header {
   width: 25vw;
   opacity: 80%;
   text-align: left;
+
 }
 
 .logo-menu i {
@@ -83,6 +84,8 @@ header {
   opacity: 80%;
 }
 
+
+
 .main-slider {
   display: block;
   margin: 0;
@@ -93,7 +96,10 @@ header {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+
 }
+
+
 
 .main-productos h3 {
   display: block;
@@ -129,6 +135,7 @@ header {
 .boton-reservar {
   display: block;
   text-align: center;
+
 }
 
 .main-productos a {
@@ -144,7 +151,7 @@ header {
 
 .sobre-nosotros {
   display: block;
-  margin: 20px;
+  padding: 20px;
 }
 
 .sobre-nosotros h3 {
