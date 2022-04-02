@@ -1,111 +1,191 @@
-*{
-    font-family: 'Raleway', sans-serif;
+* {
+  font-family: "Raleway", sans-serif;
 }
 
-:root{
-    --verde-oscuro: #3F4E4A;
-    --verde-claro: #3F7552;
-    --celeste-oscuro: #9FB7BC;
-    --celeste-claro: #BCCFD6;
+:root {
+  --verde-oscuro: #3f4e4a;
+  --verde-claro: #3f7552;
+  --celeste-oscuro: #9fb7bc;
+  --celeste-claro: #bccfd6;
 }
 
-
+header {
+  background-color: var(--celeste-claro);
+}
 
 .topheader {
-    display: inline-block;
-    margin: 10px 0px;
-    width: 100vw;
-    text-align: center;
+  display: inline-block;
+  margin: 10px 0px;
+  width: 100vw;
+  text-align: center;
 }
 
 .logo-menu {
-    display: inline-block;
-    width: 25vw;
-    opacity: 70%;
-
+  display: inline-block;
+  width: 25vw;
+  opacity: 80%;
+  text-align: left;
 }
 
 .logo-menu i {
-    font-size: 32px;
+  color: var(--verde-oscuro);
+  font-size: 32px;
 }
 
 .logo-alojamascotas {
-    display: inline-block;
-    width: 50vw;
-    max-width: 30%;
-    text-align: center;
+  display: inline-block;
+  width: 50vw;
+  max-width: 30%;
+  text-align: center;
 }
 
 .icon-search {
-    display: inline-block;
-    width: 12vw;
-
-    padding: 10px
+  display: inline-block;
+  width: 12vw;
+  padding: 10px;
 }
 
 .icon-search i {
-    font-size: 26px;
-    color: black;
-    opacity: 70%;
+  font-size: 26px;
+  color: var(--verde-oscuro);
+  opacity: 80%;
 }
 
 .icon-cart {
-    display: inline-block;
-
-    padding:10px
-
+  display: inline-block;
+  padding: 10px;
 }
 
 .icon-cart i {
-    font-size: 26px;
-    color: black;
-    opacity: 70%;
+  font-size: 26px;
+  color: var(--verde-oscuro);
+  opacity: 80%;
 }
 
 .subheader {
-    display: inline-block;
-    font-size: 14px;
-    padding: 2vw 10vw;
-    width: 100vw;
-    text-align: center;
-
+  display: inline-block;
+  font-size: 14px;
+  padding: 2vw 10vw;
+  width: 100vw;
+  text-align: center;
 }
 
-.subheader a.crear-cuenta{
-    padding-right: 5vw;
-    text-decoration: none;
-    color: black;
-    opacity: 70%;
+.subheader a.crear-cuenta {
+  padding-right: 5vw;
+  text-decoration: none;
+  color: var(--verde-oscuro);
+  opacity: 80%;
 }
 .subheader a.iniciar-sesion {
-    padding-left: 5vw;
-    text-decoration: none;
-    color: black;
-    opacity: 70%;
-
+  padding-left: 5vw;
+  text-decoration: none;
+  color: var(--verde-oscuro);
+  opacity: 80%;
 }
 
-.main-slider{
-    display: block;
-    margin: 0;
+.main-slider {
+  display: block;
+  margin: 0;
 }
 
-.main-slider img{
-    display: block;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+.main-slider img {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.main-productos h3 {
+  display: block;
+  text-align: center;
+  color: var(--verde-oscuro);
+  font-size: 18px;
+  opacity: 80%;
+  padding: 20px 10px;
+}
+
+.guarderia-1 {
+  text-align: center;
+  font-size: 48px;
+  color: var(--verde-oscuro);
+  margin: 10px;
+}
+
+.main-productos h4 {
+  display: block;
+  text-align: center;
+  color: var(--verde-oscuro);
+  margin: 10px;
+}
+
+.main-productos p {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: var(--verde-oscuro);
+  margin: 10px 40px;
+}
+
+.boton-reservar {
+  display: block;
+  text-align: center;
+}
+
+.main-productos a {
+  display: inline-block;
+  margin: 10px auto 10px auto;
+  text-align: center;
+  text-decoration: none;
+  color: var(--verde-oscuro);
+  padding: 5px;
+  border: 1px var(--verde-oscuro) solid;
+  border-radius: 5px;
+}
+
+.sobre-nosotros {
+  display: block;
+  margin: 20px;
+}
+
+.sobre-nosotros h3 {
+  display: block;
+  text-align: center;
+  margin: 10px;
+  color: var(--verde-oscuro);
+  font-size: 18px;
+}
+
+.sobre-nosotros p {
+  display: block;
+  text-align: center;
+  margin: 10px;
+  color: var(--verde-oscuro);
+  font-size: 12px;
+}
+
+footer {
+  padding: 10px;
+  background-color: var(--celeste-claro);
+  text-align: center;
+}
+
+.footer-nav1,
+.footer-nav2{
+    display: inline-block;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: var(--verde-oscuro);
+}
+
+.redes{
+    margin: 10px;
+}
 
 .fab {
-   color: black;
-   margin: 5px;
-
-
-}
-
-.imagen-guarderia1{
-    width: 30vw;
-    height: 30vh;
+  font-size: 28px;
+  color: black;
+  opacity: 80%;
+  margin: 5px;
 }
