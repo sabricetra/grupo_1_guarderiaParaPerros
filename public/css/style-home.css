@@ -1,0 +1,90 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+.topheader {
+    display: inline-block;
+    margin: 10px 0px;
+}
+
+.logo-menu {
+    display: inline-block;
+    width: 25vw;
+    opacity: 70%;
+    text-align: center;
+}
+
+.logo-menu i {
+    font-size: 32px;
+}
+
+.logo-alojamascotas {
+    display: inline-block;
+    width: 50vw;
+    max-width: 30%;
+}
+
+.icon-search {
+    display: inline-block;
+    width: 12vw;
+}
+
+.icon-search i {
+    font-size: 26px;
+    color: black;
+    opacity: 70%;
+}
+
+.icon-cart {
+    display: inline-block;
+}
+
+.icon-cart i {
+    font-size: 26px;
+    color: black;
+    opacity: 70%;
+}
+
+.subheader {
+    display: inline-block;
+    font-size: 14px;
+    padding: 2vw 10vw;
+}
+
+.subheader a.crear-cuenta{
+    padding-right: 5vw;
+    text-decoration: none;
+    color: black;
+    opacity: 70%;
+}
+.subheader a.iniciar-sesion {
+    padding-left: 5vw;
+    text-decoration: none;
+    color: black;
+    opacity: 70%;
+}
+
+.main-slider{
+    display: block;
+    margin: 0;
+}
+
+.main-slider img{
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.fab {
+   color: black;
+   margin: 5px;
+
+
+}
+
+.imagen-guarderia1{
+    width: 30vw;
+    height: 30vh;
+}

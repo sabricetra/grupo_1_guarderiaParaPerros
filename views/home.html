@@ -6,33 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlojaMascotas</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    rel="stylesheet" />
+
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="css/style-home.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Links Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+    <!-- Links Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <section>
-            <nav>
-                <img src="./img/menu-slider.svg" alt="logo menu">
-            </nav>
-            <img src="./img/logo.svg" alt="logo de la empresa">
-            <img src="./img/search-box.svg" alt="logo busqueda">
-            <a href="/carrito"><img src="./img/cart.svg" alt="logo carrito"></a>
+        <section class="topheader">
+            <div class="logo-menu"><i class="fas fa-bars" alt="logo menu"></i></div>
+            <img class="logo-alojamascotas" src="./img/logo-alojamascotas.svg" alt="logo de la empresa">
+            <div class="icon-search"><i class="fas fa-search" alt="logo busqueda"></i></div>
+            <a href="/carrito">
+                <div class="icon-cart"><i class="fas fa-shopping-cart" alt="logo carrito"></i></div>
         </section>
-        <section>
-            <a href="/registro">CREAR CUENTA</a>
-            <a href="/inicia-sesion">INICIAR SESION</a>
-
+        <section class="subheader">
+            <a class="crear-cuenta" href="/registro">CREAR CUENTA</a>
+            <a class="iniciar-sesion" href="/inicia-sesion">INICIAR SESION</a>
         </section>
 
     </header>
 
     <main>
-        <section>
-            <img src="./img/imagen-main1.jpg" alt="imagen main 1">
+        <section class="main-slider">
+            <img src="./img/main-slider-1.jpg" alt="imagen main 1">
         </section>
         <section>
             <h3>NUESTRAS GUARDERIAS</h3>
