@@ -2,16 +2,27 @@
     font-family: 'Raleway', sans-serif;
 }
 
+:root{
+    --verde-oscuro: #3F4E4A;
+    --verde-claro: #3F7552;
+    --celeste-oscuro: #9FB7BC;
+    --celeste-claro: #BCCFD6;
+}
+
+
+
 .topheader {
     display: inline-block;
     margin: 10px 0px;
+    width: 100vw;
+    text-align: center;
 }
 
 .logo-menu {
     display: inline-block;
     width: 25vw;
     opacity: 70%;
-    text-align: center;
+
 }
 
 .logo-menu i {
@@ -22,11 +33,14 @@
     display: inline-block;
     width: 50vw;
     max-width: 30%;
+    text-align: center;
 }
 
 .icon-search {
     display: inline-block;
     width: 12vw;
+
+    padding: 10px
 }
 
 .icon-search i {
@@ -37,6 +51,9 @@
 
 .icon-cart {
     display: inline-block;
+
+    padding:10px
+
 }
 
 .icon-cart i {
@@ -49,6 +66,9 @@
     display: inline-block;
     font-size: 14px;
     padding: 2vw 10vw;
+    width: 100vw;
+    text-align: center;
+
 }
 
 .subheader a.crear-cuenta{
@@ -62,6 +82,7 @@
     text-decoration: none;
     color: black;
     opacity: 70%;
+
 }
 
 .main-slider{
