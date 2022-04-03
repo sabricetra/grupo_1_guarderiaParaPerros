@@ -169,18 +169,35 @@ footer {
   text-align: center;
 }
 
-.footer-nav1,
-.footer-nav2{
-    display: inline-block;
+.footer-nav{
+  display: flex;
 }
 
-.footer-nav a {
+.footer-nav1,
+.footer-nav2 {
+  flex: 50%;
+}
+
+.footer-nav1{
+  line-height: 30px;
+}
+
+.footer-nav2 {
+  line-height:22px;
+}
+
+.footer-nav1 a,
+.footer-nav2 a{
   text-decoration: none;
-  color: var(--verde-oscuro);
+  color: var(--verde-oscuro)
 }
 
 .redes{
-    margin: 10px;
+    margin: 20px;
+}
+
+.redes h4{
+  margin-bottom: 10px;
 }
 
 .fab {
