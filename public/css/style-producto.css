@@ -39,3 +39,17 @@
     max-width: 30%;
     text-align: center;
   }
+
+  .imagen1,
+  .imagen2{
+      width: 40%;
+  }
+  .nombre-guarderia{
+      font-size:medium;
+      color:#3f4e4a;
+      font-weight: bold;
+  }
+
+  .cuerpo-detalle{
+      font-size: 15px;
+  }
