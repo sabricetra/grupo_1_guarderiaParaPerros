@@ -110,8 +110,8 @@
   .articulo2{
       width:100%;
     padding:10px;
-    border:#9fb7bc,5px;
-    margin:auto
+    border:hsl(190, 18%, 68%),5px;
+    margin-bottom: 15px;
   }
 
   div.cuerpo-detalle{
@@ -119,16 +119,22 @@ padding: 10px;
 width: fit-content;
 text-align: justify;
   }
+  .precios{
+    text-align:center;
+  }
+  .reservar{
+    text-align:center;
+    size: 20px;
+    color:black;
+    text-shadow: 0 0 10px #3f7552;
+  }
+
+  
+  
 
 /* seguir con los articulos */
 
 
-
-.huellita-reserva{
-    color:#3f7552;
-    size: 20px;
-    
-}
 
   .sobre-nosotros {
     display: block;
