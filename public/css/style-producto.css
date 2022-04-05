@@ -94,7 +94,7 @@
 
   }
   .nombre-guarderia{
-      font: size 24px;;
+      font-size: 50px;;
       color:#3f4e4a;
       font-weight: bold;
       text-align: center;
@@ -123,16 +123,48 @@ text-align: justify;
     text-align:center;
   }
   .reservar{
-    text-align:center;
+text-decoration:none;
+    font-weight: 300;
+    font-size: 18px;
+    color:#333333;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40%;
+    padding-right:40%;
+    background-color:#bccfd6;
+    border-color:#9fb7bc;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:25px;
+    }
+
+
+
+
+    
+    /* text-align:center;
     size: 20px;
     color:black;
     text-shadow: 0 0 10px #3f7552;
   }
 
+  .huellita-reserva {
+    size: 20px;
+    text-align:center;
+
+  } */
   
   
 
 /* seguir con los articulos */
+
+
+
+
+
+
+
+
 
 
 
