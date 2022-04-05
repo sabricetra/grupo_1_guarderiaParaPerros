@@ -1,0 +1,41 @@
+* {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  :root {
+    --verde-oscuro: #3f4e4a;
+    --verde-claro: #3f7552;
+    --celeste-oscuro: #9fb7bc;
+    --celeste-claro: #bccfd6;
+  }
+  
+  header {
+    background-color: var(--celeste-claro);
+  }
+  
+  .topheader {
+    display: inline-block;
+    margin: 10px 0px;
+    width: 100vw;
+    text-align: center;
+  }
+  
+  .logo-menu {
+    display: inline-block;
+    width: 25vw;
+    opacity: 80%;
+    text-align: left;
+  
+  }
+  
+  .logo-menu i {
+    color: var(--verde-oscuro);
+    font-size: 32px;
+  }
+  
+  .logo-alojamascotas {
+    display: inline-block;
+    width: 50vw;
+    max-width: 30%;
+    text-align: center;
+  }
