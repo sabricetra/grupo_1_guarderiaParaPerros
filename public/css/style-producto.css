@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 * {
     font-family: "Raleway", sans-serif;
   }
@@ -17,7 +22,6 @@
     display: inline-block;
     margin: 10px 0px;
     width: 100vw;
-    text-align: center;
   }
   
   .logo-menu {
@@ -40,16 +44,79 @@
     text-align: center;
   }
 
+.icon-search {
+  display: inline-block;
+  width: 12vw;
+  padding: 10px;
+}
+
+.icon-search i {
+  font-size: 26px;
+  color: var(--verde-oscuro);
+  opacity: 80%;
+}
+
+.icon-cart {
+  display: inline-block;
+  padding: 10px;
+}
+
+.icon-cart i {
+  font-size: 26px;
+  color: var(--verde-oscuro);
+  opacity: 80%;
+}
+
+.subheader {
+  display: inline-block;
+  font-size: 14px;
+  padding: 2vw 10vw;
+  width: 100vw;
+  text-align: center;
+}
+
+.subheader a.crear-cuenta {
+  padding-right: 5vw;
+  text-decoration: none;
+  color: var(--verde-oscuro);
+  opacity: 80%;
+}
+.subheader a.iniciar-sesion {
+  padding-left: 5vw;
+  text-decoration: none;
+  color: var(--verde-oscuro);
+  opacity: 80%;
+}
+
   .imagen1,
   .imagen2{
-      width: 40%;
+      width: 90%;
+
   }
   .nombre-guarderia{
-      font-size:medium;
+      font: size 24px;;
       color:#3f4e4a;
       font-weight: bold;
+      text-align: center;
   }
 
   .cuerpo-detalle{
       font-size: 15px;
+      text-align: center;
+    
   }
+
+  .articulo1,
+  .articulo2{
+      width:100%;
+    padding:10px;
+    border:#9fb7bc,5px;
+    margin:auto
+  }
+
+  div.cuerpo-detalle{
+padding: 10px;
+width: fit-content;
+text-align: justify;
+  }
+  
