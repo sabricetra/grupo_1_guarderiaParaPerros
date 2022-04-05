@@ -119,4 +119,79 @@ padding: 10px;
 width: fit-content;
 text-align: justify;
   }
+
+/* seguir con los articulos */
+
+
+
+.huellita-reserva{
+    color:#3f7552;
+    size: 20px;
+    
+}
+
+  .sobre-nosotros {
+    display: block;
+    padding: 20px;
+  }
+  
+  .sobre-nosotros h3 {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    color: var(--verde-oscuro);
+    font-size: 18px;
+  }
+  
+  .sobre-nosotros p {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    color: var(--verde-oscuro);
+    font-size: 12px;
+  }
+  
+  footer {
+    padding: 10px;
+    background-color: var(--celeste-claro);
+    text-align: center;
+  }
+  
+  .footer-nav{
+    display: flex;
+  }
+  
+  .footer-nav1,
+  .footer-nav2 {
+    flex: 50%;
+  }
+  
+  .footer-nav1{
+    line-height: 30px;
+  }
+  
+  .footer-nav2 {
+    line-height:22px;
+  }
+  
+  .footer-nav1 a,
+  .footer-nav2 a{
+    text-decoration: none;
+    color: var(--verde-oscuro)
+  }
+  
+  .redes{
+      margin: 20px;
+  }
+  
+  .redes h4{
+    margin-bottom: 10px;
+  }
+  
+  .fab {
+    font-size: 28px;
+    color: black;
+    opacity: 80%;
+    margin: 5px;
+  }
   
