@@ -91,10 +91,19 @@
   .imagen1,
   .imagen2{
       width: 90%;
+      display:block;
+      text-align: center;
+      margin:10px;
+      padding: 10px;
 
   }
+h1{
+  font-size: 20px;
+
+}
+
   .nombre-guarderia{
-      font-size: 50px;;
+      font-size: 30px;;
       color:#3f4e4a;
       font-weight: bold;
       text-align: center;
@@ -107,17 +116,20 @@
   }
 
   .articulo1,
-  .articulo2{
-      width:100%;
+  .articulo2 {
+      width:80%;
     padding:10px;
-    border:hsl(190, 18%, 68%),5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    
   }
 
   div.cuerpo-detalle{
 padding: 10px;
 width: fit-content;
 text-align: justify;
+background-color:hsl(197, 39%, 86%,0.4);
+
+
   }
   .precios{
     text-align:center;
@@ -136,6 +148,14 @@ text-decoration:none;
     border-width: 3px;
     border-style: solid;
     border-radius:25px;
+    display: flex;
+    justify-content:center;
+
+    }
+
+    .reservar a{
+      text-decoration: none;
+      color:#333333;
     }
 
 
@@ -233,3 +253,9 @@ text-decoration:none;
     margin: 5px;
   }
   
+  .estrellas{
+    color:#3f7552;
+    display:block;
+    text-align: center;
+
+  }
