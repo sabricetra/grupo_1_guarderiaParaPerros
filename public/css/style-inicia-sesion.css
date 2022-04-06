@@ -1,0 +1,37 @@
+
+* {
+    font-family: "Raleway", sans-serif;
+  }
+
+  :root {
+    --verde-oscuro: #3f4e4a;
+    --verde-claro: #3f7552;
+    --celeste-oscuro: #9fb7bc;
+    --celeste-claro: #bccfd6;
+  }
+
+
+.subheader {
+
+    display : none
+}
+
+.boton-volver-home {
+    padding: 20px
+}
+
+.titulo-iniciar-sesion {
+    padding: 30px;
+    text-align: center;
+}
+
+.contenedor-iniciar-sesion {
+    margin: 50px;
+    text-align: center;
+    background-color: var(--celeste-claro);
+}
+
+form p {
+    padding: 30px;
+}
+

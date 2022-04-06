@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AlojaMascotas</title>
 
-        <!-- Links CSS -->
-        <link rel="stylesheet" href="css/style-home.css">
-        <link rel="stylesheet" href="css/normalize.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlojaMascotas</title>
 
-        <!-- Links Icons -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="css/style-home.css">
+    <link rel="stylesheet" href="css/style-inicia-sesion.css">
+    <link rel="stylesheet" href="css/normalize.css">
 
-        <!-- Links Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    </head>
+    <!-- Links Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+    <!-- Links Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
 <body>
 
     <header>
@@ -36,7 +39,29 @@
     </header>
 
     <main>
+        <div class="boton-volver-home">
+            <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
+        </div>
+        <h3 class="titulo-iniciar-sesion">INICIA SESION</h3>
+        <div class="contenedor-iniciar-sesion">
+            <form action="/inicia-sesion" method="POST">
+                <p>
+                    <label>CORREO ELECTRONICO:</label>
+                    <input type="email" name="email" required>
+                </p>
 
+                <p>
+                    <label>CONTRASEÑA:</label>
+                    <input type="password" name="password" required>
+                </p>
+
+                <p>
+                    <button type="submit" name="iniciar-sesion">INICIAR SESIÓN</button>
+                </p>
+            </form>
+            <a class="crear-cuenta" href="/registro">CREAR CUENTA</a>
+            <a class="Olvidaste-contraseña" href="#">¿Has olvidado tu contraseña?</a>
+        </div>
 
     </main>
 
@@ -65,4 +90,5 @@
     </footer>
 
 </body>
+
 </html>
