@@ -45,22 +45,26 @@
         <h3 class="titulo-iniciar-sesion">INICIA SESION</h3>
         <div class="contenedor-iniciar-sesion">
             <form action="/inicia-sesion" method="POST">
-                <p>
-                    <label>CORREO ELECTRONICO:</label>
+                <div>
+                    <label class="label-email">CORREO ELECTRONICO:</label>
                     <input type="email" name="email" required>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <label>CONTRASEÑA:</label>
                     <input type="password" name="password" required>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <button type="submit" name="iniciar-sesion">INICIAR SESIÓN</button>
-                </p>
+                </div>
             </form>
-            <a class="crear-cuenta" href="/registro">CREAR CUENTA</a>
+
+                <a class="crear-cuenta" href="/registro">CREAR CUENTA</a>
+
+           <div class="contenedor-olvidaste-contraseña">
             <a class="Olvidaste-contraseña" href="#">¿Has olvidado tu contraseña?</a>
+           </div>
         </div>
 
     </main>

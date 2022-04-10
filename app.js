@@ -17,6 +17,11 @@ app.get("/inicia-sesion", function(req,res){
     res.sendFile(htmlPath)
 })
 
+app.post("/inicia-sesion", function(req,res){
+    let htmlPath = path.join(__dirname, "/views/home.html")
+    res.sendFile(htmlPath)
+})
+
 app.get("/registro", function(req,res){
     let htmlPath = path.join(__dirname, "/views/registro.html")
     res.sendFile(htmlPath)
