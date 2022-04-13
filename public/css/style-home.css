@@ -11,13 +11,17 @@
 
 header {
   background-color: var(--celeste-claro);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
 }
 
 .topheader {
-  display: inline-block;
-  margin: 10px 0px;
+  display: block;
+  padding: 10px 0px;
   width: 100vw;
   text-align: center;
+
 }
 
 .logo-menu {
@@ -84,7 +88,9 @@ header {
   opacity: 80%;
 }
 
-
+main {
+  margin-top: 200px;
+}
 
 .main-slider {
   display: block;
@@ -98,7 +104,6 @@ header {
   margin-right: auto;
 
 }
-
 
 
 .main-productos h3 {

@@ -8,8 +8,9 @@
     <title>AlojaMascotas</title>
 
     <!-- Links CSS -->
-    <link rel="stylesheet" href="css/style-home.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style-home.css">
+    <link rel="stylesheet" href="css/style-carrito.css">
 
     <!-- Links Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
@@ -40,51 +41,92 @@
     <main>
         <section class="resumen-cart-productos">
             <article class="producto1">
-                <div>foto</div>
-                <div>detalle
-                    <div class="titulo-producto"></div>
-                    <div class="categoria-producto"></div>
-                    <div class="fechas-producto"></div>
+                <div><img src="./img/guarderia_2.jpg" alt="Guarderia"></div>
+                <div class="detalle-producto">
+                    <div class="titulo-producto">
+                        <h2>Guarderia 1</h2>
+                    </div>
+                    <div class="categoria-producto">
+                        <h3>Categoria A</h3>
+                    </div>
+                    <div class="fechas-producto">
+                        <p>18/10/2022 al 25/10/2022</p>
+                    </div>
                 </div>
-                <div>cantidad</div>
-                <div>total</div>
-                <div>remover</div>
+                <div class="cantidad">
+                    <i class="fas fa-minus"></i>
+                    <div>1</div>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <h3 class="precio">$100,99</h3>
+                <h4 class="remover">Remover</h4>
             </article>
             <article class="producto2">
-                <div>foto</div>
-                <div>detalle
-                    <div class="titulo-producto"></div>
-                    <div class="categoria-producto"></div>
-                    <div class="fechas-producto"></div>
+                <div><img src="./img/guarderia_canina_1.jpg" alt="Guarderia"></div>
+                <div class="detalle-producto">
+                    <div class="titulo-producto">
+                        <h2>Guarderia 2</h2>
+                    </div>
+                    <div class="categoria-producto">
+                        <h3>Categoria B</h3>
+                    </div>
+                    <div class="fechas-producto">
+                        <p>26/11/2022 al 25/11/2022</p>
+                    </div>
                 </div>
-                <div>cantidad</div>
-                <div>total</div>
-                <div>remover</div>
+                <div class="cantidad">
+                    <i class="fas fa-minus"></i>
+                    <div>2</div>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <h3 class="precio">$280,00</h3>
+                <h4 class="remover">Remover</h4>
             </article>
             <article class="producto3">
-                <div>foto</div>
-                <div>detalle
-                    <div class="titulo-producto"></div>
-                    <div class="categoria-producto"></div>
-                    <div class="fechas-producto"></div>
+                <div><img src="./img/guarderia1_slidec.jpg" alt="Guarderia"></div>
+                <div class="detalle-producto">
+                    <div class="titulo-producto">
+                        <h2>Guarderia 3</h2>
+                    </div>
+                    <div class="categoria-producto">
+                        <h3>Categoria C</h3>
+                    </div>
+                    <div class="fechas-producto">
+                        <p>04/12/2022 al 16/12/2022</p>
+                    </div>
                 </div>
-                <div>cantidad</div>
-                <div>total</div>
-                <div>remover</div>
+                <div class="cantidad">
+                    <i class="fas fa-minus"></i>
+                    <div>2</div>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <h3 class="precio">$75,00</h3>
+                <h4 class="remover">Remover</h4>
             </article>
         </section>
 
         <section class="codigo-descuento">
-            <h3>Tengo un código de descuento</h3>
-            <div>input</div>
+            <h4>Tengo un código de descuento</h4>
+            <input type="text" name="codigoDescuento">
             <button type="submit">Agregar código</button>
         </section>
 
         <section class="resumen-cart-total">
-            <div class="subtotal"></div>
-            <div class="impuestos-tasas"></div>
+            <div class="subtotal">
+            <h4 class="subtotal-title">Subtotal:</h4>
+            <h4 class="subtotal-value">$455,99</h4>
+            </div>
+            <div class="impuestos-tasas">
+            <h4 class="impuestos-tasas-title">Impuestos y Tasas</h4>
+            <h4 class="impuestos-tasas-value">$0,00</h4>
+            </div>
             <div class="descuento">
-                <div class="total"></div>
+            <h4 class="descuento-title">Descuento:</h4>
+            <h4 class="descuento-value">$100,00</h4>
+            </div>
+            <div class="total">
+            <h3 class="total-title">Total:</h3>
+            <h3 class="total-value">$355,99</h3>
             </div>
         </section>
 
