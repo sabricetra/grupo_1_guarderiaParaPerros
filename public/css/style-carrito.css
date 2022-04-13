@@ -36,6 +36,10 @@ article img{
       font-size: 12px;
 }
 
+.precio {
+      padding-top: 5px;
+}
+
 .resumen-cart-total div{
       display: flex;
       justify-content: space-between;
@@ -45,6 +49,12 @@ article img{
       position: absolute;
       right: 5px;
       bottom: 5px;
+}
+
+.producto1,
+.producto2,
+.producto3 {
+      border-bottom: 1px solid grey;
 }
 
 .codigo-descuento {
@@ -70,6 +80,10 @@ article img{
       position: absolute;
       bottom: 5px;
       right: 5px;
+}
+
+.resumen-cart-total{
+      margin: 10px 0px;
 }
 
 /* PSEUDOCLASES */
