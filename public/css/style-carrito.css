@@ -25,12 +25,22 @@ article img{
 
 .resumen-cart-productos article{
       display: flex;
+      position: relative;
+      justify-content: space-between;
 }
 
 .resumen-cart-total div{
       display: flex;
       justify-content: space-between;
 }
+
+.remover {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+}
+
+/* PSEUDOCLASES */
 
 .resumen-cart-productos article:hover {
       box-shadow: 0 0 2px 1px var(--celeste-oscuro);
