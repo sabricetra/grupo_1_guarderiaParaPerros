@@ -21,12 +21,19 @@ article img{
 .detalle-producto{
       display: flex;
       flex-direction: column;
+      justify-content: space-evenly;
+      max-width: 25vw;
 }
 
 .resumen-cart-productos article{
       display: flex;
       position: relative;
       justify-content: space-between;
+      margin: 10px 0;
+}
+
+.fechas-producto{
+      font-size: 12px;
 }
 
 .resumen-cart-total div{
@@ -38,6 +45,31 @@ article img{
       position: absolute;
       right: 5px;
       bottom: 5px;
+}
+
+.codigo-descuento {
+      position: relative;
+}
+
+.cod-descuento {
+      display: flex;
+      padding: 20px 0;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.cod-descuento h4 {
+      max-width: 40%;
+}
+
+.codigo-descuento input {
+      height: 1rem;
+}
+
+.codigo-descuento button {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
 }
 
 /* PSEUDOCLASES */
