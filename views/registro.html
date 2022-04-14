@@ -1,1 +1,109 @@
-<div>holaaaa</div>
+
+
+		
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlojaMascotas</title>
+
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="css/style-home.css">
+    <link rel="stylesheet" href="css/style-inicia-sesion.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Links Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+    <!-- Links Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <section class="topheader">
+            <div class="logo-menu"><i class="fas fa-bars" alt="logo menu"></i></div>
+            <div ><a href="/"><img class="logo-alojamascotas" src="./img/logo-alojamascotas.svg" alt="logo de la empresa"></a></div>
+            <div class="icon-search"><i class="fas fa-search" alt="logo busqueda"></i></div>
+            <a href="/carrito">
+                <div class="icon-cart"><i class="fas fa-shopping-cart" alt="logo carrito"></i></div>
+        </section>
+        <section class="subheader">
+            <a class="crear-cuenta" href="/registro">CREAR CUENTA</a>
+            <a class="iniciar-sesion" href="/inicia-sesion">INICIAR SESION</a>
+        </section>
+
+    </header>
+
+	<nav>
+		<form action="/register" method="POST">
+
+
+			<h5>Crea tu cuenta</h5>
+
+			<p>
+				<label>Nombre de usuari@:</label>
+				<input type="text" name="nombre de usuario" required>
+			</p>
+			<p>
+				<label>Fecha de nacimiento:</label>
+				<input type="date" name="fecha de nacimiento" required>
+			</p>
+			<p>
+				<label>Domicilio:</label>
+				<input type="text" name="Domicilio" placeholder="calle y numero" required>
+			</p>
+
+			<p>
+				<label>E-mail:</label>
+				<input type="email" name="email" required>
+			</p>
+			<input type="text" name="dni" placeholder="introduzca su DNI" pattern="[0-9]{8}"
+				title="Debe poner 8 números">
+			<p>
+
+				<input name="password" type="password" value="" class="form-control" id="elige contraseña"
+					placeholder="Elige tu contraseña">
+
+				<input name="password" type="password" value="" class="form-control" id="confirmar contraseña"
+					placeholder="Confirma tu contraseña">
+			</p>
+			<p> <input type="submit" value="Enviar">
+				<input type="reset" value="Cancelar">
+			</p>
+			<input type="submit" name="" value="Enviar">
+			<input type="reset" name="" value="Cancelar">
+	</nav>
+	
+    <footer>
+        <div class="footer-nav">
+            <div class="footer-nav1">
+                <a href="/inicia-sesion">Iniciar Sesion</a><br>
+                <a href="/registro">Registrarse</a><br>
+                <a href="#">Nosotros</a><br>
+            </div>
+            <div class="footer-nav2">
+                <a href="#">Contacto</a><br>
+                <a href="#">FAQ</a><br>
+                <a href="#">Terminos y condiciones</a><br>
+            </div>
+        </div>
+        <div class="redes">
+            <h4>SEGUINOS EN NUESTRAS REDES</h4>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </div>
+        <h6 class="copyright">Copyright © 2022 AlojaMascotas S.R.L.</h6>
+
+    </footer>
+
+</body>
+
+</html>
