@@ -36,6 +36,22 @@ article img{
       font-size: 12px;
 }
 
+.cantidad{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+      align-items: center;
+}
+
+.cantidad i {
+      font-size: 12px;
+      background-color: var(--celeste-claro);
+      border: solid 1px var(--celeste-claro);
+      border-radius: 50%;
+      color: white;
+
+}
+
 .precio {
       padding-top: 5px;
 }
@@ -54,6 +70,7 @@ article img{
 .producto1,
 .producto2,
 .producto3 {
+      padding-bottom: 10px;
       border-bottom: 1px solid grey;
 }
 
@@ -62,6 +79,7 @@ article img{
 }
 
 .cod-descuento {
+      position: relative;
       display: flex;
       padding: 20px 0;
       justify-content: space-between;
@@ -73,13 +91,18 @@ article img{
 }
 
 .codigo-descuento input {
-      height: 1rem;
+      height: 16px;
 }
 
 .codigo-descuento button {
       position: absolute;
-      bottom: 5px;
-      right: 5px;
+      bottom: 0px;
+      right: 0px;
+      padding: 1%;
+      background-color: var(--celeste-claro);
+      color: var(--verde-oscuro);
+      border: 0;
+      border-radius: 5px;
 }
 
 .resumen-cart-total{

@@ -1,0 +1,25 @@
+:root {
+      --verde-oscuro: #3f4e4a;
+      --verde-claro: #3f7552;
+      --celeste-oscuro: #9fb7bc;
+      --celeste-claro: #bccfd6;
+    }
+
+/* Fondos */
+
+.producto1,
+.producto3 {
+      background-color: rgba(201, 201, 201, 0.103)
+}
+
+
+/* Productos */
+
+.resumen-cart-productos img {
+            object-fit: cover;
+            width: 60vw;          
+}
+
+.cantidad {
+      display: flex;
+}
