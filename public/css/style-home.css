@@ -126,13 +126,14 @@ main {
 }
 
 .main-slider {
-  display: block;
-  margin: 0;
+  position: relative;
+  max-width: 70vw;
+  margin: auto;
 }
 
 .main-slider img {
   display: block;
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 
