@@ -12,51 +12,122 @@
       background-color: rgba(201, 201, 201, 0.103)
 }
 
-/* Productos */
+/* Flex por articulo */
 
 .producto1 {
       display: flex;
 }
 
-.producto {
-      width: 60vw;
-      padding: 10px;
-}
+/* Flex de cada Producto */
 
-.resumen-producto1 {
+.info-producto {
       display: flex;
-      width: 40vw;
       flex-direction: column;
+      justify-content: space-between;
+      width: 50vw;
       padding: 20px;
 }
 
+.resumen-producto {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 40vw;
+      padding: 20px;
+}
+
+/* Info - Producto */
+
 .resumen-cart-productos img {
             object-fit: cover;
-            width: 60vw;
-            border-radius: 2px;          
+            width: 35vw;
+            border-radius: 3px;
+            border: 1px solid var(--verde-oscuro);          
+}
+
+.titulo-producto {
+      padding: 10px 0;
+      font-size: 14px;
+      color: var(--verde-oscuro)
+}
+
+.descripcion-producto {
+      font-size: 13px;
+      color: var(--verde-oscuro)
+}
+
+/* Resumen - Producto */
+
+.categoria-producto {
+   margin: 5px 0;
+}
+
+ .titulo-categoria{
+      font-size: 13px;
+      color: var(--verde-oscuro)
+}
+
+.opciones-categoria {
+      font-size: 12px;
+      color: var(--verde-oscuro)      
+}
+
+.fechas-producto {
+      margin: 5px 0;
 }
 
 .fechas-producto label {
-      display: block;
+      font-size: 13px;
+      color: var(--verde-oscuro)
 }
 
 .cantidad .mascota {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-around;
       align-items: center;
+      margin: 10px 0;
+}
+
+.cantidad .fa-dog,
+.cantidad .fa-cat {
+      font-size: 18px;
+      text-align: center;
+      color: var(--verde-oscuro);
+      width: 24px;
+      height: 24px;
+      background-color: white;
+      border-radius: 50%;
+      border: solid 1px var(--verde-oscuro);
+      padding-top: 2px;
+      
 }
 
 .cantidad .fa-plus,
 .cantidad .fa-minus {
-      font-size: 12px;
+      font-size: 14px;
       background-color: var(--celeste-claro);
       border: solid 1px var(--celeste-claro);
       border-radius: 50%;
       color: white;
 }
 
-.cantidad .fa-dog,
-.cantidad .fa-cat {
+.titulo-comentario {
+      font-size: 13px;
       color: var(--verde-oscuro)
+}
+
+.precio {
+      position: absolute;
+      bottom: 40px;
+      right: 10px;
+      font-size: 14px;
+}
+
+.remover {
+      position: absolute;
+      bottom: 10px;
+      right: 1px;
+      font-size: 14px;
 }

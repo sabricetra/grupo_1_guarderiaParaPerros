@@ -42,21 +42,23 @@
     <main>
         <section class="resumen-cart-productos">
             <article class="producto1">
-                <div class="producto">
+                <div class="info-producto">
                     <div class="slider-producto"><img src="./img/guarderia_2.jpg" alt="Guarderia"></div>
                     <div class="detalle-producto">
                         <h4 class="titulo-producto">Guarderia 1</h4>
-                        <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur, 
+                            adipisicing elit. Numquam vitae optio consequuntur nisi qui adipisci iure quis, 
+                            sequi quam voluptas dolorum quos, animi officiis sed.</p>
                     </div>
                 </div>
-                <div class="resumen-producto1">
+                <div class="resumen-producto">
                     <div class="categoria-producto">
                         <form action="categoria" method="GET">
-                            <label>Categoría:</label><br>
-                            <select name="categoria">
-                                <option value="cat1" selected>Cat. 1</option>
-                                <option value="cat2">Cat. 2</option>
-                                <option value="cat3">Cat. 3</option>
+                            <label class="titulo-categoria">Categoría:</label>
+                            <select class="opciones-categoria" name="categoria">
+                                <option value="cat1" selected>Categoria 1</option>
+                                <option value="cat2">Categoria 2</option>
+                                <option value="cat3">Categoria 3</option>
                             </select>
                         </form>
                     </div>
@@ -80,10 +82,8 @@
                             <i class="fas fa-minus"></i>
                         </div>
                     </div>
-                    <label for="comentario">Comentario:</label>
-                    <textarea name="comentario" id="comentario">Contenido</textarea> 
-                    <h4 class="precio">$100,99</h4>
-                    <h6 class="remover">Remover</h6>
+                    <h4 class="precio">Total: $100,99</h4>
+                    <div class="remover"><h6><i class="far fa-times-circle"></i>Remover</h6></div>
                 </div>
             </article>
             <article class="producto2">
@@ -137,6 +137,11 @@
                 <button type="submit">Agregar código</button>
             </div>
 
+        </section>
+
+        <section class="comentario">
+            <label class="titulo-comentario" for="comentario">Comentario:</label>
+            <textarea name="comentario" id="comentario">Contenido</textarea> 
         </section>
 
         <section class="resumen-cart-total">
