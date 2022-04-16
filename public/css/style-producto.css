@@ -307,7 +307,8 @@ ul.slider li:target {
 
 
 
-  .menu-articulo1{
+  .menu-articulo1,
+  .menu-articulo2{
     text-align:center;
     margin-top: 30px;
   }
@@ -327,3 +328,21 @@ ul.slider li:target {
   
 
   }
+
+  .menu-articulo2 li{
+    display:inline-block;
+    text-align: center;
+    
+  }
+
+  .menu-articulo2 a{
+    display:inline-block;
+    color:white;
+    text-decoration: none;
+    background-color: #3f7552;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 100%;
+
+  }
+  
