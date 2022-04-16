@@ -12,14 +12,51 @@
       background-color: rgba(201, 201, 201, 0.103)
 }
 
-
 /* Productos */
+
+.producto1 {
+      display: flex;
+}
+
+.producto {
+      width: 60vw;
+      padding: 10px;
+}
+
+.resumen-producto1 {
+      display: flex;
+      width: 40vw;
+      flex-direction: column;
+      padding: 20px;
+}
 
 .resumen-cart-productos img {
             object-fit: cover;
-            width: 60vw;          
+            width: 60vw;
+            border-radius: 2px;          
 }
 
-.cantidad {
+.fechas-producto label {
+      display: block;
+}
+
+.cantidad .mascota {
       display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+}
+
+.cantidad .fa-plus,
+.cantidad .fa-minus {
+      font-size: 12px;
+      background-color: var(--celeste-claro);
+      border: solid 1px var(--celeste-claro);
+      border-radius: 50%;
+      color: white;
+}
+
+.cantidad .fa-dog,
+.cantidad .fa-cat {
+      color: var(--verde-oscuro)
 }
