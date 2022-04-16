@@ -46,8 +46,8 @@
                     <div class="slider-producto"><img src="./img/guarderia_2.jpg" alt="Guarderia"></div>
                     <div class="detalle-producto">
                         <h4 class="titulo-producto">Guarderia 1</h4>
-                        <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur, 
-                            adipisicing elit. Numquam vitae optio consequuntur nisi qui adipisci iure quis, 
+                        <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Numquam vitae optio consequuntur nisi qui adipisci iure quis,
                             sequi quam voluptas dolorum quos, animi officiis sed.</p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                         <div class="mascota">
                             <i class="fas fa-dog"></i>
                             <i class="fas fa-plus"></i>
-                            <div>1</div>
+                            <div>0</div>
                             <i class="fas fa-minus"></i>
                         </div>
                         <div class="mascota">
@@ -83,65 +83,75 @@
                         </div>
                     </div>
                     <h4 class="precio">Total: $100,99</h4>
-                    <div class="remover"><h6><i class="far fa-times-circle"></i>Remover</h6></div>
+                    <div class="remover">
+                        <h6><i class="far fa-times-circle"></i>Remover</h6>
+                    </div>
                 </div>
             </article>
+
             <article class="producto2">
-                <div><img src="./img/guarderia_canina_1.jpg" alt="Guarderia"></div>
-                <div class="detalle-producto">
-                    <div class="titulo-producto">
-                        <h4>Guarderia 2</h4>
+                <div class="info-producto">
+                    <div class="slider-producto"><img src="./img/guarderia_canina_1.jpg" alt="Guarderia"></div>
+                    <div class="detalle-producto">
+                        <h4 class="titulo-producto">Guarderia 2</h4>
+                        <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Numquam vitae optio consequuntur nisi qui adipisci iure quis,
+                            sequi quam voluptas dolorum quos, animi officiis sed.</p>
                     </div>
+                </div>
+                <div class="resumen-producto">
                     <div class="categoria-producto">
-                        <h5>Categoria B</h5>
+                        <form action="categoria" method="GET">
+                            <label class="titulo-categoria">Categoría:</label>
+                            <select class="opciones-categoria" name="categoria">
+                                <option value="cat1">Categoria 1</option>
+                                <option value="cat2" selected>Categoria 2</option>
+                                <option value="cat3">Categoria 3</option>
+                            </select>
+                        </form>
                     </div>
                     <div class="fechas-producto">
-                        <p>26/11/2022 al 25/11/2022</p>
+                        <label>Desde:</label><input type="date" name="fechaIngreso" value="2022-08-18" min="2022-04-01"
+                            max="2023-12-31">
+                        <label>Hasta:</label><input type="date" name="fechaSalida" value="2022-08-26" min="2022-04-01"
+                            max="2023-12-31">
+                    </div>
+                    <div class="cantidad">
+                        <div class="mascota">
+                            <i class="fas fa-dog"></i>
+                            <i class="fas fa-plus"></i>
+                            <div>1</div>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                        <div class="mascota">
+                            <i class="fas fa-cat"></i>
+                            <i class="fas fa-plus"></i>
+                            <div>0</div>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <h4 class="precio">Total: $123,56</h4>
+                    <div class="remover">
+                        <h6><i class="far fa-times-circle"></i>Remover</h6>
                     </div>
                 </div>
-                <div class="cantidad">
-                    <i class="fas fa-minus"></i>
-                    <div>2</div>
-                    <i class="fas fa-plus"></i>
-                </div>
-                <h4 class="precio">$280,00</h4>
-                <h6 class="remover">Remover</h6>
             </article>
-            <article class="producto3">
-                <div><img src="./img/guarderia1_slidec.jpg" alt="Guarderia"></div>
-                <div class="detalle-producto">
-                    <div class="titulo-producto">
-                        <h4>Guarderia 3</h4>
-                    </div>
-                    <div class="categoria-producto">
-                        <h5>Categoria C</h5>
-                    </div>
-                    <div class="fechas-producto">
-                        <p>04/12/2022 al 16/12/2022</p>
-                    </div>
-                </div>
-                <div class="cantidad">
-                    <i class="fas fa-minus"></i>
-                    <div>2</div>
-                    <i class="fas fa-plus"></i>
-                </div>
-                <h4 class="precio">$175,00</h4>
-                <h6 class="remover">Remover</h6>
-            </article>
+
         </section>
 
         <section class="codigo-descuento">
-            <div class="cod-descuento">
-                <h4>Tengo un código de descuento</h4>
+            <h4 class="titulo-descuento">Tengo un código <br> de descuento</h4>
+            <div class="input-descuento">
                 <input type="text" name="codigoDescuento">
                 <button type="submit">Agregar código</button>
+            </div>
             </div>
 
         </section>
 
         <section class="comentario">
-            <label class="titulo-comentario" for="comentario">Comentario:</label>
-            <textarea name="comentario" id="comentario">Contenido</textarea> 
+            <label class="titulo-comentario" for="comentario">Comentarios<br>adicionales:</label>
+            <textarea name="comentario" id="comentario" placeholder="Deje su comentario"></textarea>
         </section>
 
         <section class="resumen-cart-total">

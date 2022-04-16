@@ -14,7 +14,8 @@
 
 /* Flex por articulo */
 
-.producto1 {
+.producto1,
+.producto2 {
       display: flex;
 }
 
@@ -24,7 +25,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 50vw;
+      width: 55vw;
       padding: 20px;
 }
 
@@ -41,9 +42,11 @@
 
 .resumen-cart-productos img {
             object-fit: cover;
-            width: 35vw;
-            border-radius: 3px;
-            border: 1px solid var(--verde-oscuro);          
+            width: 40vw;
+            padding: 1px;
+            border-radius: 5px;
+            border-right: 2px solid rgba(201, 201, 201, 0.20);
+            border-bottom: 2px solid rgba(201, 201, 201, 0.20);           
 }
 
 .titulo-producto {
@@ -54,13 +57,14 @@
 
 .descripcion-producto {
       font-size: 13px;
+      text-align: justify;
       color: var(--verde-oscuro)
 }
 
 /* Resumen - Producto */
 
 .categoria-producto {
-   margin: 5px 0;
+   
 }
 
  .titulo-categoria{
@@ -77,8 +81,13 @@
       margin: 5px 0;
 }
 
+.fechas-producto input {
+      font-size: 12px;
+      color: var(--verde-oscuro);
+}
+
 .fechas-producto label {
-      font-size: 13px;
+      font-size: 12px;
       color: var(--verde-oscuro)
 }
 
@@ -98,9 +107,10 @@
       width: 24px;
       height: 24px;
       background-color: white;
-      border-radius: 50%;
+      border-radius: 30%;
       border: solid 1px var(--verde-oscuro);
       padding-top: 2px;
+      margin-right: 5px;
       
 }
 
@@ -113,16 +123,19 @@
       color: white;
 }
 
-.titulo-comentario {
-      font-size: 13px;
-      color: var(--verde-oscuro)
+.cantidad div{
+      font-family: sans-serif;
+      font-size: 12px;
 }
 
 .precio {
       position: absolute;
-      bottom: 40px;
+      bottom: 50px;
       right: 10px;
       font-size: 14px;
+      padding: 3px;
+      border-bottom: solid 1px var(--celeste-oscuro);
+      border-left: solid 1px var(--celeste-oscuro);
 }
 
 .remover {
@@ -130,4 +143,58 @@
       bottom: 10px;
       right: 1px;
       font-size: 14px;
+}
+
+
+/* Seccion - Codigo descuento */
+
+.codigo-descuento {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: px;
+      background-color:rgba(201, 201, 201, 0.20)
+}
+
+.titulo-descuento {
+      font-size: 13px;
+      color: var(--verde-oscuro);
+      margin: 15px 0 40px 20px;
+}
+
+.input-descuento input {
+      margin-top: 20px;
+      margin-right: 10px;
+}
+
+.input-descuento button {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      padding: 3px;
+      background-color: var(--celeste-claro);
+      color: white;
+      border-style: none;
+      border-radius: 3px;
+
+}
+
+.comentario {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10px 20px 20px;
+      background-color: rgba(170, 180, 189, 0.3)
+}
+
+.titulo-comentario {
+      font-size: 13px;
+      color: var(--verde-oscuro)
+}
+
+.comentario textarea {
+      width: 60vw;
+      height: 3rem;
+      padding: 2px;
 }
