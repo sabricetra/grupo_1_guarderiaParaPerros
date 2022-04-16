@@ -124,13 +124,12 @@ h1{
   }
 
   div.cuerpo-detalle{
-padding: 10px;
+padding: 20px;
 width: fit-content;
 text-align: justify;
 background-color:hsl(197, 39%, 86%,0.4);
-
-
   }
+
   .precios{
     text-align:center;
   }
@@ -157,33 +156,6 @@ text-decoration:none;
       text-decoration: none;
       color:#333333;
     }
-
-
-
-
-    
-    /* text-align:center;
-    size: 20px;
-    color:black;
-    text-shadow: 0 0 10px #3f7552;
-  }
-
-  .huellita-reserva {
-    size: 20px;
-    text-align:center;
-
-  } */
-  
-  
-
-/* seguir con los articulos */
-
-
-
-
-
-
-
 
 
 
