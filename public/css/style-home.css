@@ -260,7 +260,6 @@ footer {
   position: fixed;
   left: 0;
   width: 100vw;
-  margin-top: ;
   transform: translateX(-100vw);
   transition: transform 250ms ease-in-out;
   background-color: #bccfd6;

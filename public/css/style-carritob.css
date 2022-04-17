@@ -52,6 +52,7 @@
 .titulo-producto {
       padding: 10px 0;
       font-size: 14px;
+      font-weight: bold;
       color: var(--verde-oscuro)
 }
 
@@ -63,9 +64,6 @@
 
 /* Resumen - Producto */
 
-.categoria-producto {
-   
-}
 
  .titulo-categoria{
       font-size: 13px;
@@ -74,10 +72,13 @@
 
 .opciones-categoria {
       font-size: 12px;
+      padding: 5px
       color: var(--verde-oscuro)      
 }
 
 .fechas-producto {
+      display: flex;
+      flex-direction: column;
       margin: 5px 0;
 }
 
@@ -87,6 +88,7 @@
 }
 
 .fechas-producto label {
+      padding: 5px 0;
       font-size: 12px;
       color: var(--verde-oscuro)
 }
