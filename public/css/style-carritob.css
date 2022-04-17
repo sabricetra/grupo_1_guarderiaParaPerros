@@ -57,7 +57,7 @@
 
 .descripcion-producto {
       font-size: 13px;
-      text-align: justify;
+      text-align: left;
       color: var(--verde-oscuro)
 }
 
@@ -133,9 +133,9 @@
       bottom: 50px;
       right: 10px;
       font-size: 14px;
-      padding: 3px;
+      padding: 4px;
       border-bottom: solid 1px var(--celeste-oscuro);
-      border-left: solid 1px var(--celeste-oscuro);
+    
 }
 
 .remover {
@@ -166,19 +166,22 @@
 .input-descuento input {
       margin-top: 20px;
       margin-right: 10px;
+
 }
 
 .input-descuento button {
       position: absolute;
       bottom: 10px;
       right: 10px;
-      padding: 3px;
+      padding: 5px;
       background-color: var(--celeste-claro);
       color: white;
       border-style: none;
       border-radius: 3px;
 
 }
+
+/* Comentario */
 
 .comentario {
       display: flex;
@@ -194,7 +197,61 @@
 }
 
 .comentario textarea {
+      font-size: 11px;
       width: 60vw;
       height: 3rem;
       padding: 2px;
+}
+
+/* Seccion Total */
+
+
+.resumen-cart-total {
+      position: sticky;
+      z-index: 999;
+      bottom: -5px;
+      background-color: rgb(236, 235, 235);
+      border-top: 1px var(--verde-oscuro) solid;
+      border-bottom: 1px var(--verde-oscuro) solid;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 10px 10px 10px;
+}
+
+.subtotal, .impuestos-tasas,
+.descuento, .total {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+
+.subtotal, .impuestos-tasas {
+      font-size: 12px;
+      padding: 1px;
+}
+
+.descuento {
+      font-size: 14px;
+      padding: 1px;
+}
+
+.total {
+      font-size: 15px;
+      padding: 3px;
+}
+
+.finalizar-compra {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+}
+
+.finalizar-compra button {
+      padding: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      border-style: none;
+      color: white;
+      background-color: var(--celeste-claro);
 }
