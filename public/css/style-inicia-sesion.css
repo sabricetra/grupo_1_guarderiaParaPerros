@@ -35,7 +35,12 @@
 }
 
 form div {
-    padding: 20px;
+    padding: 15px;
+}
+
+.contanedor-guardar-clave{
+    padding: 1px;
+    margin: 2px;
 }
 
 form label{
@@ -48,11 +53,19 @@ form label{
     margin-top: 30px;
 }
 
-form input {
+.input-datos {
     border: none;
     border-radius: 5px;
     width: 200px;
     height: 20px;
+}
+
+
+.input-guardar-clave {
+    font-size: 10px;
+    text-align: center;
+
+
 }
 
 form button {

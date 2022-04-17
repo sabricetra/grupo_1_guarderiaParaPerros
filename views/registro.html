@@ -1,6 +1,3 @@
-
-
-		
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +9,7 @@
 
     <!-- Links CSS -->
     <link rel="stylesheet" href="css/style-home.css">
-    <link rel="stylesheet" href="css/style-inicia-sesion.css">
+    <link rel="stylesheet" href="css/style-registro.css">
     <link rel="stylesheet" href="css/normalize.css">
 
     <!-- Links Icons -->
@@ -29,58 +26,106 @@
     <header>
         <section class="topheader">
             <div class="logo-menu"><i class="fas fa-bars" alt="logo menu"></i></div>
-            <div ><a href="/"><img class="logo-alojamascotas" src="./img/logo-alojamascotas.svg" alt="logo de la empresa"></a></div>
+            <div class="vacio"></div>
+            <div class="logo"><a href="/"><img class="logo-alojamascotas" src="./img/logo-alojamascotas.svg"
+                        alt="logo de la empresa"></a></div>
             <div class="icon-search"><i class="fas fa-search" alt="logo busqueda"></i></div>
-            <a href="/carrito">
-                <div class="icon-cart"><i class="fas fa-shopping-cart" alt="logo carrito"></i></div>
+            <div class="icon-cart"><a href="/carrito"><i class="fas fa-shopping-cart" alt="logo carrito"></i></a></div>
         </section>
         <section class="subheader">
             <a class="crear-cuenta" href="/registro">CREAR CUENTA</a>
+            <div class="line"></div>
             <a class="iniciar-sesion" href="/inicia-sesion">INICIAR SESION</a>
         </section>
 
+          <!-- Sidebar Nav -->
+
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+          <ul class="sidebarMenuInner">
+            <li><a href="#" target="_blank">Mi Cuenta</a></li>
+            <li><a href="#" target="_blank">Guarderias</a></li>
+            <li><a href="#" target="_blank">Nosotros</a></li>
+            <li><a href="#" target="_blank">Contacto</a></li>
+            <li><a href="#" target="_blank">FAQ</a></li>
+            <li><a href="#" target="_blank">Terminos y Condiciones</a></li>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
+
     </header>
 
-	<nav>
-		<form action="/register" method="POST">
+
+    <main>
+
+        <div class="boton-volver-home">
+            <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
+        </div>
+        <h3 class="titulo-registro">CREA TU CUENTA</h3>
+
+        <div class="contenedor-registro">
 
 
-			<h5>Crea tu cuenta</h5>
+        <form action="/register" method="POST">
 
-			<p>
-				<label>Nombre de usuari@:</label>
-				<input type="text" name="nombre de usuario" required>
-			</p>
-			<p>
-				<label>Fecha de nacimiento:</label>
-				<input type="date" name="fecha de nacimiento" required>
-			</p>
-			<p>
-				<label>Domicilio:</label>
-				<input type="text" name="Domicilio" placeholder="calle y numero" required>
-			</p>
 
-			<p>
-				<label>E-mail:</label>
-				<input type="email" name="email" required>
-			</p>
-			<input type="text" name="dni" placeholder="introduzca su DNI" pattern="[0-9]{8}"
-				title="Debe poner 8 números">
-			<p>
+            <div>
+                <label>Nombre de usuario:</label>
+                <input type="text" name="nombre de usuario" required>
+            </div>
 
-				<input name="password" type="password" value="" class="form-control" id="elige contraseña"
-					placeholder="Elige tu contraseña">
+            <div>
+                <label>Fecha de nacimiento:</label>
+                <input type="date" name="fecha de nacimiento" required>
+            </div>
 
-				<input name="password" type="password" value="" class="form-control" id="confirmar contraseña"
-					placeholder="Confirma tu contraseña">
-			</p>
-			<p> <input type="submit" value="Enviar">
-				<input type="reset" value="Cancelar">
-			</p>
-			<input type="submit" name="" value="Enviar">
-			<input type="reset" name="" value="Cancelar">
-	</nav>
-	
+            <div>
+                <label>Domicilio:</label>
+                <input type="text" name="Domicilio" placeholder=" Calle y numero" required>
+            </div>
+
+            <div>
+                <label>E-mail:</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div>
+                <label>DNI:</label>
+                <input type="number" name="dni" pattern="[0-9]{8}">
+            </div>
+
+            <div>
+                <label>Contraseña:</label>
+                <input name="password" type="password" value="" class="form-control" id="elige contraseña"
+                    placeholder=" Elige tu contraseña">
+            </div>
+
+            <div class="div-confirmar-clave">
+                <input name="password" type="password" value="" class="form-control" id="confirmar contraseña"
+                    placeholder=" Confirma tu contraseña">
+            </div>
+
+            <div class="div-button">
+                <button type="submit">Enviar</button>
+
+            </div>
+
+            <div class="div-button">
+                <button type="reset">Cancelar</button>
+            </div>
+
+
+        </div>
+
+    </main>
+
     <footer>
         <div class="footer-nav">
             <div class="footer-nav1">

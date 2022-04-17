@@ -58,20 +58,30 @@
     </header>
 
     <main>
+
         <div class="boton-volver-home">
             <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
         </div>
+
         <h3 class="titulo-iniciar-sesion">INICIA SESION</h3>
+
         <div class="contenedor-iniciar-sesion">
             <form action="/inicia-sesion" method="POST">
                 <div>
                     <label class="label-email">CORREO ELECTRONICO:</label>
-                    <input type="email" name="email" required>
+                    <input class="input-datos" type="email" name="email" required>
                 </div>
 
                 <div>
                     <label>CONTRASEÑA:</label>
-                    <input type="password" name="password" required>
+                    <input class="input-datos" type="password" name="password" required>
+                </div>
+
+                <div class="contanedor-guardar-clave">
+                    <label class="input-guardar-clave">
+                    <input type="checkbox" name="guardar-clave" value="guardar-clave" checked >
+                    Guardar contraseña
+                    </label>
                 </div>
 
                 <div>
@@ -84,6 +94,7 @@
            <div class="contenedor-olvidaste-contraseña">
             <a class="Olvidaste-contraseña" href="#">¿Has olvidado tu contraseña?</a>
            </div>
+
         </div>
 
     </main>
