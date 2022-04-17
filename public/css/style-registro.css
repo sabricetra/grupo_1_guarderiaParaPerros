@@ -1,7 +1,89 @@
+  *{
+    box-sizing: border-box;
+}
 
-:root {
+
+* {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  :root {
     --verde-oscuro: #3f4e4a;
     --verde-claro: #3f7552;
     --celeste-oscuro: #9fb7bc;
     --celeste-claro: #bccfd6;
   }
+  
+  header {
+    background-color: var(--celeste-claro);
+  }
+  
+  .topheader {
+    display: inline-block;
+    margin: 10px 0px;
+    width: 100vw;
+  }
+  
+  .logo-menu {
+    display: inline-block;
+    width: 25vw;
+    opacity: 80%;
+    text-align: left;
+  
+  }
+  
+  .logo-menu i {
+    color: var(--verde-oscuro);
+    font-size: 32px;
+  }
+  
+  .logo-alojamascotas {
+    display: inline-block;
+    width: 50vw;
+    max-width: 30%;
+    text-align: center;
+  }
+
+.icon-search {
+  display: inline-block;
+  width: 12vw;
+  padding: 10px;
+}
+
+.icon-search i {
+  font-size: 26px;
+  color: var(--verde-oscuro);
+  opacity: 80%;
+}
+
+.icon-cart {
+  display: inline-block;
+  padding: 10px;
+}
+
+.icon-cart i {
+  font-size: 26px;
+  color: var(--verde-oscuro);
+  opacity: 80%;
+}
+
+.subheader {
+  display: inline-block;
+  font-size: 14px;
+  padding: 2vw 10vw;
+  width: 100vw;
+  text-align: center;
+}
+
+.subheader a.crear-cuenta {
+  padding-right: 5vw;
+  text-decoration: none;
+  color: var(--verde-oscuro);
+  opacity: 80%;
+}
+.subheader a.iniciar-sesion {
+  padding-left: 5vw;
+  text-decoration: none;
+  color: var(--verde-oscuro);
+  opacity: 80%;
+}
