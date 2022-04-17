@@ -40,6 +40,10 @@
   border-radius: 10px;
 }
 
+form {
+  padding: 30px;
+}
+
 form div {
   padding: 10px;
 }
