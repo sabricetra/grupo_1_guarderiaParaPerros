@@ -5,7 +5,8 @@
       --celeste-claro: #bccfd6;
     }
 
-/* Fondos */
+
+    /* Fondos */
 
 .producto1,
 .producto3 {
@@ -36,6 +37,8 @@
       justify-content: flex-start;
       width: 40vw;
       padding: 20px;
+      background-color: var(--celeste-oscuro);
+      border-radius: 10px;
 }
 
 /* Info - Producto */
@@ -72,7 +75,7 @@
 
 .opciones-categoria {
       font-size: 12px;
-      padding: 5px
+      padding: 5px;
       color: var(--verde-oscuro)      
 }
 
