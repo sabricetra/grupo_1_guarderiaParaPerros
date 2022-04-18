@@ -3,9 +3,9 @@
   --verde-claro: #3f7552;
   --celeste-oscuro: #9fb7bc;
   --celeste-claro: #c7dae0;
-  --gris-claro: #e0e7eb;
+  --gris: rgba(128, 128, 128, 0.151);
+  --gris-oscuro: rgba(128, 128, 128, 0.247);
 }
-
 /* Buscador - Producto */
 
 .buscarPorNombre {
@@ -36,7 +36,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
-  background-color: var(--gris-claro);
+  background-color: var(--celeste-claro);
 }
 
 .categoria-producto,
@@ -52,7 +52,7 @@
 .opciones-categoria {
   font-size: 12px;
   padding: 1px;
-  color: var(--verde-oscuro)      
+  color: var(--verde-oscuro)
 }
 
 .fechas-producto {
@@ -92,7 +92,7 @@
   border: solid 1px var(--verde-oscuro);
   padding-top: 2px;
   margin-right: 5px;
-  
+
 }
 
 .cantidad .fa-plus,
@@ -159,7 +159,8 @@ div.cuerpo-detalle {
   padding: 20px;
   width: fit-content;
   text-align: justify;
-  background-color: hsl(197, 39%, 86%, 0.4);
+  background-color: var(--gris);
+  border-radius: 10px;
 }
 
 .reservar {

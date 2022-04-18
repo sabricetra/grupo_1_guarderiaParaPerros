@@ -7,7 +7,8 @@
   --verde-claro: #3f7552;
   --celeste-oscuro: #9fb7bc;
   --celeste-claro: #c7dae0;
-  --gris: rgba(128, 128, 128, 0.151)
+  --gris: rgba(128, 128, 128, 0.151);
+  --gris-oscuro: rgba(128, 128, 128, 0.247);
 }
 
 header {
@@ -248,10 +249,10 @@ header {
   bottom: 20px;
   left: 30px;
   max-width: 300px;
-  font-size: 15px;
+  font-size: 17px;
   color: white;
   padding: 15px;
-  background-color: var(--gris);
+  background-color: var(--gris-oscuro);
   border-radius: 5px;
 
 }
