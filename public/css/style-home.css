@@ -6,7 +6,7 @@
   --verde-oscuro: #3f4e4a;
   --verde-claro: #3f7552;
   --celeste-oscuro: #9fb7bc;
-  --celeste-claro: #bccfd6;
+  --celeste-claro: #c7dae0;
   --gris: rgba(128, 128, 128, 0.151)
 }
 
@@ -59,7 +59,7 @@ header {
   display: block;
   min-width: 40vw;
   max-height: 13vh;
-  padding: 5px;
+  padding: 15px;
 
 }
 
@@ -70,7 +70,7 @@ header {
 }
 
 .icon-search i {
-  font-size: 26px;
+  font-size: 20px;
   color: var(--verde-oscuro);
   opacity: 80%;
 }
@@ -83,7 +83,7 @@ header {
 }
 
 .icon-cart i {
-  font-size: 26px;
+  font-size: 20px;
   color: var(--verde-oscuro);
   opacity: 80%;
 }
@@ -93,8 +93,8 @@ header {
 .subheader {
   display: flex;
   justify-content: space-evenly;
-  font-size: 14px;
-  padding: 5px 5%;
+  font-size: 13px;
+  /* padding: 5px 5%; */
   width: 100vw;
   height: 20%;
   text-align: center;
@@ -106,12 +106,6 @@ header {
   text-decoration: none;
   color: var(--verde-oscuro);
   opacity: 80%;
-}
-
-.line {
-  width: 0;
-  opacity: 50%;
-  border-inline: 0.5px solid black;
 }
 
 .subheader .iniciar-sesion {
@@ -130,7 +124,7 @@ header {
   width: 250px;
   transform: translateX(-250px);
   transition: transform 250ms ease-in-out;
-  background-color: #bccfd6;
+  background-color: var(--celeste-claro);
 }
 .sidebarMenuInner{
   margin:0;
@@ -142,7 +136,7 @@ header {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 20px;
+  padding: 15px;
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
@@ -172,7 +166,7 @@ header {
   z-index: 999999;
   height: 100%;
   width: 100%;
-  top: 45px;
+  top: 40px;
   left: 25px;
   height: 22px;
   width: 22px;
@@ -225,10 +219,6 @@ header {
 }
 
 /* Main */
-
-main {
-  margin-top: 100px;
-}
 
 .main-slider {
   position: relative;
