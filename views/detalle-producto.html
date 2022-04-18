@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guarderías</title>
+    <link rel="icon" type="image/x-icon" href="/img/Group.svg">
 
     <!-- Links CSS -->
     <link rel="stylesheet" href="/css/normalize.css">
@@ -50,12 +51,12 @@
         </label>
         <div id="sidebarMenu">
             <ul class="sidebarMenuInner">
-                <li><a href="#" target="_blank">Mi Cuenta</a></li>
-                <li><a href="#" target="_blank">Guarderias</a></li>
-                <li><a href="#" target="_blank">Nosotros</a></li>
-                <li><a href="#" target="_blank">Contacto</a></li>
-                <li><a href="#" target="_blank">FAQ</a></li>
-                <li><a href="#" target="_blank">Terminos y Condiciones</a></li>
+                <li><a href="/registro">Mi Cuenta</a></li>
+                <li><a href="/detalle-producto">Guarderias</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terminos y Condiciones</a></li>
                 <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
                 <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
                 <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
@@ -68,15 +69,23 @@
     <main>
 
         <div class="resumen-producto">
-            <div class="categoria-producto">
-                <form action="categoria" method="GET">
-                    <label class="titulo-categoria">Categoría:</label>
-                    <select class="opciones-categoria" name="categoria">
-                        <option value="cat1" selected>Categoria 1</option>
-                        <option value="cat2">Categoria 2</option>
-                        <option value="cat3">Categoria 3</option>
-                    </select>
-                </form>
+            <div class="nombre-y-categoria">
+                <div class="buscar-nombre">
+                    <form action="buscarnombre" method="GET">
+                        <label class="titulo-categoria">Nombre:</label>
+                        <input type="text" name="nombreGuarderia">
+                    </form>
+                </div>
+                <div class="categoria-producto">
+                    <form action="categoria" method="GET">
+                        <label class="titulo-categoria">Cat. :</label>
+                        <select class="opciones-categoria" name="categoria">
+                            <option value="cat1" selected>Categoria 1</option>
+                            <option value="cat2">Categoria 2</option>
+                            <option value="cat3">Categoria 3</option>
+                        </select>
+                    </form>
+                </div>
             </div>
             <div class="fechas-producto">
                 <label>Desde:</label><input type="date" name="fechaIngreso" value="2022-04-22" min="2022-04-01"
@@ -98,12 +107,11 @@
                     <i class="fas fa-minus"></i>
                 </div>
             </div>
-            <h4 class="precio">Total: $100,99</h4>
         </div>
 
         <section class="articulos">
             <article class="articulo1">
-                
+
                 <div class="container">
                     <ul class="slider">
                         <li id="slide1">

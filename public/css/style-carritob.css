@@ -3,6 +3,7 @@
       --verde-claro: #3f7552;
       --celeste-oscuro: #9fb7bc;
       --celeste-claro: #c7dae0;
+      --gris-claro: #e0e7eb;
     }
 
 
@@ -36,7 +37,10 @@
       flex-direction: column;
       justify-content: flex-start;
       width: 40vw;
-      padding: 20px;
+      padding: 15px;
+      margin: 5px;
+      background-color: var(--gris-claro);
+      border-radius: 4px;
 }
 
 /* Info - Producto */
@@ -132,20 +136,26 @@
 }
 
 .precio {
-      position: absolute;
+      /* position: absolute;
       bottom: 35px;
-      right: 15px;
-      font-size: 14px;
+      right: 15px; */
+      font-size: 12px;
       padding: 4px;
+      margin: 5px 0;
       border-bottom: solid 1px var(--celeste-oscuro);
     
 }
 
 .remover {
-      position: absolute;
+      /* position: absolute;
       bottom: 10px;
-      right: 1px;
+      right: 5px; */
+      text-align: center;
+      margin-top: 8px;
+      padding: 2px;
       font-size: 14px;
+      background-color: var(--celeste-oscuro);
+      border-radius: 2px;
 }
 
 
