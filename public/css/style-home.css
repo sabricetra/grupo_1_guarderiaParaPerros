@@ -283,7 +283,7 @@ header {
 
 
 .main-productos h4 {
-  display: block;
+  display: inline-block;
   text-align: center;
   color: var(--verde-oscuro);
   margin: 10px;
