@@ -133,8 +133,8 @@
 
 .precio {
       position: absolute;
-      bottom: 50px;
-      right: 10px;
+      bottom: 35px;
+      right: 15px;
       font-size: 14px;
       padding: 4px;
       border-bottom: solid 1px var(--celeste-oscuro);
@@ -252,11 +252,11 @@
 
 .finalizar-compra button {
       padding: 5px;
-      font-size: 16px;
+      font-size: 14px;
       border-radius: 5px;
       border-style:ridge;
       border-color:white;
-      color: white;
+      color: var(--verde-oscuro);
       background-color: var(--celeste-claro);
 }
 
