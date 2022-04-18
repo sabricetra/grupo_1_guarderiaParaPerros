@@ -7,6 +7,7 @@
   --verde-claro: #3f7552;
   --celeste-oscuro: #9fb7bc;
   --celeste-claro: #bccfd6;
+  --gris: rgba(128, 128, 128, 0.151)
 }
 
 header {
@@ -260,7 +261,7 @@ main {
   font-size: 15px;
   color: white;
   padding: 15px;
-  background-color: rgba(128, 128, 128, 0.247);
+  background-color: var(--gris);
   border-radius: 5px;
 
 }
@@ -270,7 +271,7 @@ main {
 .main-productos{
   margin: 30px;
   text-align: center;
-  background-color: rgba(128, 128, 128, 0.096);
+  background-color: var(--gris);
   border-radius: 5px;
 }
 
@@ -328,7 +329,7 @@ main {
   padding: 20px;
   margin: 30px;
   text-align: center;
-  background-color: rgba(128, 128, 128, 0.096);
+  background-color: var(--gris);
   border-radius: 5px;
 }
 

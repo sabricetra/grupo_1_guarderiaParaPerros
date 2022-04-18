@@ -8,6 +8,7 @@
     --verde-claro: #3f7552;
     --celeste-oscuro: #9fb7bc;
     --celeste-claro: #bccfd6;
+    --gris: rgba(128, 128, 128, 0.151)
   }
 
 .boton-volver-home {
@@ -29,7 +30,7 @@
 .contenedor-iniciar-sesion {
     margin: 30px;
     text-align: center;
-    background-color: rgba(128, 128, 128, 0.24);
+    background-color: var(--gris);
     border-radius: 10px;
 
 }
