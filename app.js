@@ -2,41 +2,22 @@ const express = require('express')
 const path = require('path')
 const app = express()
 
+const mainRouter = require("./src/routes/mainRouter.js")
+const productosRouter = require("./src/routes/productosRouter.js")
+const usersRouter = require("./src/routes/usersRouter.js")
+
+
 app.use(express.static('public'))
+
+app.set("view engine", "ejs")
+
+app.set('views', path.resolve(__dirname, './src/views'))
 
 app.listen(8000, ()=> console.log('Corriendo servidor en http://localhost:8000'))
 
 
-app.get("/", function(req,res){
-    let htmlPath = path.join(__dirname, "/views/home.html")
-    res.sendFile(htmlPath)
-})
+app.use("/", usersRouter)
 
-app.get("/inicia-sesion", function(req,res){
-    let htmlPath = path.join(__dirname, "/views/inicia-sesion.html")
-    res.sendFile(htmlPath)
-})
+app.use("/", productosRouter)
 
-app.post("/inicia-sesion", function(req,res){
-    let htmlPath = path.join(__dirname, "/views/home.html")
-    res.sendFile(htmlPath)
-})
-
-app.get("/registro", function(req,res){
-    let htmlPath = path.join(__dirname, "/views/registro.html")
-    res.sendFile(htmlPath)
-})
-
-app.get("/detalle-producto", function(req,res){
-    let htmlPath = path.join(__dirname, "/views/detalle-producto.html")
-    res.sendFile(htmlPath)
-})
-
-app.get("/carrito", function(req,res){
-    let htmlPath = path.join(__dirname, "/views/carrito.html")
-    res.sendFile(htmlPath)
-})
-
-app.get("/404", function(req,res){
-    res.send("Error página no encontrada")
-})
+app.use("/", mainRouter)
