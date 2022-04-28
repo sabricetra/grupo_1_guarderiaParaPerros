@@ -1,65 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlojaMascotas</title>
-    <link rel="icon" type="image/x-icon" href="/img/Group.svg">
-
-    <!-- Links CSS -->
-    <link rel="stylesheet" href="css/style-home.css">
-    <link rel="stylesheet" href="css/normalize.css">
-
-    <!-- Links Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-
-    <!-- Links Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-</head>
+<!-- head -->
+<%- include('partials/headLinks') %>
 
 <body>
+<!-- headers -->
+    <!-- headerMain -->
+    <%- include('partials/headerMain') %>
 
-    <header>
-        <section class="topheader">
-            <div class="logo-menu"><i class="fas fa-bars" alt="logo menu"></i></div>
-            <div class="vacio"></div>
-            <div class="logo"><a href="/"><img class="logo-alojamascotas" src="./img/group.svg"
-                        alt="logo de la empresa"></a></div>
-            <div class="icon-search"><i class="fas fa-search" alt="logo busqueda"></i></div>
-            <div class="icon-cart"><a href="/carrito"><i class="fas fa-shopping-cart" alt="logo carrito"></i></a></div>
-        </section>
-        <section class="subheader">
-            <a class="crear-cuenta" href="/registro">CREAR CUENTA</a>
-            <a class="iniciar-sesion" href="/inicia-sesion">INICIAR SESION</a>
-        </section>
+    <!-- headerSidebar Nav -->
+     <%- include('partials/headerSidebar') %>
 
-          <!-- Sidebar Nav -->
-
-        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-        <label for="openSidebarMenu" class="sidebarIconToggle">
-          <div class="spinner diagonal part-1"></div>
-          <div class="spinner horizontal"></div>
-          <div class="spinner diagonal part-2"></div>
-        </label>
-        <div id="sidebarMenu">
-          <ul class="sidebarMenuInner">
-            <li><a href="/inicia-sesion">Mi Cuenta</a></li>
-            <li><a href="/detalle-producto">Guarderias</a></li>
-            <li><a href="/">Nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Terminos y Condiciones</a></li>
-            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-          </ul>
-        </div>
-
-    </header>
 
 <!-- Main -->
 
@@ -91,29 +43,7 @@
     </main>
 
 <!-- Footer -->
-
-    <footer>
-        <div class="footer-nav">
-            <div class="footer-nav1">
-                <a href="/inicia-sesion">Iniciar Sesion</a><br>
-                <a href="/registro">Registrarse</a><br>
-                <a href="#">Nosotros</a><br>
-            </div>
-            <div class="footer-nav2">
-                <a href="#">Contacto</a><br>
-                <a href="#">FAQ</a><br>
-                <a href="#">Terminos y condiciones</a><br>
-            </div>
-        </div>
-        <div class="redes">
-            <h4>SEGUINOS EN NUESTRAS REDES</h4>
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-instagram-square"></i></a>
-            <a href="#"><i class="fab fa-twitter-square"></i></a>
-        </div>
-        <h6 class="copyright">Copyright © 2022 AlojaMascotas S.R.L.</h6>
-
-    </footer>
+     <%- include('partials/footer') %>
 
 </body>
 
