@@ -16,8 +16,8 @@ app.set('views', path.resolve(__dirname, './src/views'))
 app.listen(8000, ()=> console.log('Corriendo servidor en http://localhost:8000'))
 
 
-app.use("/", usersRouter)
+app.use("/users", usersRouter)
 
-app.use("/", productosRouter)
+app.use("/productos", productosRouter)
 
 app.use("/", mainRouter)
