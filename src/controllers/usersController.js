@@ -6,7 +6,7 @@ const usersController = {
 
     registro: function(req,res){
         res.render('registro')
-    },
+    }
 
 }
 

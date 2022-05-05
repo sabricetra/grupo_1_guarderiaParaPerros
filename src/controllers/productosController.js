@@ -6,7 +6,7 @@ const productosController = {
 
     carrito: function(req,res){
         res.render('carrito')
-    },
+    }
 
 }
 
