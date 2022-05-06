@@ -73,9 +73,10 @@ form button {
   background-color: grey;
   color: white;
   border: none;
-  border-radius: 10px;
-  width: 200px;
+  border-radius: 5px;
+  width: 30px;
   height: 22px;
+  position: absolute;
 }
 
 .div-button{
