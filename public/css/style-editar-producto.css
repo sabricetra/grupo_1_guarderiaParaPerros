@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+
+* {
+    font-family: "Raleway", sans-serif;
+  }
+
+  :root {
+    --verde-oscuro: #3f4e4a;
+    --verde-claro: #3f7552;
+    --celeste-oscuro: #9fb7bc;
+    --celeste-claro: #c7dae0;
+    --gris: rgba(128, 128, 128, 0.151);
+  }
+
+
+
+.boton-volver-home {
+  padding: 20px;
+}
+
+.boton-volver-home a{
+  text-decoration: none;
+  color: grey;
+}
+
+
+.titulo-registro {
+  padding: 20px;
+  text-align: center;
+  font-size: 23px;
+  color: rgb(117, 115, 115);
+}
+
+.contenedor-registro {
+  margin: 30px;
+  text-align: center;
+  background-color: var(--gris);
+  border-radius: 10px;
+}
+
+form {
+  padding: 30px;
+}
+
+form div {
+  padding: 10px;
+}
+
+form label{
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(85, 83, 83);
+}
+
+form input {
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+}
+
+.div-confirmar-clave{
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+form button {
+  font-size: 15px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 30px;
+  height: 22px;
+  position: absolute;
+}
+
+.div-button{
+  padding: 5px;
+}
