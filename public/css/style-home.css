@@ -117,6 +117,28 @@ header {
   opacity: 80%;
 }
 
+
+/* Search bar */
+
+.input-buscar-guarderia{
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  height: 22px;
+}
+
+
+.boton-search{
+
+  font-size: 15px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 50px;
+  height: 22px;
+}
+
 /* Sidebar Nav */
 
 #sidebarMenu {

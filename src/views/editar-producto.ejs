@@ -21,28 +21,28 @@
                     <div class="contenedor-registro">
 
 
-                        <form action="/productos/editar-producto" method="POST">
+                        <form action="/productos/editar-producto?_method=PUT" method="POST" enctype="multipart/form-data">
 
 
                             <div>
                                 <label>Nombre de la Guarderia:</label>
-                                <input type="text" name="Nombre de la guarderia" required>
+                                <input type="text" name="nombre" required>
                             </div>
 
                             <div>
                                 <label>Características:</label>
-                                <input type="text" name="Características" required>
+                                <input type="text" name="caracteristicas" required>
                             </div>
 
                             <div>
                                 <label>Instalaciones:</label>
-                                <input type="text" name="Instalaciones" required>
+                                <input type="text" name="instalaciones" required>
                             </div>
 
 
                             <div>
                                 <label>Foto:</label>
-                                <input type="file" name="Foto" required>
+                                <input type="file" name="imagen" required>
                             </div>
 
 
