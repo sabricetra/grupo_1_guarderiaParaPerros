@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head  -->
+
+<%- include('partials/headLinks') %>
+
+    <body>
+        <!-- headers -->
+        <!-- headerMain y headerSidebar -->
+        <%- include('partials/header') %>
+
+
+                <main>
+
+                    <div class="boton-volver-home">
+                        <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
+                    </div>
+                    <h3 class="titulo-registro">CREA TU CUENTA</h3>
+
+                    <div class="contenedor-registro">
+
+
+                        <form action="/register" method="POST">
+
+
+                            <div>
+                                <label>Nombre de Guarderia:</label>
+                                <input type="text" name="Nombre de guarderia" required>
+                            </div>
+
+                            <div>
+                                <label>Nombre:</label>
+                                <input type="date" name="Nombre" required>
+                            </div>
+
+                            <div>
+                                <label>Caracteristicas:</label>
+                                <input type="text" name="Caracteristicas" required>
+                            </div>
+
+                            <div>
+                                <label>Instalaciones:</label>
+                                <input type="text" name="Instalaciones" required>
+                            </div>
+                            
+
+                            <div>
+                                <label>Foto:</label>
+                                <input type="foto" name="Foto" required>
+                            </div>
+
+                            <div>
+                                <label>Contraseña:</label>
+                                <input name="password" type="password" value="" class="form-control"
+                                    id="elige contraseña" placeholder=" Elige tu contraseña">
+                            </div>
+
+                            <div class="div-confirmar-clave">
+                                <input name="password" type="password" value="" class="form-control"
+                                    id="confirmar contraseña" placeholder=" Confirma tu contraseña">
+                            </div>
+
+                            <div class="div-button">
+                                <button type="submit">Enviar</button>
+
+                            </div>
+
+                            <div class="div-button">
+                                <button type="reset">Cancelar</button>
+                            </div>
+
+
+                    </div>
+
+                </main>
+
+                <!-- Footer -->
+                <%- include('partials/footer') %>
+
+
+    </body>
+
+</html>
