@@ -6,7 +6,15 @@ const productosController = {
 
     carrito: function(req,res){
         res.render('carrito')
-    }
+    },
+
+    crear: function(req,res){
+        res.render('crear-producto')
+    },
+
+    editar: function(req,res){
+        res.render('editar-producto')
+    },
 
 }
 

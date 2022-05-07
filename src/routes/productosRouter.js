@@ -8,4 +8,9 @@ router.get("/detalle-producto" , productosController.detalleProducto)
 
 router.get("/carrito" , productosController.carrito)
 
+
+router.get("/crear-producto" , productosController.crear)
+
+router.get("/editar-producto" , productosController.editar)
+
 module.exports = router
