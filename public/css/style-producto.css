@@ -37,7 +37,9 @@
   justify-content: space-evenly;
   align-items: flex-start;
   background-color: var(--celeste-claro);
+  margin-bottom: 50px;
 }
+
 
 .categoria-producto,
 .categoria-producto label {
@@ -219,6 +221,7 @@ ul.slider li img {
   margin: auto;
   margin: 5px;
   padding: 5px;
+  margin-top: 50px;
 }
 
 ul.slider li:first-child {
@@ -251,5 +254,4 @@ ul.slider li:target {
   font-size: 15px;
   border-radius: 100%;
 }
-
 
