@@ -1,0 +1,19 @@
+ [
+     {
+    "id": 1,
+    "name": "Wag Wag",
+    "price": "$$$",
+    "category": "Canina",
+    "description":"Características:Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, autem amet.Instalaciones:Lorem ipsum dolor sit adipisicing elit. Voluptas, autem amet rerum eius quis assumenda libero excepturi illum!", 
+    "image": "guarderia_canina_1.jpg"
+   },
+
+   {
+    "id": 2,
+    "name": "Catis",
+    "price": "$$$",
+    "category": "Felina",
+    "description": "Características:Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, autem amet.Instalaciones:Lorem ipsum dolor sit adipisicing elit. Voluptas, autem amet rerum eius quis assumenda libero excepturi illum!",
+    "image": "guarderia_2.jpg"
+ }
+]
