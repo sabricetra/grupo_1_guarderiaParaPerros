@@ -11,56 +11,63 @@
         <%- include('partials/header') %>
 
 
-                <main>
+            <main>
 
-                    <div class="boton-volver-home">
-                        <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
-                    </div>
-                    <h3 class="titulo-registro">CREA TU CUENTA</h3>
+                <div class="boton-volver-home">
+                    <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
+                </div>
+                <h3 class="titulo-registro">CREA TU CUENTA</h3>
 
-                    <div class="contenedor-registro">
-
-
-                        <form action="/productos" method="POST" enctype="multipart/form-data">
+                <div class="contenedor-registro">
 
 
-                            <div>
-                                <label>Nombre de la Guarderia:</label>
-                                <input type="text" name="nombre"  required>
-                            </div>
-
-                            <div>
-                                <label>Características:</label>
-                                <input type="text" name="caracteristicas"  required>
-                            </div>
-
-                            <div>
-                                <label>Instalaciones:</label>
-                                <input type="text" name="instalaciones" required>
-                            </div>
+                    <form action="/productos" method="POST" enctype="multipart/form-data">
 
 
-                            <div>
-                                <label>Foto:</label>
-                                <input type="file" name="imagen" required>
-                            </div>
+                        <div>
+                            <label>Nombre de la Guarderia:</label>
+                            <input type="text" name="nombre" required>
+                        </div>
 
-                            <div class="div-button">
-                                <button type="submit">Crear</button>
+                        <div>
+                            <label>Características:</label>
+                            <input type="text" name="caracteristicas" required>
+                        </div>
 
-                            </div>
+                        <div>
+                            <label>Instalaciones:</label>
+                            <input type="text" name="instalaciones" required>
+                        </div>
 
-                            <div class="div-button">
-                                <button type="reset">Cancelar</button>
-                            </div>
+                       <div>
+                           <label>Categorías</label>
+                        <select>
+                            <option value="cat1">Categoria 1-Perros</option>
+                            <option value="cat2" selected>Categoria 2-Gatos</option>
+                            <option value="cat3">Categoria 3-Perros y Gatos</option>
+                        </select>
+                </div>
+                <div>
+                    <label>Foto:</label>
+                    <input type="file" name="imagen" required>
+                </div>
+
+                <div class="div-button">
+                    <button type="submit">Crear</button>
+
+                </div>
+
+                <div class="div-button">
+                    <button type="reset">Cancelar</button>
+                </div>
 
 
-                    </div>
+                </div>
 
-                </main>
+            </main>
 
-                <!-- Footer -->
-                <%- include('partials/footer') %>
+            <!-- Footer -->
+            <%- include('partials/footer') %>
 
 
     </body>
