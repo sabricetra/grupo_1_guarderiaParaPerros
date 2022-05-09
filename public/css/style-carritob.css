@@ -235,7 +235,7 @@ img{
       display: flex;
       flex-direction: column;
       padding: 10px 10px 10px 10px;
-      margin-top:50px;
+      margin-bottom:50px;
 }
 
 .subtotal, .impuestos-tasas,

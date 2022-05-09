@@ -10,6 +10,10 @@ const productosController = {
         res.render('detalle-producto')
     },
 
+    producto: function(req, res){
+        res.render('producto')
+    },
+
     carrito: function(req,res){
         res.render('carrito')
     },
@@ -19,7 +23,6 @@ const productosController = {
     },
 
     crear: function(req,res){
-        res.send(req.body)
 
         let nuevaGuarderia = {
 

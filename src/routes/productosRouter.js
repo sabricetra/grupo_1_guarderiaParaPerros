@@ -18,11 +18,13 @@ var upload = multer({storage})
 
 router.get("/detalle-producto" , productosController.detalleProducto)
 
+router.get("/producto/:id" , productosController.producto)
+
 router.get("/carrito" , productosController.carrito)
 
 
 router.get("/crear-producto" , productosController.vistaCrear)
-router.post("/" , upload.single("imagen"), productosController.crear)
+router.post("/crear-producto" , upload.single("imagen"), productosController.crear)
 
 router.get("/editar-producto" , productosController.vistaEditar)
 router.put("/editar-producto" , upload.single("imagen"), productosController.editar)
