@@ -9,11 +9,11 @@ var storage = multer.diskStorage({
         cb(null, "public/img/uploads")
     },
     filename: function(req, file, cb){
-        cb(null, file.fieldname + "-" + Date.now() + path.extname(file.originalname))
+        cb(null, Date.now() + path.extname(file.originalname))
     }
 })
 
-var upload = multer({storage})
+const upload = multer({storage : storage})
 
 
 router.get("/detalle-producto" , productosController.detalleProducto)
