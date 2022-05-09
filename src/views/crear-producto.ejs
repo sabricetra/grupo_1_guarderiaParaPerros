@@ -16,17 +16,22 @@
                 <div class="boton-volver-home">
                     <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
                 </div>
-                <h3 class="titulo-registro">CREA TU CUENTA</h3>
+                <h3 class="titulo-registro">CREAR PRODUCTO</h3>
 
                 <div class="contenedor-registro">
 
 
-                    <form action="/productos" method="POST" enctype="multipart/form-data">
+                    <form action="/productos/crear-producto" method="POST" enctype="multipart/form-data">
 
 
                         <div>
                             <label>Nombre de la Guarderia:</label>
                             <input type="text" name="nombre" required>
+                        </div>
+
+                        <div>
+                            <label>Precio:</label>
+                            <input type="number" name="precio" required>
                         </div>
 
                         <div>
