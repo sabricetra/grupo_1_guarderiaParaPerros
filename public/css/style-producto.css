@@ -188,6 +188,59 @@ div.cuerpo-detalle {
   color: #333333;
 }
 
+.editar-producto{
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  color: #333333;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40%;
+  padding-right: 40%;
+  background-color: #bccfd6;
+  border-color: #9fb7bc;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.editar-producto a{
+  text-decoration: none;
+  color: #333333;
+
+}
+
+.crear-producto{
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  color: #333333;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40%;
+  padding-right: 40%;
+  background-color: #bccfd6;
+  border-color: #9fb7bc;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.crear-producto a{
+  text-decoration: none;
+  color: #333333;
+
+}
 
 ul,
 li {
