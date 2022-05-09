@@ -7,11 +7,14 @@ const productos = JSON.parse(fs.readFileSync(productosFilePath, "utf-8"))
 const productosController = {
 
     detalleProducto: function(req,res){
-        res.render('detalle-producto')
+        let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
+        res.render('detalle-producto', {productos : productos})
     },
 
     producto: function(req, res){
-        res.render('producto')
+
+        let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
+        res.render('producto', {guarderia : guarderia})
     },
 
     carrito: function(req,res){
@@ -28,10 +31,11 @@ const productosController = {
 
             id: productos[productos.length -1].id +1 ,
             nombre: req.body.nombre,
+            precio: req.body.precio,
+            categoria: req.body.categoria,
             caracteristicas: req.body.caracteristicas,
             instalaciones: req.body.instalaciones,
             imagen: "default-img.jpg"
-
         }
 
         productos.push(nuevaGuarderia)
@@ -42,14 +46,34 @@ const productosController = {
     },
 
     vistaEditar: function(req,res){
-        res.render('editar-producto')
+        let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
+        res.render('editar-producto', {guarderia : guarderia})
     },
 
     editar: function(req,res){
+        let guarderiaEditar = productos.find(guarderia => guarderia.id == req.params.id)
 
-        res.send(req.body)
+        let guarderiaGuardar = {
+            id: guarderiaEditar.id ,
+            nombre: req.body.nombre,
+            precio: req.body.precio,
+            categoria: req.body.categoria,
+            caracteristicas: req.body.caracteristicas,
+            instalaciones: req.body.instalaciones,
+            imagen: guarderiaEditar.imagen
 
-        res.redirect('detalle-producto')
+        }
+
+        let indice = productos.findIndex(guarderia => {
+            return guarderia.id == req.params.id
+        })
+
+        productos[indice] = guarderiaGuardar
+
+        fs.writeFileSync(productosFilePath, JSON.stringify(productos,null, " "))
+
+
+        res.redirect("/productos/detalle-producto")
     },
 
 }

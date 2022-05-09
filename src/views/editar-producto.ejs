@@ -21,33 +21,42 @@
                     <div class="contenedor-registro">
 
 
-                        <form action="/productos/editar-producto?_method=PUT" method="POST" enctype="multipart/form-data">
+                        <form action="/productos/editar-producto/<%=guarderia.id%>/?_method=PUT" method="POST" enctype="multipart/form-data">
 
 
                             <div>
                                 <label>Nombre de la Guarderia:</label>
-                                <input type="text" name="nombre" required>
+                                <input type="text" name="nombre" value="<%= guarderia.nombre %>" required>
                             </div>
 
                             <div>
                                 <label>Precio:</label>
-                                <input type="number" name="precio" required>
+                                <input type="number" name="precio" value="<%= guarderia.precio %>"required>
                             </div>
 
                             <div>
                                 <label>Características:</label>
-                                <input type="text" name="caracteristicas" required>
+                                <input type="text" name="caracteristicas" value="<%= guarderia.caracteristicas %>" required>
                             </div>
 
                             <div>
                                 <label>Instalaciones:</label>
-                                <input type="text" name="instalaciones" required>
+                                <input type="text" name="instalaciones" value="<%= guarderia.instalaciones %>" required>
                             </div>
+
+                            <div>
+                                <label>Categorías</label>
+                             <select name="categoria">
+                                 <option value="Canina">Categoria 1-Perros</option>
+                                 <option value="Felina" selected>Categoria 2-Gatos</option>
+                                 <option value="Canina y Felina">Categoria 3-Perros y Gatos</option>
+                             </select>
+                     </div>
 
 
                             <div>
                                 <label>Foto:</label>
-                                <input type="file" name="imagen" required>
+                                <input type="file" name="imagen">
                             </div>
 
 

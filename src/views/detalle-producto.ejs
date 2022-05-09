@@ -3,8 +3,8 @@
 
 <!-- head  -->
 
-    <%- include('partials/headLinks') %> 
-    
+    <%- include('partials/headLinks') %>
+
 
 <body>
     <!-- headerMain y headerSidebar-->
@@ -20,8 +20,7 @@
             <input type="text" name="nombreGuarderia">
         </div>
 
-        <section class="articulos">
-            <article class="articulo1">
+        <!--
 
                 <div class="container">
                     <ul class="slider">
@@ -41,112 +40,46 @@
                     <li><a href="#slide3">3</a></li>
                 </ul>
 
-                <!-- <img src="/img/guarderia_canina_1.jpg" alt="guarderia1" class="imagen1"> -->
-                <div class="nombre-guarderia">Guardería Wag Wag</div>
-                <div class="precios">$$$$</div>
-                <div class="estrellas">
-                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
+                -->
 
-                <div class="cuerpo-detalle">
+                <section class="articulos">
 
-                    <h3>Características</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, autem amet
-                        rerum eius quis assumenda libero excepturi illum! Ipsam nam numquam ab iusto nemo enim neque
-                        cumque
-                        praesentium officia repudiandae?
-                        Voluptatibus qui nisi magnam consequuntur, ducimus alias rerum tempora neque nulla ipsam vitae
-                        nam
-                        consequatur facilis libero suscipit iste eos accusantium modi deleniti reiciendis aperiam quae
-                        ullam
-                        culpa labore? Eos!
-                    </p>
-                    <h3>Instalaciones</h3>
-                    <p>Quasi inventore illum excepturi, at dignissimos officia possimus assumenda in
-                        nihil corporis minus aliquid, soluta eum beatae dolore quas eligendi molestias accusantium? Ad
-                        porro
-                        sunt, assumenda non explicabo quasi at.
-                        Illo, optio! Vitae ratione fugit quo fugiat, consequatur labore voluptatibus eius quibusdam
-                        reprehenderit aperiam voluptate atque ut non praesentium omnis minus voluptates. Enim, corporis?
-                        Voluptatibus quae dolore culpa corporis quasi.
-                    </p>
-                </div>
+                <% productos.forEach(guarderia => { %>
 
-                <div class="reservar" strong>
-                    <a href="#">Reservar</a></strong>
-                    <i class="fas fa-paw huellita-reserva"></i>
-                </div>
+
+                <article class="articulo1">
+
+
+                    <img src= "/img/<%= guarderia.imagen %> " alt="guarderia1" class="imagen1">
+                    <div class="nombre-guarderia">Guarderia <%= guarderia.nombre %> </div>
+                    <div class="precios">$<%= guarderia.precio %></div>
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="cuerpo-detalle">
+
+                        <h3>Características</h3>
+                        <p><%= guarderia.caracteristicas %> </p>
+                        <h3>Instalaciones</h3>
+                        <p><%= guarderia.instalaciones %> </p>
+                        <h3>Categoria</h3>
+                        <p><%= guarderia.categoria %> </p>
+
+                    </div>
+
+                    <div class="reservar" strong>
+                        <a href="/productos/producto/<%= guarderia.id  %> ">Reservar</a></strong>
+                        <i class="fas fa-paw huellita-reserva"></i>
+                    </div>
+
 
             </article>
 
+          <% }) %>
 
-            <article class="articulo2">
-                <div class="container">
-                    <ul class="slider">
-                        <li id="slideA">
-                            <img src="/img/CATIS_2.jpg" alt="guarderia2" class="imagen1">
-                        <li id="slideB">
-                            <img src="/img/catis_3.jpg" alt="guarderiab" class="imagen2">
-                        <li id="slideC">
-                            <img src="/img/guarderia_2.jpg" alt="guarderiac" class="imagen3">
-                        </li>
-                    </ul>
-                </div><br>
 
-                <ul class="menu-articulo2">
-                    <li>
-                        <a href="#slideA">1</a>
-                    </li>
-                    <li>
-                        <a href="#slideB">2</a>
-                    </li>
-                    <li>
-                        <a href="#slideC">3</a>
-                    </li>
-
-                </ul>
-
-                <article class="articulo2">
-                    <p>
-                    <div class="nombre-guarderia">Guardería Catis</div>
-                    </p>
-                    <p>
-                    <div class="precios">$$$$</div>
-                    </p>
-                    <div class="estrellas">
-                        <p><i class="fas fa-star"></i> <i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i>
-                    </div>
-                    </p><br>
-                    <div class="cuerpo-detalle">
-                        <p>
-                        <h1>Características</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-                        autem
-                        amet rerum eius quis assumenda libero excepturi illum! Ipsam nam numquam ab iusto nemo enim
-                        neque
-                        cumque praesentium officia repudiandae?
-                        Voluptatibus qui nisi magnam consequuntur, ducimus alias rerum tempora neque nulla ipsam vitae
-                        nam
-                        consequatur facilis libero suscipit iste eos accusantium modi deleniti reiciendis aperiam quae
-                        ullam
-                        culpa labore? Eos!</p>
-                        <h1>Instalaciones</h1>Quasi inventore illum excepturi, at dignissimos officia possimus assumenda
-                        in
-                        nihil corporis minus aliquid, soluta eum beatae dolore quas eligendi molestias accusantium? Ad
-                        porro
-                        sunt, assumenda non explicabo quasi at.
-                        Illo, optio! Vitae ratione fugit quo fugiat, consequatur labore voluptatibus eius quibusdam
-                        reprehenderit aperiam voluptate atque ut non praesentium omnis minus voluptates. Enim, corporis?
-                        Voluptatibus quae dolore culpa corporis quasi.
-                    </div>
-                    </p>
-                    <p>
-                    <div class="reservar" strong><a href="#">Reservar</a></strong><i class="fas fa-paw"
-                            class="huellita-reserva"></i></div>
-                    </p>
-
-                </article>
         </section>
 
         <div class="resumen-producto">
