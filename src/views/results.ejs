@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head  -->
+
+    <%- include('partials/headLinks') %>
+
+
+<body>
+    <!-- headerMain y headerSidebar-->
+    <%- include('partials/header') %>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <% productsToSearch.forEach(guarderia => { %>
+
+                <img src= "/img/<%= guarderia.imagen %> " alt="guarderia1" class="imagen1">
+                <div class="nombre-guarderia">Guarderia <%= guarderia.nombre %> </div>
+                <div class="precios">$<%= guarderia.precio %></div>
+                <div class="estrellas">
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+
+                <div class="cuerpo-detalle">
+
+                    <h3>Características</h3>
+                    <p><%= guarderia.caracteristicas %> </p>
+                    <h3>Instalaciones</h3>
+                    <p><%= guarderia.instalaciones %> </p>
+
+                </div>
+
+                <div class="reservar" strong>
+                    <a href="#">Reservar</a></strong>
+                    <i class="fas fa-paw huellita-reserva"></i>
+                </div>
+
+                <div class="editar-producto" strong>
+                    <a href="/productos/editar-producto/<%= guarderia.id %>">Editar producto</a></strong>
+                    <i class="fas fa-paw huellita-reserva"></i>
+                </div>
+
+                <div class="crear-producto" strong>
+                    <a href="/productos/crear-producto">Crear Producto</a></strong>
+                    <i class="fas fa-paw huellita-reserva"></i>
+                </div>
+
+                <% }) %>
+
+
+        <div class="resumen-producto">
+            <div class="categoria-producto">
+                <form action="categoria" method="GET">
+                    <label class="titulo-categoria">Cat. :</label><br>
+                    <select class="opciones-categoria" name="categoria">
+                        <option value="cat1" selected>Categoria 1</option>
+                        <option value="cat2">Categoria 2</option>
+                        <option value="cat3">Categoria 3</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="fechas-producto">
+                <label>Desde:</label><input type="date" name="fechaIngreso" value="2022-04-22" min="2022-04-01"
+                    max="2023-12-31">
+                <label>Hasta:</label><input type="date" name="fechaSalida" value="2022-04-27" min="2022-04-01"
+                    max="2023-12-31">
+            </div>
+            <div class="cantidad">
+                <div class="mascota">
+                    <i class="fas fa-dog"></i>
+                    <i class="fas fa-plus"></i>
+                    <div>0</div>
+                    <i class="fas fa-minus"></i>
+                </div>
+                <div class="mascota">
+                    <i class="fas fa-cat"></i>
+                    <i class="fas fa-plus"></i>
+                    <div>1</div>
+                    <i class="fas fa-minus"></i>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+
+
+</body>
+
+</html>

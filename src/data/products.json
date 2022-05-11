@@ -1,21 +1,20 @@
- [
-     {
-    "id": 1,
-    "nombre": "Wag Wag",
-    "precio": "$$$",
-    "categoria": "Canina",
-    "características":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, autem amet.Lorem ipsum dolor sit adipisicing elit. Voluptas.", 
-    "instalaciones":"Lorem ipsum dolor sit adipisicing el elit. Voluptas, autem amet.Lorem ipsum dolor sit adipisicing elit. Voluptas, autem amet rerum eius quis assumenda libero excepturi illum!", 
-    "imagen": "guarderia_canina_1.jpg"
-   },
-
-   {
-    "id": 2,
-    "nombre": "Catis",
-    "precio": "$$$",
-    "categoria": "Felina",
-    "características": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "instalaciones": "Voluptas, autem amet.Instalaciones:Lorem ipsum dolor sit adipisicing elit. Voluptas, autem amet rerum eius quis assumenda libero excepturi illum!",
-    "imagen": "guarderia_2.jpg"
+[
+ {
+  "id": 1,
+  "nombre": "Wag Wag",
+  "precio": "500",
+  "categoria": "Felina",
+  "caracteristicas": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, autem amet.Lorem ipsum dolor sit adipisicing elit. Voluptas.",
+  "instalaciones": "Lorem ipsum dolor sit adipisicing el elit. Voluptas, autem amet.Lorem ipsum dolor sit adipisicing elit. Voluptas, autem amet rerum eius quis assumenda libero excepturi illum!",
+  "imagen": "guarderia_canina_1.jpg"
+ },
+ {
+  "id": 2,
+  "nombre": "Catis",
+  "precio": 700,
+  "categoria": "Felina",
+  "caracteristicas": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "instalaciones": "Voluptas, autem amet.Instalaciones:Lorem ipsum dolor sit adipisicing elit. Voluptas, autem amet rerum eius quis assumenda libero excepturi illum!",
+  "imagen": "guarderia_2.jpg"
  }
 ]
