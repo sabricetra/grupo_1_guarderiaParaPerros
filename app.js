@@ -20,7 +20,6 @@ app.use(express.urlencoded({extended : false}))
 app.use(express.json())
 
 
-
 app.use("/users", usersRouter);
 
 app.use("/productos", productosRouter);
