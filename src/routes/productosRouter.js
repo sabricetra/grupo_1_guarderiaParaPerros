@@ -18,9 +18,9 @@ var storage = multer.diskStorage({
 const upload = multer({storage : storage})
 
 
-router.get("/detalle-producto" , productosController.detalleProducto)
+router.get("/productos" , productosController.productos)
 
-router.get("/producto/:id/" , productosController.producto)
+router.get("/detalle-producto/:id/" , productosController.detalleProducto)
 
 router.get("/carrito" , productosController.carrito)
 

@@ -14,70 +14,37 @@
     <!-- Main -->
 
     <main>
-
-        <div class="buscarPorNombre">
-            <label>Buscar por nombre:</label>
-            <input type="text" name="nombreGuarderia">
-        </div>
-
-        <!--
-
-                <div class="container">
-                    <ul class="slider">
-                        <li id="slide1">
-                            <img src="/img/guarderia_canina_1.jpg" alt="guarderia1" class="imagen1">
-                        <li id="slide2">
-                            <img src="/img/guarderia1_slideb.jpg" alt="guarderiab" class="imagen2">
-                        <li id="slide3">
-                            <img src="/img/guarderia1_slidec.jpg" alt="guarderiac" class="imagen2">
-                        </li>
-                    </ul>
+                <img src= "/img/guarderias/<%= guarderia.imagen %> " alt="guarderia1" class="imagen1">
+                <div class="nombre-guarderia">Guarderia <%= guarderia.nombre %> </div>
+                <div class="precios">$<%= guarderia.precio %></div>
+                <div class="estrellas">
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
 
-                <ul class="menu-articulo1">
-                    <li><a href="#slide1">1</a></li>
-                    <li><a href="#slide2">2</a></li>
-                    <li><a href="#slide3">3</a></li>
-                </ul>
+                <div class="cuerpo-detalle">
 
-                -->
+                    <h3>Características</h3>
+                    <p><%= guarderia.caracteristicas %> </p>
+                    <h3>Instalaciones</h3>
+                    <p><%= guarderia.instalaciones %> </p>
 
-                <section class="articulos">
+                </div>
 
-                <% productos.forEach(guarderia => { %>
+                <div class="reservar" strong>
+                    <a href="#">Reservar</a></strong>
+                    <i class="fas fa-paw huellita-reserva"></i>
+                </div>
 
+                <div class="editar-producto" strong>
+                    <a href="/productos/editar-producto/<%= guarderia.id %>">Editar producto</a></strong>
+                    <i class="fas fa-paw huellita-reserva"></i>
+                </div>
 
-                <article class="articulo1">
-
-
-                    <img src= "/img/guarderias/<%= guarderia.imagen %> " alt="guarderia1" class="imagen1">
-                    <div class="nombre-guarderia">Guarderia <%= guarderia.nombre %> </div>
-                    <div class="precios">$<%= guarderia.precio %></div>
-                    <div class="estrellas">
-                        <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-
-                    <div class="cuerpo-detalle">
-
-                        <h3>Características</h3>
-                        <p><%= guarderia.caracteristicas %> </p>
-                        <h3>Instalaciones</h3>
-                        <p><%= guarderia.instalaciones %> </p>
-                        <h3>Categoria</h3>
-                        <p><%= guarderia.categoria %> </p>
-
-                    </div>
-
-                    <div class="reservar" strong>
-                        <a href="/productos/producto/<%= guarderia.id  %> ">Reservar</a></strong>
-                        <i class="fas fa-paw huellita-reserva"></i>
-                    </div>
-
-
-            </article>
-
-          <% }) %>
+                <div class="crear-producto" strong>
+                    <a href="/productos/crear-producto">Crear Producto</a></strong>
+                    <i class="fas fa-paw huellita-reserva"></i>
+                </div>
 
 
         </section>
