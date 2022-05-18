@@ -11,7 +11,7 @@ const mainController = {
     },
 
     search: (req, res) => {
-		let search = req.query.keywords;
+		let search = req.query.search;
 		let productsToSearch = productos.filter(guarderia => guarderia.nombre.includes(search));
 		res.render('results', {
 			productsToSearch: productsToSearch
