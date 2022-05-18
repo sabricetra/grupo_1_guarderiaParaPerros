@@ -1,12 +1,14 @@
 const express = require("express")
 const router = express.Router()
+const path = require("path")
 const multer = require("multer")
 
 const productosController = require("../controllers/productosController.js")
 
 var storage = multer.diskStorage({
     destination: function(req, file, cb){
-        cb(null, "public/img/uploads")
+        let folder = path.join(__dirname , "../../public/img/guarderias" )
+        cb(null, folder )
     },
     filename: function(req, file, cb){
         cb(null, Date.now() + path.extname(file.originalname))

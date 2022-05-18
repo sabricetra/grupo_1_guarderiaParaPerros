@@ -35,7 +35,7 @@ const productosController = {
             categoria: req.body.categoria,
             caracteristicas: req.body.caracteristicas,
             instalaciones: req.body.instalaciones,
-            imagen: "default-img.jpg"
+            imagen: req.file ? req.file.filename : "default-img.jpg"
         }
 
         productos.push(nuevaGuarderia)
@@ -60,7 +60,7 @@ const productosController = {
             categoria: req.body.categoria,
             caracteristicas: req.body.caracteristicas,
             instalaciones: req.body.instalaciones,
-            imagen: guarderiaEditar.imagen
+            imagen: req.file ? req.file.filename : guarderiaEditar.imagen
 
         }
 

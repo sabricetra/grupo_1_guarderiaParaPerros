@@ -16,6 +16,8 @@ app.set("view engine", "ejs")
 
 app.set('views', path.resolve(__dirname, './src/views'))
 
+
+// captura lo que viene en un formulario en un objeto literal y puedo usarlo con json
 app.use(express.urlencoded({extended : false}))
 app.use(express.json())
 
