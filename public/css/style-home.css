@@ -58,8 +58,8 @@ header {
 
 .logo-alojamascotas {
   display: block;
-  min-width: 40vw;
-  max-height: 13vh;
+  min-width: 10vw;
+  max-height: 12vh;
   padding: px;
 
 }
@@ -120,10 +120,12 @@ header {
 
 /* Search bar */
 
+
 .input-buscar-guarderia{
   border: none;
   border-radius: 5px;
-  width: 200px;
+  min-width: 5px;
+  max-width: 250px;
   height: 22px;
 }
 
