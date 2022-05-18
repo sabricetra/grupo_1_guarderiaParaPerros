@@ -14,7 +14,10 @@
     <!-- Main -->
 
     <main>
-                <img src= "/img/<%= guarderia.imagen %> " alt="guarderia1" class="imagen1">
+
+        <% productsToSearch.forEach(guarderia => { %>
+
+                <img src= "/img/guarderias/<%= guarderia.imagen %> " alt="guarderia1" class="imagen1">
                 <div class="nombre-guarderia">Guarderia <%= guarderia.nombre %> </div>
                 <div class="precios">$<%= guarderia.precio %></div>
                 <div class="estrellas">
@@ -46,8 +49,8 @@
                     <i class="fas fa-paw huellita-reserva"></i>
                 </div>
 
+                <% }) %>
 
-        </section>
 
         <div class="resumen-producto">
             <div class="categoria-producto">

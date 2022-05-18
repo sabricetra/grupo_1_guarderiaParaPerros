@@ -6,15 +6,15 @@ const productos = JSON.parse(fs.readFileSync(productosFilePath, "utf-8"))
 
 const productosController = {
 
-    detalleProducto: function(req,res){
+    productos: function(req,res){
         let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
-        res.render('detalle-producto', {productos : productos})
+        res.render('productos', {productos : productos})
     },
 
-    producto: function(req, res){
+    detalleProducto: function(req, res){
 
         let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
-        res.render('producto', {guarderia : guarderia})
+        res.render('detalle-producto', {guarderia : guarderia})
     },
 
     carrito: function(req,res){
@@ -35,14 +35,14 @@ const productosController = {
             categoria: req.body.categoria,
             caracteristicas: req.body.caracteristicas,
             instalaciones: req.body.instalaciones,
-            imagen: "default-img.jpg"
+            imagen: req.file ? req.file.filename : "default-img.jpg"
         }
 
         productos.push(nuevaGuarderia)
         fs.writeFileSync(productosFilePath, JSON.stringify(productos,null, " "))
 
 
-        res.redirect('detalle-producto')
+        res.redirect('productos')
     },
 
     vistaEditar: function(req,res){
@@ -60,7 +60,7 @@ const productosController = {
             categoria: req.body.categoria,
             caracteristicas: req.body.caracteristicas,
             instalaciones: req.body.instalaciones,
-            imagen: guarderiaEditar.imagen
+            imagen: req.file ? req.file.filename : guarderiaEditar.imagen
 
         }
 
@@ -73,7 +73,7 @@ const productosController = {
         fs.writeFileSync(productosFilePath, JSON.stringify(productos,null, " "))
 
 
-        res.redirect("/productos/detalle-producto")
+        res.redirect("/productos/productos")
     },
 
 }

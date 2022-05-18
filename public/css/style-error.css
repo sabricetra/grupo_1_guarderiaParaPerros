@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    background: rgba(223, 223, 255, 0.39);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+
+
+.titulo-error{
+    padding: 15px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(117, 115, 115);
+    font-weight: bold;
+    background-color:#c7dae0; 
+}
+
+
+
+.main-container {
+    width: 100%;
+    min-width: 600px;
+    background-color: white;
+    font-size: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 50px 0 rgba(146, 146, 146, 0.63);
+}
+
+.main-container  .imagenError{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%
+}
+.imagenError{
+    opacity:80%
+}
+
+.leyenda-error{
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0px;
+    vertical-align: text-bottom;
+    color: #3f4e4a;
+    background-color: #c7dae0;
+}
+.action{
+
+    color:#3f4e4a;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration-line: none;
+
+}
