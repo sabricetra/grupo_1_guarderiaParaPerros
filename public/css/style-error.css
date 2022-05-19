@@ -7,10 +7,11 @@ body {
 
     background: rgba(223, 223, 255, 0.39);
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    
+    justify-content: center;
+    align-items: center;
+
 }
+
 
 
 .titulo-error{
@@ -19,9 +20,8 @@ body {
     font-size: 40px;
     color: rgb(117, 115, 115);
     font-weight: bold;
-    background-color:#c7dae0; 
+    background-color:#c7dae0;
 }
-
 
 
 .main-container {
@@ -31,6 +31,7 @@ body {
     font-size: 0;
     border-radius: 20px;
     box-shadow: 0 0 50px 0 rgba(146, 146, 146, 0.63);
+
 }
 
 .main-container  .imagenError{
