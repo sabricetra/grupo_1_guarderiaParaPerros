@@ -6,6 +6,7 @@ const mainRouter = require("./src/routes/mainRouter.js")
 const productosRouter = require("./src/routes/productosRouter.js")
 const usersRouter = require("./src/routes/usersRouter.js")
 
+// Habilita metodos Put/Patch/Delete
 const methodOverride = require("method-override")
 app.use(methodOverride("_method"))
 
