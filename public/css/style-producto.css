@@ -123,7 +123,7 @@ article {
 }
 
 .imagenGuarderia{
-  width: 50%;
+  width: 65%;
   text-align:center;
   display:block;
   margin:0px auto;
@@ -169,6 +169,7 @@ div.cuerpo-detalle {
   text-align: justify;
   background-color: var(--gris);
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .reservar {
@@ -186,7 +187,8 @@ div.cuerpo-detalle {
   border-style: solid;
   border-radius: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .reservar a {
@@ -209,9 +211,10 @@ div.cuerpo-detalle {
   border-style: solid;
   border-radius: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align:center;
 
 }
 
@@ -236,9 +239,9 @@ div.cuerpo-detalle {
   border-style: solid;
   border-radius: 25px;
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  justify-content: space-between;
   margin-bottom: 10px;
+  text-align:center;
 
 }
 
