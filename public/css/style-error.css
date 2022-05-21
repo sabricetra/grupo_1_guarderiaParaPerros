@@ -33,12 +33,12 @@ body {
     box-shadow: 0 0 50px 0 rgba(146, 146, 146, 0.63);
 }
 
-.main-container  .imagenError{
+.main-container  .imagenError {
     display: inline-block;
     vertical-align: top;
-    width: 50%
+    width: 40%
 }
-.imagenError{
+.imagenError {
     opacity:80%
 }
 
