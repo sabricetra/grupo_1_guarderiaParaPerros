@@ -123,7 +123,10 @@ article {
 }
 
 .imagenGuarderia{
-  width: 40%;
+  width: 50%;
+  text-align:center;
+  display:block;
+  margin:0px auto;
 }
 
 /* Slider article */
