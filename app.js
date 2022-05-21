@@ -6,6 +6,7 @@ const mainRouter = require("./src/routes/mainRouter.js")
 const productosRouter = require("./src/routes/productosRouter.js")
 const usersRouter = require("./src/routes/usersRouter.js")
 
+// Habilita metodos Put/Patch/Delete
 const methodOverride = require("method-override")
 app.use(methodOverride("_method"))
 
@@ -16,7 +17,9 @@ app.set("view engine", "ejs")
 
 app.set('views', path.resolve(__dirname, './src/views'))
 
-app.use(express.urlencoded({extended: false}))
+
+// captura lo que viene en un formulario en un objeto literal y puedo usarlo con json
+app.use(express.urlencoded({extended : false}))
 app.use(express.json())
 
 
