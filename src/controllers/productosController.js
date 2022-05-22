@@ -31,7 +31,7 @@ const productosController = {
 
             id: productos[productos.length -1].id +1 ,
             nombre: req.body.nombre,
-            precio: req.body.precio,
+            precio: parseInt(req.body.precio),
             categoria: req.body.categoria,
             caracteristicas: req.body.caracteristicas,
             instalaciones: req.body.instalaciones,
