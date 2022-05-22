@@ -5,7 +5,7 @@
 
 <%- include('partials/headLinks') %>
 
-<link rel="stylesheet" href="/css/style-editar-producto.css">
+    <link rel="stylesheet" href="/css/style-editar-producto.css">
 
     <body>
         <!-- headers -->
@@ -13,71 +13,74 @@
         <%- include('partials/header') %>
 
 
-                <main>
+            <main>
 
-                    <div class="boton-volver-home">
-                        <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
-                    </div>
-                    <h3 class="titulo-registro">EDITAR PRODUCTO</h3>
+                <div class="boton-volver-home">
+                    <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
+                </div>
+                <h3 class="titulo-registro">EDITAR PRODUCTO</h3>
 
-                    <div class="contenedor-registro">
-
-
-                        <form action="/productos/editar-producto/<%=guarderia.id%>/?_method=PUT" method="POST" enctype="multipart/form-data">
+                <div class="contenedor-registro">
 
 
-                            <div>
-                                <label>Nombre de la Guarderia:</label>
-                                <input type="text" name="nombre" value="<%= guarderia.nombre %>" required>
-                            </div>
-
-                            <div>
-                                <label>Precio:</label>
-                                <input type="number" name="precio" value="<%= guarderia.precio %>"required>
-                            </div>
-
-                            <div>
-                                <label>Características:</label>
-                                <input type="text" name="caracteristicas" value="<%= guarderia.caracteristicas %>" required>
-                            </div>
-
-                            <div>
-                                <label>Instalaciones:</label>
-                                <input type="text" name="instalaciones" value="<%= guarderia.instalaciones %>" required>
-                            </div>
-
-                            <div>
-                                <label>Categorías</label>
-                             <select name="categoria">
-                                 <option value="Canina">Categoria 1-Perros</option>
-                                 <option value="Felina" selected>Categoria 2-Gatos</option>
-                                 <option value="Canina y Felina">Categoria 3-Perros y Gatos</option>
-                             </select>
-                     </div>
+                    <form action="/productos/editar-producto/<%=guarderia.id%>/?_method=PUT" method="POST"
+                        enctype="multipart/form-data">
 
 
-                            <div>
-                                <label>Foto:</label>
-                                <input type="file" name="imagen">
-                            </div>
+                        <div>
+                            <label>Nombre de la Guarderia:</label>
+                            <input type="text" name="nombre" value="<%= guarderia.nombre %>" required>
+                        </div>
+
+                        <div>
+                            <label>Precio:</label>
+                            <input type="number" name="precio" value="<%= guarderia.precio %>" required>
+                        </div>
+
+                        <div>
+                            <label>Características:</label>
+                            <input type="text" name="caracteristicas" value="<%= guarderia.caracteristicas %>" required>
+                        </div>
+
+                        <div>
+                            <label>Instalaciones:</label>
+                            <input type="text" name="instalaciones" value="<%= guarderia.instalaciones %>" required>
+                        </div>
+
+                        <div>
+                            <label>Categorías</label>
+                            <select name="categoria">
+                                <option value="Canina">Categoria 1-Perros</option>
+                                <option value="Felina" selected>Categoria 2-Gatos</option>
+                                <option value="Canina y Felina">Categoria 3-Perros y Gatos</option>
+                            </select>
+                        </div>
 
 
-                            <div class="div-button">
-                                <button type="submit">Editar</button>
-
-                            </div>
-
-                            <div class="div-button">
-                                <button type="reset">Cancelar</button>
-                            </div>
+                        <div>
+                            <label>Foto:</label>
+                            <input type="file" name="imagen">
+                        </div>
 
 
-                    </div>
+                        <div class="div-button">
+                            <button type="submit">Editar</button>
 
-                </main>
+                        </div>
 
-                <!-- Footer -->
-                <%- include('partials/footer') %>
+                        <div class="div-button">
+                            <button type="reset">Cancelar</button>
+                        </div>
+
+                    </form>
+
+
+                </div>
+
+            </main>
+
+            <!-- Footer -->
+            <%- include('partials/footer') %>
 
 
     </body>

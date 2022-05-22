@@ -3,22 +3,24 @@
 
 <!-- head  -->
 
-    <%- include('partials/headLinks') %>
+<%- include('partials/headLinks') %>
 
     <link rel="stylesheet" href="/css/style-producto.css">
 
 
-<body>
-    <!-- headerMain y headerSidebar-->
-    <%- include('partials/header') %>
+    <body>
+        <!-- headerMain y headerSidebar-->
+        <%- include('partials/header') %>
 
 
-    <!-- Main -->
+            <!-- Main -->
 
-    <main>
-                <img src= "/img/guarderias/<%= guarderia.imagen %> " alt="guarderia1" class="imagen1">
-                <div class="nombre-guarderia">Guarderia <%= guarderia.nombre %> </div>
-                <div class="precios">$<%= guarderia.precio %></div>
+            <main>
+                <img src="/img/guarderias/<%= guarderia.imagen %> " alt="guarderia1" class="imagen1">
+                <div class="nombre-guarderia">Guarderia <%= guarderia.nombre %>
+                </div>
+                <div class="precios">$<%= guarderia.precio %>
+                </div>
                 <div class="estrellas">
                     <i class="fas fa-star"></i> <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -27,9 +29,13 @@
                 <div class="cuerpo-detalle">
 
                     <h3>Características</h3>
-                    <p><%= guarderia.caracteristicas %> </p>
+                    <p>
+                        <%= guarderia.caracteristicas %>
+                    </p>
                     <h3>Instalaciones</h3>
-                    <p><%= guarderia.instalaciones %> </p>
+                    <p>
+                        <%= guarderia.instalaciones %>
+                    </p>
 
                 </div>
 
@@ -48,49 +54,59 @@
                     <i class="fas fa-paw huellita-reserva"></i>
                 </div>
 
+                <form method="POST" action="/productos/eliminar-producto/<%= guarderia.id %>/?_method=DELETE">
 
-        </section>
+                    <div class="eliminar-producto" strong>
+                        <button type="submit">Eliminar Producto</strong>
+                            <i class="fas fa-paw huellita-reserva"></i>
+                        </button>
+                    </div>
 
-        <div class="resumen-producto">
-            <div class="categoria-producto">
-                <form action="categoria" method="GET">
-                    <label class="titulo-categoria">Cat. :</label><br>
-                    <select class="opciones-categoria" name="categoria">
-                        <option value="cat1" selected>Categoria 1</option>
-                        <option value="cat2">Categoria 2</option>
-                        <option value="cat3">Categoria 3</option>
-                    </select>
                 </form>
-            </div>
 
-            <div class="fechas-producto">
-                <label>Desde:</label><input type="date" name="fechaIngreso" value="2022-04-22" min="2022-04-01"
-                    max="2023-12-31">
-                <label>Hasta:</label><input type="date" name="fechaSalida" value="2022-04-27" min="2022-04-01"
-                    max="2023-12-31">
-            </div>
-            <div class="cantidad">
-                <div class="mascota">
-                    <i class="fas fa-dog"></i>
-                    <i class="fas fa-plus"></i>
-                    <div>0</div>
-                    <i class="fas fa-minus"></i>
+
+                </section>
+
+                <div class="resumen-producto">
+                    <div class="categoria-producto">
+                        <form action="categoria" method="GET">
+                            <label class="titulo-categoria">Cat. :</label><br>
+                            <select class="opciones-categoria" name="categoria">
+                                <option value="cat1" selected>Categoria 1</option>
+                                <option value="cat2">Categoria 2</option>
+                                <option value="cat3">Categoria 3</option>
+                            </select>
+                        </form>
+                    </div>
+
+                    <div class="fechas-producto">
+                        <label>Desde:</label><input type="date" name="fechaIngreso" value="2022-04-22" min="2022-04-01"
+                            max="2023-12-31">
+                        <label>Hasta:</label><input type="date" name="fechaSalida" value="2022-04-27" min="2022-04-01"
+                            max="2023-12-31">
+                    </div>
+                    <div class="cantidad">
+                        <div class="mascota">
+                            <i class="fas fa-dog"></i>
+                            <i class="fas fa-plus"></i>
+                            <div>0</div>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                        <div class="mascota">
+                            <i class="fas fa-cat"></i>
+                            <i class="fas fa-plus"></i>
+                            <div>1</div>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="mascota">
-                    <i class="fas fa-cat"></i>
-                    <i class="fas fa-plus"></i>
-                    <div>1</div>
-                    <i class="fas fa-minus"></i>
-                </div>
-            </div>
-        </div>
 
-    </main>
+            </main>
 
-    <!-- Footer -->
-    <%- include('partials/footer') %>
+            <!-- Footer -->
+            <%- include('partials/footer') %>
 
 
-</body>
+    </body>
 
 </html>

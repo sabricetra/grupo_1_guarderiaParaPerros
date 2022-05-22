@@ -31,4 +31,6 @@ router.post("/crear-producto" , upload.single("imagen"), productosController.cre
 router.get("/editar-producto/:id/" , productosController.vistaEditar)
 router.put("/editar-producto/:id/" , upload.single("imagen"), productosController.editar)
 
+router.delete("/eliminar-producto/:id/" , productosController.eliminar)
+
 module.exports = router

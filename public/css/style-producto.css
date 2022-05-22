@@ -196,7 +196,8 @@ div.cuerpo-detalle {
   color: #333333;
 }
 
-.editar-producto{
+.editar-producto,
+.eliminar-producto {
   text-decoration: none;
   font-weight: 300;
   font-size: 18px;
@@ -218,7 +219,8 @@ div.cuerpo-detalle {
 
 }
 
-.editar-producto a{
+.editar-producto a,
+.eliminar-producto a {
   text-decoration: none;
   color: #333333;
 

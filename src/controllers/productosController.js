@@ -76,6 +76,15 @@ const productosController = {
         res.redirect("/productos/productos")
     },
 
+    eliminar: function(req, res){
+        let idEliminar = req.params.id;
+        let resultado = productos.filter(guarderia => guarderia.id != idEliminar);
+
+        fs.writeFileSync(productosFilePath, JSON.stringify(resultado,null, " "))
+
+        res.redirect("/")
+    }
+
 }
 
 module.exports = productosController

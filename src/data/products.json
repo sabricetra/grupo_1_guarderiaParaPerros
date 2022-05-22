@@ -9,23 +9,21 @@
   "imagen": "guarderia_canina_1.jpg"
  },
  {
-  "id": 2,
-  "nombre": "Catis",
-  "precio": 700,
-  "categoria": "Felina",
+   "id": 2,
+   "nombre": "Catis",
+   "precio": 700,
+   "categoria": "Felina",
+   "caracteristicas": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+   "instalaciones": "Voluptas, autem amet.Instalaciones:Lorem ipsum dolor sit adipisicing elit. Voluptas, autem amet rerum eius quis assumenda libero excepturi illum!",
+   "imagen": "guarderia_2.jpg"
+  },
+ {
+  "id": 3,
+  "nombre": "PetHouse",
+  "precio": 300,
+  "categoria": "Canina y Felina",
   "caracteristicas": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   "instalaciones": "Voluptas, autem amet.Instalaciones:Lorem ipsum dolor sit adipisicing elit. Voluptas, autem amet rerum eius quis assumenda libero excepturi illum!",
-  "imagen": "guarderia_2.jpg"
- },
- {
-    "id": 3,
-    "nombre": "PetHouse",
-    "precio": 300,
-    "categoria": "Canina y Felina",
-    "caracteristicas": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "instalaciones": "Voluptas, autem amet.Instalaciones:Lorem ipsum dolor sit adipisicing elit. Voluptas, autem amet rerum eius quis assumenda libero excepturi illum!",
-    "imagen": "guarderia_3.jpg"
-   }
-
-
+  "imagen": "guarderia_3.jpg"
+ }
 ]

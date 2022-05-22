@@ -4,7 +4,7 @@
 <!-- head  -->
 
 <%- include('partials/headLinks') %>
-<link rel="stylesheet" href="/css/style-crear-producto.css">
+    <link rel="stylesheet" href="/css/style-crear-producto.css">
 
     <body>
         <!-- headers -->
@@ -45,27 +45,29 @@
                             <input type="text" name="instalaciones" required>
                         </div>
 
-                       <div>
-                           <label>Categorías</label>
-                        <select name="categoria">
-                            <option value="Canina">Categoria 1-Perros</option>
-                            <option value="Felina" selected>Categoria 2-Gatos</option>
-                            <option value="Canina y Felina">Categoria 3-Perros y Gatos</option>
-                        </select>
-                </div>
-                <div>
-                    <label>Foto:</label>
-                    <input type="file" name="imagen">
-                </div>
+                        <div>
+                            <label>Categorías</label>
+                            <select name="categoria">
+                                <option value="Canina">Categoria 1-Perros</option>
+                                <option value="Felina" selected>Categoria 2-Gatos</option>
+                                <option value="Canina y Felina">Categoria 3-Perros y Gatos</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Foto:</label>
+                            <input type="file" name="imagen">
+                        </div>
 
-                <div class="div-button">
-                    <button type="submit">Crear</button>
+                        <div class="div-button">
+                            <button type="submit">Crear</button>
 
-                </div>
+                        </div>
 
-                <div class="div-button">
-                    <button type="reset">Cancelar</button>
-                </div>
+                        <div class="div-button">
+                            <button type="reset">Cancelar</button>
+                        </div>
+
+                    </form>
 
 
                 </div>
