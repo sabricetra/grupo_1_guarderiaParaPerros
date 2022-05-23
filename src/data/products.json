@@ -9,14 +9,14 @@
   "imagen": "guarderia_canina_1.jpg"
  },
  {
-   "id": 2,
-   "nombre": "Catis",
-   "precio": 700,
-   "categoria": "Felina",
-   "caracteristicas": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-   "instalaciones": "Voluptas, autem amet.Instalaciones:Lorem ipsum dolor sit adipisicing elit. Voluptas, autem amet rerum eius quis assumenda libero excepturi illum!",
-   "imagen": "guarderia_2.jpg"
-  },
+  "id": 2,
+  "nombre": "Catis",
+  "precio": 700,
+  "categoria": "Felina",
+  "caracteristicas": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "instalaciones": "Voluptas, autem amet.Instalaciones:Lorem ipsum dolor sit adipisicing elit. Voluptas, autem amet rerum eius quis assumenda libero excepturi illum!",
+  "imagen": "guarderia_2.jpg"
+ },
  {
   "id": 3,
   "nombre": "PetHouse",
@@ -25,5 +25,23 @@
   "caracteristicas": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   "instalaciones": "Voluptas, autem amet.Instalaciones:Lorem ipsum dolor sit adipisicing elit. Voluptas, autem amet rerum eius quis assumenda libero excepturi illum!",
   "imagen": "guarderia_3.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "Mascotas Hotel",
+  "precio": 600,
+  "categoria": "Canina",
+  "caracteristicas": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "instalaciones": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "imagen": "1653260295674_guarderia.jpeg"
+ },
+ {
+  "id": 5,
+  "nombre": "Pet Palace",
+  "precio": 750,
+  "categoria": "Canina y Felina",
+  "caracteristicas": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "instalaciones": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "imagen": "1653260475693_guarderia.jpeg"
  }
 ]

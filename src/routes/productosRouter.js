@@ -11,7 +11,7 @@ var storage = multer.diskStorage({
         cb(null, folder )
     },
     filename: function(req, file, cb){
-        cb(null, Date.now() + path.extname(file.originalname))
+        cb(null, Date.now() + "_guarderia"+ path.extname(file.originalname))
     }
 })
 
