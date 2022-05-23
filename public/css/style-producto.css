@@ -219,8 +219,16 @@ div.cuerpo-detalle {
 
 }
 
-.editar-producto a,
-.eliminar-producto a {
+.eliminar-producto button {
+  background-color: #bccfd6;
+  border: none;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.editar-producto a {
   text-decoration: none;
   color: #333333;
 
