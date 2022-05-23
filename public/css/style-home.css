@@ -416,6 +416,8 @@ footer {
   opacity: 80%;
   margin: 5px;
 }
+/* MEDIA QUERIES */
+
 
 @media(max-width:320px){
   .sidebarIconToggle {
@@ -430,7 +432,15 @@ footer {
   }
 }
 @media(min-width:760px){
-
-
-  
 }
+
+  /* carrito */
+
+@media(max-width:320px){
+    
+  .icon-cart {
+  order:-1;
+  padding-left: 1%;
+
+}   
+  }
