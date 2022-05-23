@@ -41,9 +41,7 @@
   border-radius: 10px;
 }
 
-form {
-  padding: 30px;
-}
+
 
 form div {
   padding: 10px;
@@ -76,7 +74,6 @@ form button {
   border-radius: 10px;
   width: 150px;
   height: 22px;
-  position: absolute;
 }
 
 .div-button{
