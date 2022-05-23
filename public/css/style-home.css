@@ -35,8 +35,8 @@ header {
 .logo-menu {
   display: block;
   opacity: 80%;
-  width: 15%;
-  text-align: left;
+  width: 20%;
+  text-align: center;
   padding-left: 5%;
 
 }
@@ -48,43 +48,36 @@ header {
 
 .vacio {
   display: block;
-  width: 15%;
+  width: 20%;
 }
 
+/* Contenedor logo */
 .logo {
   display: block;
-  width: 40%;
+  width: 20%;
 }
 
+/* Imagen logo */
 .logo-alojamascotas {
   display: block;
+  margin: auto;
   min-width: 15vw;
   max-height: 12vh;
-  padding: px;
-
 }
 
-.icon-search {
+.icon-cart,
+.logo-cuenta {
   display: block;
-  width: 2%;
-  padding: 3 px;
+  width: 20%;
+  text-align: right;
 }
 
-.icon-search i {
-  font-size: 15px;
-  color: var(--verde-oscuro);
-  opacity: 80%;
+.icon-cart{
+  padding-right: 10px;
 }
 
-
-.icon-cart {
-  display: block;
-  width: 15%;
-  padding-right: 3%;
-
-}
-
-.icon-cart i {
+.icon-cart i,
+.logo-cuenta i {
   font-size: 20px;
   color: var(--verde-oscuro);
   opacity: 80%;
@@ -119,28 +112,43 @@ header {
 
 
 /* Search bar */
-
-
-.input-buscar-guarderia{
-  border: none;
-  border-radius: 5px;
-  min-width: 5px;
-  max-width: 150px;
-  height: 22px;
+.searchbar {
+  display: block;
+  background-color: var(--celeste-claro);
 }
 
+.searchbar form{
+  text-align: center;
+}
 
-.boton-search{
-
-  font-size: 15px;
-  background-color: grey;
-  color: white;
+.input-buscar-guarderia{
+  font-size: 10px;
+  padding: 0 5px;
   border: none;
   border-radius: 5px;
-  width: 50px;
+  width: 150px;
+  min-width: 5px;
+  max-width: 400px;
+  height: 18px;
+}
+
+.boton-search{
+  font-size: 12px;
+  background-color: var(--celeste-claro);
+  color: grey;
+  border: none;
+  border-radius: 10px;
+  width: 25px;
   height: 22px;
   position: absolute;
 }
+
+.boton-search i{
+  position: relative;
+  right: 25px;
+  bottom: 2px;
+}
+
 
 /* Sidebar Nav */
 
@@ -282,7 +290,6 @@ header {
   border-radius: 5px;
 
 }
-
 
 
 .main-productos{

@@ -234,8 +234,8 @@ img{
       border-radius: 10px;
       display: flex;
       flex-direction: column;
-      padding: 10px 10px 10px 10px;
-      margin-bottom:50px;
+      padding: 5px 10px 5px 10px;
+      /* margin-bottom:50px; */
 }
 
 .subtotal, .impuestos-tasas,
@@ -263,7 +263,7 @@ img{
 .finalizar-compra {
       display: flex;
       justify-content: center;
-      padding: 10px;
+      padding: 0 10px 0 10px;
 }
 
 .finalizar-compra button {

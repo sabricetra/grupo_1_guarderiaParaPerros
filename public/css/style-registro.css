@@ -41,7 +41,7 @@
   border-radius: 10px;
 }
 
-form {
+.form-registro {
   padding: 30px;
 }
 
@@ -68,7 +68,7 @@ form input {
   padding-bottom: 20px;
 }
 
-form button {
+.div-enviar button {
   font-size: 15px;
   background-color: grey;
   color: white;
@@ -76,9 +76,5 @@ form button {
   border-radius: 5px;
   width: 150px;
   height: 22px;
-  position: absolute;
 }
 
-.div-button{
-  padding: 5px;
-}

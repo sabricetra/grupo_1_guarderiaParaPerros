@@ -2,51 +2,47 @@
   a:link,
   a:visited,
   a:active {
-      text-decoration: none;
+    text-decoration: none;
   }
 </style>
 
 
 <header>
-    <section class="topheader">
-        <div class="logo-menu"><i class="fas fa-bars" alt="logo menu"></i></div>
-        <div class="vacio"></div>
-        <div class="logo"><a href="/"><img class="logo-alojamascotas" src="/img/group.svg"
-                    alt="logo de la empresa"></a></div>
- <!-- PROBANDO -->
-                    <form action="/search" method="GET">
-                      <div class="button-search">
-                      <input class="input-buscar-guarderia" type="text" name="search" placeholder="Buscar guardería">
-                      <button class="boton-search" type="submit"> <i class="fas fa-search"></i>
-                      </div>
-                      </button>
-                  </form>
-
-         <!-- <div class="icon-search"><i class="fas fa-search" alt="logo busqueda"></i></div>-->
-        <div class="icon-cart"><a href="/productos/carrito"><i class="fas fa-shopping-cart" alt="logo carrito"></i></a></div>
+  <section class="topheader">
+    <div class="logo-menu"><i class="fas fa-bars" alt="logo menu"></i></div>
+    <div class="vacio"></div>
+    <div class="logo"><a href="/"><img class="logo-alojamascotas" src="/img/group.svg" alt="logo de la empresa"></a></div>
+    <div class="logo-cuenta"><a href="/users/inicia-sesion"><i class="fas fa-user-circle" alt="logo cuenta"></i></a></div>
+    <div class="icon-cart"><a href="/productos/carrito"><i class="fas fa-shopping-cart" alt="logo carrito"></i></a></div>
+  </section>
+  <section class="subheader">
+    <a class="crear-cuenta" href="/users/registro">CREAR CUENTA</a>
+    <section class="searchbar">
+      <form action="/search" method="GET">
+          <input class="input-buscar-guarderia" type="text" name="search" placeholder="Buscar guardería..">
+          <button class="boton-search" type="submit"> <i class="fas fa-search"></i></button>
+      </form>
     </section>
-    <section class="subheader">
-        <a class="crear-cuenta" href="/users/registro">CREAR CUENTA</a>
-        <a class="iniciar-sesion" href="/users/inicia-sesion">INICIAR SESION</a>
-    </section>
-    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-    <label for="openSidebarMenu" class="sidebarIconToggle">
-      <div class="spinner diagonal part-1"></div>
-      <div class="spinner horizontal"></div>
-      <div class="spinner diagonal part-2"></div>
-    </label>
-    <div id="sidebarMenu">
-      <ul class="sidebarMenuInner">
-        <li><a href="/users/inicia-sesion">Mi Cuenta</a></li>
-        <li><a href="/productos/productos">Guarderias</a></li>
-        <li><a href="/productos/crear-producto">Crear Producto</a></li>
-        <li><a href="/">Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Terminos y Condiciones</a></li>
-        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-      </ul>
-    </div>
-   </header>
+  </section>
+  
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><a href="/users/inicia-sesion">Mi Cuenta</a></li>
+      <li><a href="/productos/productos">Guarderias</a></li>
+      <li><a href="/productos/crear-producto">Crear Producto</a></li>
+      <li><a href="/">Nosotros</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Terminos y Condiciones</a></li>
+      <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+      <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+      <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+    </ul>
+  </div>
+</header>
