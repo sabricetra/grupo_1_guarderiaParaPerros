@@ -16,7 +16,7 @@ const productosController = {
         let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
         res.render('detalle-producto', {guarderia : guarderia})
     },
-
+ 
     carrito: function(req,res){
         res.render('carrito')
     },
@@ -42,9 +42,9 @@ const productosController = {
         fs.writeFileSync(productosFilePath, JSON.stringify(productos,null, " "))
 
 
-        res.redirect('productos')
+        res.redirect('productos') 
     },
-
+// Editar productos//
     vistaEditar: function(req,res){
         let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
         res.render('editar-producto', {guarderia : guarderia})
@@ -75,6 +75,7 @@ const productosController = {
 
         res.redirect("/productos/productos")
     },
+    //Eliminar productos//
 
     eliminar: function(req, res){
         let idEliminar = req.params.id;
