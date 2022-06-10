@@ -6,6 +6,12 @@ const mainRouter = require("./src/routes/mainRouter.js")
 const productosRouter = require("./src/routes/productosRouter.js")
 const usersRouter = require("./src/routes/usersRouter.js")
 
+const bcrypt = require ('bcryptjs');
+let passEncriptada = bcrypt.hashSync ('monitor123',10);
+
+//let check = bcrypt.compareSync ('monito123', passEncriptada);
+
+
 // Habilita metodos Put/Patch/Delete
 const methodOverride = require("method-override")
 app.use(methodOverride("_method"))
@@ -31,6 +37,9 @@ app.use("/", mainRouter)
 //error 404//
 app.use((req,res,next)=>{
     res.status(404).render("error-404");
+
 })
+
+
 
 app.listen(8000, ()=> console.log('Corriendo servidor en http://localhost:8000'))
