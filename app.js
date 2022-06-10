@@ -6,10 +6,15 @@ const mainRouter = require("./src/routes/mainRouter.js")
 const productosRouter = require("./src/routes/productosRouter.js")
 const usersRouter = require("./src/routes/usersRouter.js")
 
+//contraseña encriptada//
+//bcryptjs.const bcrypt = require ('bcryptjs');
 const bcrypt = require ('bcryptjs');
-let passEncriptada = bcrypt.hashSync ('monitor123',10);
+let passEncriptada = bcrypt.hashSync('monitor123', 10);
 
-//let check = bcrypt.compareSync ('monito123', passEncriptada);
+let check = bcrypt.compareSync ('monito123', passEncriptada);
+console.log(check);//true
+
+
 
 
 // Habilita metodos Put/Patch/Delete

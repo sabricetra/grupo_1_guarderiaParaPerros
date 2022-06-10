@@ -4,6 +4,9 @@ const path = require("path")
 const registroFilePath = path.join(__dirname , "../data/users.json")
 const registro = JSON.parse(fs.readFileSync(registroFilePath, "utf-8"))
 
+// requeriendo encriptado de contraseña
+const bcrypt = require('bcrypt')
+
 
 
 
