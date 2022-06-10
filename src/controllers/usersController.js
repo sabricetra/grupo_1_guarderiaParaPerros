@@ -23,7 +23,7 @@ const usersController = {
 
         let nuevoUsuario = {
 
-            id: newRegister[newRegister.length -1].id +1 ,
+            id: registro[registro.length -1].id +1 ,
             first_name: req.body.first_name,
             last_name: req.body.last_name,
             date:req.body.date,
@@ -40,7 +40,7 @@ const usersController = {
         fs.writeFileSync(registroFilePath, JSON.stringify(registro,null, " "))
 
 //redirigir a la vista del home//
-       // res.redirect("/inicia-sesion")//
+        res.redirect("/inicia-sesion")
 
 
 
