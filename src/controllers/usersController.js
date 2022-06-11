@@ -5,7 +5,7 @@ const registroFilePath = path.join(__dirname , "../data/users.json")
 const registro = JSON.parse(fs.readFileSync(registroFilePath, "utf-8"))
 
 // requeriendo encriptado de contraseña
-const bcrypt = require('bcrypt')
+const bcryptjs = require('bcryptjs')
 
 
 
@@ -43,7 +43,7 @@ const usersController = {
         fs.writeFileSync(registroFilePath, JSON.stringify(registro,null, " "))
 
 //redirigir a la vista del home//
-        res.redirect("/inicia-sesion")
+        res.redirect("inicia-sesion")
 
 
 
