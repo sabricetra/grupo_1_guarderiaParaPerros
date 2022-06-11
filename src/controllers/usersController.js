@@ -5,7 +5,7 @@ const registroFilePath = path.join(__dirname , "../data/users.json")
 const registro = JSON.parse(fs.readFileSync(registroFilePath, "utf-8"))
 
 // requeriendo encriptado de contraseña
-const bcryptjs = require('bcryptjs')
+const bcrypt = require('bcryptjs')
 
 
 
@@ -35,7 +35,7 @@ const usersController = {
             password: bcrypt.hashSync(req.body.password, 10),
             dni:req.body.dni,
             category: req.body.category,
-            image: req.file ? req.file.filename : "default-img.jpg"
+            image: req.file ? req.file.filename : "default-profileimg.jpg"
         }
 
         //guardar en el json//
