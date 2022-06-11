@@ -4,6 +4,9 @@ const path = require("path")
 const registroFilePath = path.join(__dirname , "../data/users.json")
 const registro = JSON.parse(fs.readFileSync(registroFilePath, "utf-8"))
 
+// requeriendo encriptado de contraseña
+const bcrypt = require('bcrypt')
+
 
 
 
@@ -23,13 +26,13 @@ const usersController = {
 
         let nuevoUsuario = {
 
-            id: newRegister[newRegister.length -1].id +1 ,
+            id: registro[registro.length -1].id +1 ,
             first_name: req.body.first_name,
             last_name: req.body.last_name,
             date:req.body.date,
             adress: req.body.adress,
             email: req.body.email,
-            password: req.body.password,
+            password: bcrypt.hashSync(req.body.password, 10),
             dni:req.body.dni,
             category: req.body.category,
             image: req.file ? req.file.filename : "default-img.jpg"
@@ -40,7 +43,7 @@ const usersController = {
         fs.writeFileSync(registroFilePath, JSON.stringify(registro,null, " "))
 
 //redirigir a la vista del home//
-       // res.redirect("/inicia-sesion")//
+        res.redirect("/inicia-sesion")
 
 
 
