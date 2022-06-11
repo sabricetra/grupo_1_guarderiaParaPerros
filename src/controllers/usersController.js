@@ -32,7 +32,7 @@ const usersController = {
             date:req.body.date,
             adress: req.body.adress,
             email: req.body.email,
-            password: bcrypt.hashSync(req.body.password, 10),
+            password: bcryptjs.hashSync(req.body.password, 10),
             dni:req.body.dni,
             category: req.body.category,
             image: req.file ? req.file.filename : "default-img.jpg"
