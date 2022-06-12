@@ -212,8 +212,29 @@
   "date": "1990-10-10",
   "adress": "iwi 32932",
   "email": "eugecampoy@test.com",
-  "password": "$2a$10$rsnruVW0Rwy66Q9VPWwjyuuMbN/T9A8hIB6rTlNUiUL8/Xv/jMJHi",
   "dni": "32232332",
+  "image": "default-profileimg.jpg"
+ },
+ {
+  "id": 27,
+  "first_name": "Testing",
+  "last_name": "testing",
+  "date": "1950-10-10",
+  "adress": "sddsds1",
+  "email": "testing@1.com",
+  "password": "$2a$10$Pq5yQ7QVqdx/Wy7eWj.zp.ODXM/BPkaqro2XQ8hoAIL0Y/y5Ii5zu",
+  "dni": "22323323",
+  "image": "user- 1655069288899.jpg"
+ },
+ {
+  "id": 28,
+  "first_name": "royroy",
+  "last_name": "r",
+  "date": "1910-10-10",
+  "adress": "23dedw",
+  "email": "royroy@roy.com",
+  "password": "$2a$10$td9sJZhrsYqvmRillae8yOULOKIetT30XfBqM1fz1AL0LS/ZUV/WC",
+  "dni": "23233232",
   "image": "default-profileimg.jpg"
  }
 ]

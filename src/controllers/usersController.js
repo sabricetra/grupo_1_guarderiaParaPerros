@@ -22,7 +22,9 @@ const usersController = {
         if(userToLogin) {
             let passwordOk = bcrypt.compareSync(req.body.password, userToLogin.password);
             if(passwordOk) {
-                res.send(userToLogin);
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin
+                return res.redirect("/users/detalle-profile");
             }
 
             return res.render('inicia-sesion', {
@@ -75,13 +77,18 @@ const usersController = {
     },
     detalleProfile: function(req,res) {
 
-        let user = registro.find(user => user.id == req.params.id)
-        res.render('detalle-profile', {user : user})
+        res.render('detalle-profile', {
+            user: req.session.userLogged
+        })
         
+    },
+
+    logout: function(req,res) {
+        req.session.destroy()
+        return res.redirect("/")
+
     }
-
-
-    
+  
 
 }
 

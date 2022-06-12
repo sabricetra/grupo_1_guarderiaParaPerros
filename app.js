@@ -25,7 +25,7 @@ app.set('views', path.resolve(__dirname, './src/views'))
 app.use(express.urlencoded({extended : false}))
 app.use(express.json())
 
-// app.use(session({secret: "secreto"}));
+app.use(session({secret: "secreto"}));
 
 app.use("/users", usersRouter);
 
