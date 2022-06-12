@@ -21,7 +21,7 @@
                     <h3 class="titulo-iniciar-sesion">INICIA SESION</h3>
 
                     <div class="contenedor-iniciar-sesion">
-                        <form action="/inicia-sesion" method="POST">
+                        <form action="/users/inicia-sesion" method="POST">
                             <div>
                                 <label class="label-email">CORREO ELECTRONICO:</label>
                                 <input class="input-datos" type="email" name="email" required>
@@ -31,7 +31,11 @@
                                 <label>CONTRASEÑA:</label>
                                 <input class="input-datos" type="password" name="password" required>
                             </div>
-
+                            <% if (locals.errors && errors.email) { %>
+                             <div style="color: red;">
+                                 <%= errors.email.msg %>
+                             </div>
+                            <% } %>
                             <div class="contanedor-guardar-clave">
                                 <label class="input-guardar-clave">
                                     <input type="checkbox" name="guardar-clave" value="guardar-clave" checked>

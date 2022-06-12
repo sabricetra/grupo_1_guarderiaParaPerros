@@ -204,5 +204,16 @@
   "password": "$2a$10$muOZhga5A4hbkttpSwPEf.Y7HX3UvdrjkNpg8DyCGEvcBzGUFPwnO",
   "dni": "123123123",
   "image": "default-profileimg.jpg"
+ },
+ {
+  "id": 26,
+  "first_name": "Euge",
+  "last_name": "Campoy",
+  "date": "1990-10-10",
+  "adress": "iwi 32932",
+  "email": "eugecampoy@test.com",
+  "password": "$2a$10$rsnruVW0Rwy66Q9VPWwjyuuMbN/T9A8hIB6rTlNUiUL8/Xv/jMJHi",
+  "dni": "32232332",
+  "image": "default-profileimg.jpg"
  }
 ]

@@ -3,6 +3,8 @@ const router = express.Router()
 const path = require ("path")
 //requerimos multer para la creacion del usuario//
 const multer = require ("multer")
+const {body} = require("express-validator")
+
 
 //dónde se va a guardar//
 const storage = multer.diskStorage({
@@ -17,16 +19,31 @@ const storage = multer.diskStorage({
 
 //Ejecución de multer//
 const upload = multer ({storage: storage});
- 
+
+const validateData = [
+    body("first_name")
+        .notEmpty().withMessage("Debe ingresar un nombre"),
+    body("last_name")
+        .notEmpty().withMessage("Debe ingresar un apellido"),
+    body("date")
+        .notEmpty().withMessage("Debe ingresar una fecha de nacimiento"),
+    body("adress")
+        .notEmpty().withMessage("Debe ingresar una dirección"),
+    body("email")
+        .notEmpty().withMessage("Debe ingresar un correo electrónico"),
+    body("dni")
+        .notEmpty().withMessage("Debe ingresar un dni")
+]
 
 const usersController = require("../controllers/usersController.js")
 
 
 router.get("/inicia-sesion" , usersController.iniciaSesion);
+router.post("/inicia-sesion" , usersController.processLogin);
 //ruta de vista de registro//
 router.get("/registro" , usersController.registro);
 //ruta de creación de usuario//
 router.post("/registro" , upload.single("imagenUsuario"), usersController.newRegister);
-router.get("/mi-cuenta/:id/", usersController.detalleProfile);
+router.get("/detalle-profile/:id/", usersController.detalleProfile);
 
 module.exports = router

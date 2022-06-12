@@ -6,6 +6,7 @@ const registro = JSON.parse(fs.readFileSync(registroFilePath, "utf-8"))
 
 // requeriendo encriptado de contraseña
 const bcrypt = require('bcryptjs')
+const { redirect } = require("express/lib/response")
 
 
 
@@ -14,6 +15,33 @@ const usersController = {
 
     iniciaSesion: function(req,res){
         res.render('inicia-sesion')
+    },
+
+    processLogin: function(req,res){
+        let userToLogin = registro.find(oneUser => oneUser.email === req.body.email);
+        if(userToLogin) {
+            let passwordOk = bcrypt.compareSync(req.body.password, userToLogin.password);
+            if(passwordOk) {
+                res.send(userToLogin);
+            }
+
+            return res.render('inicia-sesion', {
+                errors: {
+                    email: {
+                        msg: 'Credenciales invalidas'
+                    }
+                }
+            })
+        }
+
+        return res.render('inicia-sesion', {
+            errors: {
+                email: {
+                    msg: 'Credenciales invalidas'
+                }
+            }
+        })
+
     },
 
     registro: function(req,res){
