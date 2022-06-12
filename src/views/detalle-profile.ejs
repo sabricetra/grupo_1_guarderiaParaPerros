@@ -13,13 +13,15 @@
 
             <!-- Main -->
             <main>
-                <span>MI CUENTA - PROFILE</span>
+                <span class="profile-title">MI CUENTA</span>
+                <div class="profile-body">
                 <img src="/img/users/<%= user.image %> " alt="profile pic" class="profileimg">
                 <div class="infouser">Usuario <%= user.first_name %><%= user.last_name %></div>
                 <div class="infouser">Fecha de Nacimiento<%= user.date %></div>
                 <div class="infouser">Direccion<%= user.adress %></div>
                 <div class="infouser">Correo Electronico<%= user.email %></div>
                 <div class="infouser">DNI<%= user.dni %></div>
+                </div>
 
                 <div> <a href="/users/logout">LOGOUT<a></div>
             </main>

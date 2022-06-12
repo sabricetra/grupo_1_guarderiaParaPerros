@@ -7,3 +7,7 @@
       --gris-oscuro: rgba(128, 128, 128, 0.247);
     }
 
+.profile-title {
+  font-size: 18px;
+  text-align: center;
+}
