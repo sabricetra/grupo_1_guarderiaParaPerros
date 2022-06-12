@@ -44,11 +44,12 @@ const usersController = {
 
 //redirigir a la vista del home//
         res.redirect("inicia-sesion")
+    },
+    detalleProfile: function(req,res) {
 
-
-
-
-
+        let user = registro.find(user => user.id == req.params.id)
+        res.render('detalle-profile', {user : user})
+        
     }
 
 

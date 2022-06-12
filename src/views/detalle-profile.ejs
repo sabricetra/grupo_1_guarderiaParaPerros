@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head  -->
+
+<%- include('partials/headLinks') %>
+
+    <link rel="stylesheet" href="/css/style-detalle-profile.css">
+
+    <body>
+        <!-- headerMain y headerSidebar-->
+        <%- include('partials/header') %>
+
+            <!-- Main -->
+            <main>
+                <span>MI CUENTA - PROFILE</span>
+                <img src="/img/users/<%= user.image %> " alt="profile pic" class="profileimg">
+                <div class="infouser">Usuario <%= user.first_name %><%= user.last_name %></div>
+                <div class="infouser">Fecha de Nacimiento<%= user.date %></div>
+                <div class="infouser">Direccion<%= user.adress %></div>
+                <div class="infouser">Correo Electronico<%= user.email %></div>
+                <div class="infouser">DNI<%= user.dni %></div>
+            </main>
+
+            <!-- Footer -->
+            <%- include('partials/footer') %>
+
+    </body>
+
+</html>

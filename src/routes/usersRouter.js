@@ -22,10 +22,11 @@ const upload = multer ({storage: storage});
 const usersController = require("../controllers/usersController.js")
 
 
-router.get("/inicia-sesion" , usersController.iniciaSesion)
+router.get("/inicia-sesion" , usersController.iniciaSesion);
 //ruta de vista de registro//
-router.get("/registro" , usersController.registro)
+router.get("/registro" , usersController.registro);
 //ruta de creación de usuario//
 router.post("/registro" , upload.single("imagenUsuario"), usersController.newRegister);
+router.get("/mi-cuenta/:id/", usersController.detalleProfile);
 
 module.exports = router
