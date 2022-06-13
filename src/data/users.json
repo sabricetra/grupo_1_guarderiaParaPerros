@@ -236,5 +236,26 @@
   "password": "$2a$10$td9sJZhrsYqvmRillae8yOULOKIetT30XfBqM1fz1AL0LS/ZUV/WC",
   "dni": "23233232",
   "image": "default-profileimg.jpg"
+ },
+ {
+  "id": 29,
+  "first_name": "luis",
+  "last_name": "Spinetta",
+  "date": "2022-06-23",
+  "adress": "rosa 123",
+  "email": "lsp@gmail.com",
+  "dni": "31668350",
+  "image": "user- 1655129901627.jpg"
+ },
+ {
+  "id": 30,
+  "first_name": "Mario",
+  "last_name": "Benedetti",
+  "date": "2022-05-03",
+  "adress": "Callecita 456",
+  "email": "mario@gmail.com",
+  "password": "$2a$10$l9VCCLOq8crMIaAJRAOjfuC4dVNYwl4S9QiAUdMcwD25tJFFbOixS",
+  "dni": "31668350",
+  "image": "user- 1655131686886.jpg"
  }
 ]
