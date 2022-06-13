@@ -53,3 +53,22 @@
 . Acumular tareas cerca a la fecha de entrega de sprints.
 5. Dejar de hacer:
 
+
+<!-- Sprint 5 -->
+
+1. Comenzar a hacer:
+. pasar todo a un mismo idioma, tenemos palabras en ingles y otras en castellano, unificar.
+2. Hacer más:
+.  zoom grupales para que todos participemos y poder ayudar a los demas.
+.  Mantener la comunicacion de los cambios que hicimos en el proyecto, se nos juntaron las tareas de todos, asique es importante mejorar la comunicacion.
+3. Continuar haciendo:
+. asignar las tareas que tiene que hacer cada uno en Trello.
+. mejoras en el css al proyecto
+. Continuar usando Github.
+. Dividimos bien las tareas, segun las fortalezas de cada uno y ayudandonos mutuamente.
+4. Hacer menos:
+. Acumular tareas cerca a la fecha de entrega de sprints.
+5. Dejar de hacer:
+. Acumular tareas cerca a la fecha de entrega de sprints.
+
+
