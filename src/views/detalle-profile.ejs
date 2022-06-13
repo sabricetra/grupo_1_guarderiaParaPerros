@@ -16,14 +16,18 @@
                 <span class="profile-title">MI CUENTA</span>
                 <div class="profile-body">
                 <img src="/img/users/<%= user.image %> " alt="profile pic" class="profileimg">
+                <div class="profile-text">
                 <div class="infouser"><div class="datos">Usuario:</div> <%= user.first_name %><%= user.last_name %></div>
                 <div class="infouser"><div class="datos">Fecha de Nacimiento:</div><%= user.date %></div>
                 <div class="infouser"><div class="datos">Direccion:</div><%= user.adress %></div>
                 <div class="infouser"><div class="datos">Correo Electronico:</div><%= user.email %></div>
                 <div class="infouser"><div class="datos">DNI:</div><%= user.dni %></div>
                 </div>
+                </div>
 
-                <div class="logout"> <a href="/users/logout">LOGOUT<a></div>
+                <div class="logout"> 
+                    <a href="/users/logout">LOGOUT</a>
+                </div>
             </main>
 
             <!-- Footer -->
