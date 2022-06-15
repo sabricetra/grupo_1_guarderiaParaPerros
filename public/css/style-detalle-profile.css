@@ -11,3 +11,39 @@
   font-size: 18px;
   text-align: center;
 }
+
+.infouser {
+  color:#3f7552;
+  font-weight:bold;
+  
+}
+
+.datos{
+  color: #3f4e4a;
+
+}
+
+.logout a {
+ text-align: center;
+ background-color: #c7dae0;
+ padding: 5px 15px;
+ border-radius: 5px;
+ display: block;
+ margin: 10px auto 10px auto;
+color:#3f4e4a;
+font-weight: bold;
+}
+
+.profile-body {
+    text-align: center;
+}
+
+.profile-text {
+    padding: 20px;
+    text-align: justify;
+    background-color: var(--gris);
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
