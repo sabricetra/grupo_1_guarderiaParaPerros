@@ -236,5 +236,16 @@
   "password": "$2a$10$td9sJZhrsYqvmRillae8yOULOKIetT30XfBqM1fz1AL0LS/ZUV/WC",
   "dni": "23233232",
   "image": "default-profileimg.jpg"
+ },
+ {
+  "id": 29,
+  "first_name": "Javier",
+  "last_name": "Ortiz",
+  "date": "1983-08-06",
+  "adress": "Santa Fe 789",
+  "email": "javier_83_2@hotmail.com",
+  "password": "$2a$10$/xNqVUa/6JFKFSOK4HG5fOSo24XK3zT4ClUuYZ072cJK.Z9OIMfwe",
+  "dni": "30055952",
+  "image": "default-profileimg.jpg"
  }
 ]

@@ -24,6 +24,9 @@ const usersController = {
             if(passwordOk) {
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin
+                if(req.body.recordame !=undefined){
+                   res.cookie("recordame",userToLogin.email,{maxAge:60000})
+                }
                 return res.redirect("/users/detalle-profile");
             }
 

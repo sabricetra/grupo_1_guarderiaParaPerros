@@ -5,7 +5,7 @@ const app = express()
 const mainRouter = require("./src/routes/mainRouter.js")
 const productosRouter = require("./src/routes/productosRouter.js")
 const usersRouter = require("./src/routes/usersRouter.js")
-
+const recordameMiddleware=require('./middlewares/recordameMiddleware')
 const session = require('express-session');
 
 
@@ -14,7 +14,9 @@ const methodOverride = require("method-override")
 app.use(methodOverride("_method"))
 
 
+
 app.use(express.static('public'))
+
 
 app.set("view engine", "ejs")
 
