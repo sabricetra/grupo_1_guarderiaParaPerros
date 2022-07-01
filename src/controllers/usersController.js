@@ -8,6 +8,8 @@ const registro = JSON.parse(fs.readFileSync(registroFilePath, "utf-8"))
 const bcrypt = require('bcryptjs')
 const { redirect } = require("express/lib/response")
 
+const db = require("../database/models")
+
 
 
 
@@ -83,7 +85,7 @@ const usersController = {
         res.render('detalle-profile', {
             user: req.session.userLogged
         })
-        
+
     },
 
     logout: function(req,res) {
@@ -91,7 +93,7 @@ const usersController = {
         return res.redirect("/")
 
     }
-  
+
 
 }
 

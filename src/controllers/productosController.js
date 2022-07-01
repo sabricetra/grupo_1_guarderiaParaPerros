@@ -3,6 +3,7 @@ const path = require("path")
 
 const productosFilePath = path.join(__dirname , "../data/products.json")
 const productos = JSON.parse(fs.readFileSync(productosFilePath, "utf-8"))
+const db = require("../database/models")
 
 const productosController = {
 
@@ -16,7 +17,7 @@ const productosController = {
         let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
         res.render('detalle-producto', {guarderia : guarderia})
     },
- 
+
     carrito: function(req,res){
         res.render('carrito')
     },
@@ -27,23 +28,34 @@ const productosController = {
 
     crear: function(req,res){
 
-        let nuevaGuarderia = {
+    //    let nuevaGuarderia = {
 
-            id: productos[productos.length -1].id +1 ,
-            nombre: req.body.nombre,
-            precio: parseInt(req.body.precio),
-            categoria: req.body.categoria,
-            caracteristicas: req.body.caracteristicas,
-            instalaciones: req.body.instalaciones,
-            imagen: req.file ? req.file.filename : "default-img.jpg"
-        }
+    //         id: productos[productos.length -1].id +1 ,
+    //         nombre: req.body.nombre,
+    //         precio: parseInt(req.body.precio),
+    //         categoria: req.body.categoria,
+    //         caracteristicas: req.body.caracteristicas,
+    //         instalaciones: req.body.instalaciones,
+    //         imagen: req.file ? req.file.filename : "default-img.jpg"
+    //     }
 
-        productos.push(nuevaGuarderia)
-        fs.writeFileSync(productosFilePath, JSON.stringify(productos,null, " "))
+    //     productos.push(nuevaGuarderia)
+    //     fs.writeFileSync(productosFilePath, JSON.stringify(productos,null, " "))
 
+    db.Daycare.create({
 
-        res.redirect('productos') 
+        name: req.body.nombre,
+        price: req.body.precio,
+        category_id: req.body.categoria,
+        characteristics: req.body.caracteristicas,
+        facilities: req.body.instalaciones,
+        image: req.file ? req.file.filename : "default-img.jpg"
+    })
+
+        res.redirect('productos')
+
     },
+
 // Editar productos//
     vistaEditar: function(req,res){
         let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
@@ -85,6 +97,8 @@ const productosController = {
 
         res.redirect("/")
     }
+
+
 
 }
 
