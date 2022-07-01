@@ -16,10 +16,10 @@
             <!-- Main -->
 
             <main>
-                <img src="/img/guarderias/<%= guarderia.imagen %> " alt="guarderia1" class="imagen1">
-                <div class="nombre-guarderia">Guarderia <%= guarderia.nombre %>
+                <img src="/img/guarderias/<%= daycare.image %> " alt="guarderia1" class="imagen1">
+                <div class="nombre-guarderia">Guarderia <%= daycare.name %>
                 </div>
-                <div class="precios">$<%= guarderia.precio %>
+                <div class="precios">$<%= daycare.price %>
                 </div>
                 <div class="estrellas">
                     <i class="fas fa-star"></i> <i class="fas fa-star"></i>
@@ -30,11 +30,11 @@
 
                     <h3>Características</h3>
                     <p>
-                        <%= guarderia.caracteristicas %>
+                        <%= daycare.characteristics %>
                     </p>
                     <h3>Instalaciones</h3>
                     <p>
-                        <%= guarderia.instalaciones %>
+                        <%= daycare.facilities %>
                     </p>
 
                 </div>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="editar-producto" strong>
-                    <a href="/productos/editar-producto/<%= guarderia.id %>">Editar producto</a></strong>
+                    <a href="/productos/editar-producto/<%= daycare.id %>">Editar producto</a></strong>
                     <i class="fas fa-paw huellita-reserva"></i>
                 </div>
 
@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="eliminar-producto" strong>
-                <form method="POST" action="/productos/eliminar-producto/<%= guarderia.id %>/?_method=DELETE">
+                <form method="POST" action="/productos/eliminar-producto/<%= daycare.id %>/?_method=DELETE">
 
                     <button class="boton-eliminar" type="submit">Eliminar Producto</strong>
                     </button>
