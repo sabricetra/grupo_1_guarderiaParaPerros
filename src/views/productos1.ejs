@@ -48,16 +48,16 @@
 
                 <section class="articulos">
 
-                    <% daycares.forEach(daycare=> { %>
+                    <% productos.forEach(guarderia=> { %>
 
                         <article class="articulo1">
 
                             <p class="centrado">
-                                <img src="/img/guarderias/<%= daycare.image %> " alt="guarderia1"
+                                <img src="/img/guarderias/<%= guarderia.imagen %> " alt="guarderia1"
                                     class="imagenGuarderia">
                             </p>
-                            <div class="nombre-guarderia">Guarderia <%= daycare.name %></div>
-                            <div class="precios">$<%= daycare.price %></div>
+                            <div class="nombre-guarderia">Guarderia <%= guarderia.nombre %></div>
+                            <div class="precios">$<%= guarderia.precio %></div>
                             <div class="estrellas">
                                 <i class="fas fa-star"></i> <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -65,20 +65,20 @@
                             <div class="cuerpo-detalle">
                                 <h3>Características</h3>
                                 <p>
-                                    <%= daycare.characteristics %>
+                                    <%= guarderia.caracteristicas %>
                                 </p>
                                 <h3>Instalaciones</h3>
                                 <p>
-                                    <%= daycare.facilities %>
+                                    <%= guarderia.instalaciones %>
                                 </p>
                                 <h3>Categoria</h3>
                                 <p>
-                                    <%= daycare.category_id %>
+                                    <%= guarderia.categoria %>
                                 </p>
                             </div>
 
                             <div class="reservar" strong>
-                                <a href="/productos/detalle-producto/<%= daycare.id  %>">Ver Guarderia</a></strong>
+                                <a href="/productos/detalle-producto/<%= guarderia.id  %>">Ver Guarderia</a></strong>
                                 <i class="fas fa-paw huellita-reserva"></i>
                             </div>
                         </article>

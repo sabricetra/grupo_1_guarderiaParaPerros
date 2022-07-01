@@ -4,12 +4,23 @@ const path = require("path")
 const productosFilePath = path.join(__dirname , "../data/products.json")
 const productos = JSON.parse(fs.readFileSync(productosFilePath, "utf-8"))
 const db = require("../database/models")
+const Daycares = db.Daycare
+const Users = db.User
+const Categories = db.Category
 
 const productosController = {
 
     productos: function(req,res){
-        let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
-        res.render('productos', {productos : productos})
+       // let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
+       //res.render('productos', {productos : productos})
+        db.Daycare.findAll({
+        
+        })
+            .then(daycares => {
+                res.render('productos.ejs', {daycares})
+            })
+
+
     },
 
     detalleProducto: function(req, res){
@@ -51,8 +62,11 @@ const productosController = {
         facilities: req.body.instalaciones,
         image: req.file ? req.file.filename : "default-img.jpg"
     })
+    .then (()=> {
+        return res.redirect('/productos')
+     })
 
-        res.redirect('productos')
+
 
     },
 
