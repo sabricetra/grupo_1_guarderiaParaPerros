@@ -6,7 +6,7 @@
     <%- include('partials/headLinks') %>
 
     <link rel="stylesheet" href="/css/style-producto.css">
-    
+
 <body>
     <!-- headerMain y headerSidebar-->
     <%- include('partials/header') %>
@@ -16,11 +16,11 @@
 
     <main>
 
-        <% productsToSearch.forEach(guarderia => { %>
+        <% daycares.forEach(daycare => { %>
 
-                <img src= "/img/guarderias/<%= guarderia.imagen %> " alt="guarderia1" class="imagen1">
-                <div class="nombre-guarderia">Guarderia <%= guarderia.nombre %> </div>
-                <div class="precios">$<%= guarderia.precio %></div>
+                <img src= "/img/guarderias/<%= daycare.image %> " alt="guarderia1" class="imagen1">
+                <div class="nombre-guarderia">Guarderia <%= daycare.name %> </div>
+                <div class="precios">$<%= daycare.price %></div>
                 <div class="estrellas">
                     <i class="fas fa-star"></i> <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -29,24 +29,14 @@
                 <div class="cuerpo-detalle">
 
                     <h3>Características</h3>
-                    <p><%= guarderia.caracteristicas %> </p>
+                    <p><%= daycare.characteristics %> </p>
                     <h3>Instalaciones</h3>
-                    <p><%= guarderia.instalaciones %> </p>
+                    <p><%= daycare.facilities %> </p>
 
                 </div>
 
                 <div class="reservar" strong>
                     <a href="#">Reservar</a></strong>
-                    <i class="fas fa-paw huellita-reserva"></i>
-                </div>
-
-                <div class="editar-producto" strong>
-                    <a href="/productos/editar-producto/<%= guarderia.id %>">Editar producto</a></strong>
-                    <i class="fas fa-paw huellita-reserva"></i>
-                </div>
-
-                <div class="crear-producto" strong>
-                    <a href="/productos/crear-producto">Crear Producto</a></strong>
                     <i class="fas fa-paw huellita-reserva"></i>
                 </div>
 

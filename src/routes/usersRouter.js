@@ -47,7 +47,15 @@ router.post("/inicia-sesion" , usersController.processLogin);
 router.get("/registro" , guestMiddleware, usersController.registro);
 //ruta de creación de usuario//
 router.post("/registro" , upload.single("imagenUsuario"), usersController.newRegister);
-router.get("/detalle-profile", authMiddleware, usersController.detalleProfile);
+router.get("/detalle-profile",  usersController.detalleProfile);
+
+//authMiddleware
+
+
+router.get("/editar-perfil/:id/" , usersController.vistaEditarPerfil)
+
+router.put("/editar-perfil/:id/" ,  upload.single("imagenUsuario"), usersController.editarPerfil)
+
 
 router.get("/logout" , usersController.logout)
 

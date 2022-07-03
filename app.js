@@ -1,4 +1,5 @@
 const express = require('express')
+const session = require('express-session');
 const path = require('path')
 const app = express()
 // Importamos los distintos enrutadores
@@ -6,7 +7,7 @@ const mainRouter = require("./src/routes/mainRouter.js")
 const productosRouter = require("./src/routes/productosRouter.js")
 const usersRouter = require("./src/routes/usersRouter.js")
 const recordameMiddleware=require('./middlewares/recordameMiddleware')
-const session = require('express-session');
+
 
 
 // Habilita metodos Put/Patch/Delete
@@ -27,7 +28,11 @@ app.set('views', path.resolve(__dirname, './src/views'))
 app.use(express.urlencoded({extended : false}))
 app.use(express.json())
 
-app.use(session({secret: "secreto"}));
+app.use(session({
+    secret: "secreto",
+    resave: true,
+    saveUninitialized: true
+}));
 
 app.use("/users", usersRouter);
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head  -->
+
+<%- include('partials/headLinks') %>
+
+<link rel="stylesheet" href="/css/style-registro.css">
+
+    <body>
+        <!-- headers -->
+        <!-- headerMain y headerSidebar -->
+        <%- include('partials/header') %>
+
+
+                <main>
+
+                    <div class="boton-volver-home">
+                        <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
+                    </div>
+                    <h3 class="titulo-registro">EDITA TU CUENTA</h3>
+
+                    <div class="contenedor-registro">
+
+
+                        <form class="form-registro" action="/users/editar-perfil/<%=user.id%>/?_method=PUT" method="POST" enctype="multipart/form-data">
+
+                            <div>
+                                <label>Nombre:</label>
+                                <input type="text" name="first_name" value="<%=user.firstName%>" required>
+                            </div>
+
+                            <div>
+                                <label>Apellido:</label>
+                                <input type="text" name="last_name" value="<%=user.lastName%>" required>
+                            </div>
+                            <div>
+                                <label>Fecha de nacimiento:</label>
+                                <input type="date" name="date" value="<%=user.date%>" required>
+                            </div>
+
+                            <div>
+                                <label>Domicilio:</label>
+                                <input type="text" name="adress" value="<%=user.adress%>" required>
+                            </div>
+
+                            <div>
+                                <label>E-mail:</label>
+                                <input type="email" name="email" value="<%=user.email%>" required>
+                            </div>
+
+                            <div>
+                                <label>Imagen de perfil</label>
+                                <input type="file" name="imagenUsuario">
+                            </div>
+
+                            <div>
+                                <label>DNI:</label>
+                                <input type="number" name="dni" value="<%=user.dni%>" pattern="[0-9]{8}">
+                            </div>
+
+
+
+                            <div class="div-enviar">
+                                <button type="submit">Editar</button>
+
+                            </div>
+
+
+
+                        </form>
+
+
+                    </div>
+
+                </main>
+
+                <!-- Footer -->
+                <%- include('partials/footer') %>
+
+
+    </body>
+
+</html>
