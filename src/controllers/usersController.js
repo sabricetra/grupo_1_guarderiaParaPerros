@@ -20,7 +20,7 @@ const usersController = {
     },
 
     processLogin: function(req,res){
-        let userToLogin = db.User.findOne({
+         db.User.findOne({
 
             where: {
                 email : req.body.email
@@ -35,7 +35,6 @@ const usersController = {
                     if(req.body.recordame !=undefined){
                        res.cookie("recordame",userToLogin.email,{maxAge:60000})
                     }
-                    console.log(req.session.userLogged)
                     return res.redirect("/users/detalle-profile");
                 }
 
@@ -99,7 +98,6 @@ const usersController = {
 
     detalleProfile: function(req, res) {
 
-        console.log(req.session.userLogged)
         res.render('detalle-profile', {
             user: req.session.userLogged
         })
@@ -139,14 +137,15 @@ const usersController = {
             {
                 where: {id: userId}
             })
-        .then((usuarioEditado)=> {
+        .then(()=> {
 
-            db.User.findByPk(
+            db.User.findByPk(userId)
+            .then( (usuarioEditado) => {
+                req.session.userLogged = usuarioEditado
+            return res.redirect("/users/detalle-profile")
 
-            )
-            req.session.userLogged = usuarioEditado[1]
-            console.log(usuarioEditado[1])
-            return res.redirect("/users/detalle-profile")})
+            })
+        })
         .catch(error => res.send(error))
 
     }
