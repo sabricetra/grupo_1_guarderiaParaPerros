@@ -2,7 +2,10 @@
 const fs = require("fs")
 const path = require("path")
 const registroFilePath = path.join(__dirname , "../data/users.json")
-const registro = JSON.parse(fs.readFileSync(registroFilePath, "utf-8"))
+const {validationResult} = require('express-validator');
+
+// const registro = JSON.parse(fs.readFileSync(registroFilePath, "utf-8"))
+
 
 // requeriendo encriptado de contraseña
 const bcrypt = require('bcryptjs')
@@ -58,6 +61,7 @@ const usersController = {
 
     //Función para guardar el usuario, tener en cuenta que los campos deben ser los mismos
     //que el campo del formulario y del json!//
+    
     newRegister: function (req, res){
 
         // let nuevoUsuario = {
@@ -78,8 +82,14 @@ const usersController = {
         // registro.push(nuevoUsuario)
         // fs.writeFileSync(registroFilePath, JSON.stringify(registro,null, " "))
 
-
-        db.User.create({
+        const resultValidation = validationResult(req);
+            
+        if (resultValidation.errors.length > 0) {
+                // console.log(resultValidation.errors)
+                res.render("registro")
+            } else {
+        
+                db.User.create({
 
             firstName: req.body.first_name,
             lastName: req.body.last_name,
@@ -94,6 +104,7 @@ const usersController = {
             return res.redirect("inicia-sesion")
          })
          .catch(error => res.send(error))
+        }
     },
 
     detalleProfile: function(req, res) {
@@ -124,6 +135,14 @@ const usersController = {
     editarPerfil: function(req, res){
 
         let userId = req.params.id;
+
+        const resultValidation = validationResult(req);
+            
+        if (resultValidation.errors.length > 0) {
+                // console.log(resultValidation.errors)
+                res.redirect("/")
+            } else {
+
         db.User.update(
             {
                 firstName: req.body.first_name,
@@ -147,7 +166,7 @@ const usersController = {
             })
         })
         .catch(error => res.send(error))
-
+    }
     }
 
 

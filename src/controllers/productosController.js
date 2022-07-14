@@ -4,6 +4,7 @@ const path = require("path")
 const productosFilePath = path.join(__dirname , "../data/products.json")
 const productos = JSON.parse(fs.readFileSync(productosFilePath, "utf-8"))
 const db = require("../database/models")
+const {validationResult} = require('express-validator');
 
 
 const productosController = {
@@ -54,6 +55,13 @@ const productosController = {
     //     }
     //     productos.push(nuevaGuarderia)
     //     fs.writeFileSync(productosFilePath, JSON.stringify(productos,null, " "))
+    
+    const resultValidation = validationResult(req);
+            
+        if (resultValidation.errors.length > 0) {
+                console.log(resultValidation.errors)
+                res.render("crear-producto")
+            } else {
 
     db.Daycare.create({
 
@@ -69,7 +77,7 @@ const productosController = {
      })
      .catch(error => res.send(error))
 
-
+    }
 
     },
 
@@ -102,6 +110,14 @@ const productosController = {
         // fs.writeFileSync(productosFilePath, JSON.stringify(productos,null, " "))
         // res.redirect("/productos/productos")
 
+        
+
+        const resultValidation = validationResult(req);
+            
+        if (resultValidation.errors.length > 0) {
+               res.redirect('/productos/productos')
+            } else {
+
         let daycareId = req.params.id;
         db.Daycare.update(
             {
@@ -118,6 +134,7 @@ const productosController = {
         .then(()=> {
             return res.redirect("/productos/productos")})
         .catch(error => res.send(error))
+        }
     },
 
     eliminar: function(req, res){
