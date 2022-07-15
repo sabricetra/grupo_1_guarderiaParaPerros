@@ -118,12 +118,12 @@ header {
 .searchbar {
   display: block;
   background-color: var(--celeste-claro);
-  
+
 }
 
 .searchbar form{
   text-align: center;
-  
+
 }
 
 .input-buscar-guarderia{
@@ -300,7 +300,7 @@ header {
 
 .contenedor-promo-guarderia{
   display: none;
-  
+
 }
 
 .promo-guarderia{
@@ -315,6 +315,11 @@ header {
   text-align: center;
   background-color: var(--gris);
   border-radius: 5px;
+}
+
+.contenedor-guarderia-home{
+  width: 30%;
+  margin: auto;
 }
 
 .main-productos h3 {
@@ -335,9 +340,16 @@ header {
 
 .img-slider{
   padding: 50px;
-  
+
 }
 
+.boton-slider-1{
+  background-color: transparent;
+  padding: 3px;
+  border-radius: 5px;
+  border: black 1px solid;
+  font-size: 15px;
+}
 
 .main-productos h4 {
   display: inline-block;
@@ -439,6 +451,12 @@ footer {
   opacity: 80%;
   margin: 5px;
 }
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
 
@@ -450,7 +468,7 @@ footer {
 
   .img-slider{
     padding: 80px;
-    
+
   }
 
 }
@@ -463,14 +481,14 @@ footer {
 
   .img-slider{
     padding: 100px;
-    
+
   }
 
 }
- 
+
 
 @media(min-width:768px){
-    
+
   .contenedor-encontra-guarderia{
     position: absolute;
     width: 60vw;
@@ -483,7 +501,7 @@ footer {
     padding: 15px;
     background-color: var(--gris-oscuro);
     border-radius: 5px;
-  
+
   }
 
   .contenedor-promo-guarderia{
@@ -510,8 +528,26 @@ footer {
   }
   .img-slider{
     padding: 150px;
-    
+
   }
+
+  .main-productos{
+    display: flex;
+    padding: 0px 20px;
+    margin: 30px;
+    text-align: center;
+    background-color: var(--gris);
+    border-radius: 5px;
+  }
+
+  .carousel-caption{
+    margin-bottom: 50px;
+  }
+
+  .carousel-caption h5{
+    font-size: 20px;
+  }
+
   }
 
   @media(min-width:900px){
@@ -523,8 +559,8 @@ footer {
       z-index: 9999;
       height: 20%;
     }
-    
-  
+
+
     main {
       margin-top: -5%;
     }
@@ -541,7 +577,7 @@ footer {
       padding: 15px;
       background-color: var(--gris-oscuro);
       border-radius: 5px;
-    
+
     }
 
     .contenedor-promo-guarderia{
@@ -556,18 +592,26 @@ footer {
       color: black;
       background-color: transparent;
       padding: 15px;
-    
+
       border-radius: 5px;
     }
 
     .slides h6{
       display: block;
     }
-    
+
     .img-slider{
       padding: 200px;
-      
+
     }
-  
+
+
+    .carousel-caption{
+      margin-bottom: 200px;
+    }
+
+    .carousel-caption h5{
+      font-size: 30px;
+    }
 
   }
