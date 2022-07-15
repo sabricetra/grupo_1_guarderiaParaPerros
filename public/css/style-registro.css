@@ -15,6 +15,9 @@
     --gris: rgba(128, 128, 128, 0.151);
   }
 
+  main{
+    margin-top: 10em;
+  }
 
 
 .boton-volver-home {
