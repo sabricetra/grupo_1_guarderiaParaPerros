@@ -69,6 +69,7 @@
 
 .main-productos{
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   padding: 0px 0px;
   margin: 30px;
@@ -84,7 +85,7 @@
   text-align: center;
   color: var(--verde-oscuro);
   font-size: 20px;
-  opacity: 80%;
+  opacity: 90%;
   padding: 50px 10px 50px 10px;
 }
 
@@ -151,14 +152,21 @@
 
 }
 
+.contenedor-guarderia-home i{
+  display:none
+}
+
 .sobre-nosotros {
   display: block;
   padding: 20px;
   margin: 30px;
-  text-align: center;
+  text-align: justify;
   background-color: var(--gris);
   border-radius: 5px;
 }
+
+
+
 
 .sobre-nosotros h3 {
   display: block;
