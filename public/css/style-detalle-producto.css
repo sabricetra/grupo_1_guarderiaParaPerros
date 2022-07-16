@@ -107,13 +107,13 @@
     
     @media(min-width:768px){
 
-      .detalle-producto {
+      .detalleproducto {
             padding: 20px 10px;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            height: 20px;
+           
       }
 
       .imagenprod {
