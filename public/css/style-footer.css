@@ -28,7 +28,7 @@ footer {
     }
     
     .footer-nav1{
-      line-height: 30px;
+      line-height: 22px;
     }
     
     .footer-nav2 {
@@ -38,7 +38,8 @@ footer {
     .footer-nav1 a,
     .footer-nav2 a{
       text-decoration: none;
-      color: var(--verde-oscuro)
+      color: var(--verde-oscuro);
+      font-size: 14px;
     }
     
     .redes{
@@ -46,6 +47,7 @@ footer {
     }
     
     .redes h4{
+      font-size: 14px;
       margin-bottom: 10px;
     }
     

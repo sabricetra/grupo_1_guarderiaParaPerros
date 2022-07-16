@@ -16,7 +16,7 @@
       position: fixed;
       top: 0;
       z-index: 9999;
-      height: 10em;
+      height: 8em;
       
     }
     
@@ -204,7 +204,7 @@
       height: 100%;
       width: 100%;
       top: 40px;
-      left: 20px;
+      left: 40px;
       height: 22px;
       width: 22px;
     }
