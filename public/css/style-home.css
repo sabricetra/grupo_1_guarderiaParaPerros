@@ -104,11 +104,14 @@
 .boton-slider-1{
   background-color: transparent;
   padding: 3px;
-  border-radius: 5px;
-  border: black 1px solid;
-  font-size: 20px;
+  font-size: 16px;
 }
 
+.boton-slider-1 a {
+  text-decoration: none;
+  color: black;
+  border: none;
+}
 
 
 .main-productos h4 {
@@ -132,7 +135,8 @@
 
 }
 
-.main-productos a {
+
+.boton-reservar a {
   display: inline-block;
   margin: 10px auto 10px auto;
   text-align: center;
@@ -143,8 +147,14 @@
   background-color: #c7dae0;
 }
 
-.contenedor-guarderia-home{
+.boton-reservar a:hover {
+  background-color: var(--celeste-oscuro)
+}
 
+.contenedor-guarderia-home{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50vw;
   margin: auto;
   overflow: hidden;
@@ -154,6 +164,17 @@
 
 .contenedor-guarderia-home i{
   display:none
+}
+
+.btn-ver-todas {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: -5px;
+}
+
+.btn-ver-todas a {
+  padding: 0px 10px;
 }
 
 .sobre-nosotros {
@@ -240,6 +261,7 @@
 
   .main-productos{
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0px 20px;
