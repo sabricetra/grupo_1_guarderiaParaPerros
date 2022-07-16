@@ -10,7 +10,17 @@ const productos = JSON.parse(fs.readFileSync(productosFilePath, "utf-8"))
 const mainController = {
 
     index: function(req,res){
-        res.render('home')
+
+        db.Daycare.findAll({
+
+            order: [["name" , "ASC"]],
+            limit: 3
+
+        })
+        .then(daycares => {
+             res.render('home', {daycares});
+            });
+
     },
 
     search: (req, res) => {
