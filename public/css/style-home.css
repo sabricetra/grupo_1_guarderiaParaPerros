@@ -171,11 +171,18 @@
   text-align: center;
   margin-bottom: 20px;
   padding: -5px;
+  border: none;
 }
 
 .btn-ver-todas a {
   padding: 0px 10px;
 }
+
+.btn-ver-todas a:hover {
+  color: var(--celeste-oscuro);
+}
+
+
 
 .sobre-nosotros {
   display: block;

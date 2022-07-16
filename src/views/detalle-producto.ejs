@@ -50,24 +50,24 @@
 
                 <div class="acciones-detalle-producto">
                     <div class="reservar" strong>
-                        <a href="#">Reservar</a></strong>
+                        <a class="a-boton" href="#">Reservar</a></strong>
                         <i class="fas fa-paw huellita-reserva"></i>
                     </div>
 
                     <div class="editar-producto" strong>
-                        <a href="/productos/editar-producto/<%= daycare.id %>">Editar producto</a></strong>
+                        <a class="a-boton" href="/productos/editar-producto/<%= daycare.id %>">Editar producto</a></strong>
                         <i class="fas fa-paw huellita-reserva"></i>
                     </div>
 
                     <div class="crear-producto" strong>
-                        <a href="/productos/crear-producto">Crear Producto</a></strong>
+                        <a class="a-boton" href="/productos/crear-producto">Crear Producto</a></strong>
                         <i class="fas fa-paw huellita-reserva"></i>
                     </div>
 
                     <div class="eliminar-producto" strong>
                         <form method="POST" action="/productos/eliminar-producto/<%= daycare.id %>/?_method=DELETE">
 
-                            <button class="boton-eliminar" type="submit">Eliminar Producto</strong>
+                            <button class="boton-eliminar a-boton" type="submit">Eliminar Producto</strong>
                             </button>
                             <i class="fas fa-paw huellita-reserva"></i>
                         </form>

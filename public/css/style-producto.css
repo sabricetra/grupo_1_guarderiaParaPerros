@@ -89,6 +89,9 @@ h3{
 }
 
 .cuerpo-detalle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 15px;
   text-align: center;
   margin: 10px;
@@ -110,10 +113,7 @@ h3{
 }
 
 
-.reservar a,
-.editar-producto a,
-.crear-producto a,
-.boton-eliminar {
+.reservar a {
   font-size: 14px;
   display: inline-block;
   margin: 10px auto 10px auto;
@@ -126,6 +126,9 @@ h3{
   background-color: #c7dae0;
 }
 
+.reservar a:hover{
+  background-color: var(--celeste-oscuro);
+}
 
 ul,
 li {

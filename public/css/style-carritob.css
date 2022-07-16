@@ -11,7 +11,8 @@
 
 .producto1,
 .producto3 {
-      background-color: rgba(201, 201, 201, 0.103)
+      background-color: rgba(201, 201, 201, 0.103);
+      margin: 15px 0px;
 }
 
 /* Flex por articulo */
@@ -25,10 +26,31 @@
 
 .info-producto {
       display: flex;
+      align-items: center;
       flex-direction: column;
-      justify-content: space-between;
-      width: 55vw;
-      padding: 20px;
+      justify-content: center;
+      width: 40vw;
+      padding: 0px;
+}
+
+
+
+.detalle-producto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 200px;
+
+}
+
+.prodcol1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+      
 }
 
 .resumen-producto {
@@ -37,6 +59,8 @@
       flex-direction: column;
       justify-content: flex-start;
       width: 40vw;
+      max-width: 200px;
+      max-height: 300px;
       padding: 15px;
       margin: 5px;
       background-color: var(--gris-claro);
@@ -47,7 +71,7 @@
 
 .resumen-cart-productos img {
             object-fit: cover;
-            width: 40vw;
+            width: 30vw;
             padding: 1px;
             border-radius: 5px;
             border-right: 2px solid rgba(201, 201, 201, 0.20);
@@ -140,6 +164,13 @@ img{
       font-size: 12px;
 }
 
+.resumen-tot-det {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+}
+
 .precio {
       /* position: absolute;
       bottom: 35px;
@@ -150,17 +181,21 @@ img{
       border-bottom: solid 1px var(--celeste-oscuro);
     
 }
-
+/* 
 .remover {
-      /* position: absolute;
+      position: absolute;
       bottom: 10px;
-      right: 5px; */
+      right: 5px;
       text-align: center;
       margin-top: 8px;
       padding: 2px;
-      font-size: 14px;
+      font-size: 12px;
       background-color: var(--celeste-oscuro);
       border-radius: 2px;
+} */
+
+.fa-trash-alt{
+      margin-left: 25px;
 }
 
 
@@ -189,9 +224,9 @@ img{
 
 .input-descuento button {
       position: absolute;
-      bottom: 10px;
+      bottom: 4px;
       right: 10px;
-      padding: 5px;
+      padding: 2px;
       background-color: var(--celeste-claro);
       color: white;
       border-style: none;
@@ -230,8 +265,8 @@ img{
       bottom: -5px;
       background-color: rgb(245, 245, 245);
       border-top: 1px var(--verde-oscuro) solid;
-      border-bottom: 1px var(--verde-oscuro) solid;
-      border-radius: 10px;
+      border-bottom: 0px var(--verde-oscuro) solid;
+      border-radius: 5px;
       display: flex;
       flex-direction: column;
       padding: 5px 10px 5px 10px;
@@ -243,21 +278,19 @@ img{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin-inline: 30px;
 }
 
 .subtotal, .impuestos-tasas {
       font-size: 12px;
-      padding: 1px;
 }
 
 .descuento {
       font-size: 14px;
-      padding: 1px;
 }
 
 .total {
-      font-size: 15px;
-      padding: 3px;
+      font-size: 14px;
 }
 
 .finalizar-compra {
@@ -267,13 +300,31 @@ img{
 }
 
 .finalizar-compra button {
-      padding: 5px;
-      font-size: 14px;
+      padding: 2px;
+      font-size: 12px;
       border-radius: 5px;
-      border-style:ridge;
-      border-color:white;
+      border-style:solid;
+      border-color:transparent;
       color: var(--verde-oscuro);
       background-color: var(--celeste-claro);
 }
 
+p {
+      margin-bottom: 0;
+}
     
+@media(min-width:760px){
+
+      .prodcol1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .info-producto img{
+            max-width: 70%;
+      }
+     
+
+}

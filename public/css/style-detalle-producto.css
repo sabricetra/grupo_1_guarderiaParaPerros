@@ -99,20 +99,25 @@
       border-radius: 5px;
       background-color: #c7dae0;
     }
-    
+
+    .a-boton:hover{
+          background-color: var(--celeste-oscuro);
+    }
+ 
     
     @media(min-width:768px){
 
-      .detalleproducto {
+      .detalle-producto {
             padding: 20px 10px;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            height: 20px;
       }
 
       .imagenprod {
-            width:60%;
+            width: 40%;
       }
 
       .detalleproducto img{
@@ -130,5 +135,6 @@
             grid-gap: 5px;
             grid-auto-rows: minmax(100px, auto);
           }
+
     }
     

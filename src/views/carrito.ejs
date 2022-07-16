@@ -1,156 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 
- <!-- head-->
+<!-- head-->
 <%- include('partials/headLinks') %>
-<link rel="stylesheet" href="/css/style-carritob.css">
+    <link rel="stylesheet" href="/css/style-carritob.css">
 
-<body>
-     <!-- HeaderMain y headerSidebar -->
-     <%- include('partials/header') %>
+    <body>
+        <!-- HeaderMain y headerSidebar -->
+        <%- include('partials/header') %>
 
-    <!-- Main: Secciones Resumen Cart - Codigo Descuento y Total -->
-    <main>
-        <section class="resumen-cart-productos">
-            <article class="producto1">
-                <div class="info-producto">
-                    <div class="slider-producto"><img src="/img/guarderias/guarderia_2.jpg" alt="Guarderia"></div>
-                    <div class="detalle-producto">
-                        <h4 class="titulo-producto">Guardería Catis</h4>
-                        <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Numquam vitae optio consequuntur nisi qui adipisci iure quis,
-                            sequi quam voluptas dolorum quos, animi officiis sed.</p>
-                    </div>
-                </div>
-                <div class="resumen-producto">
-                    <div class="categoria-producto">
-                        <form action="categoria" method="GET">
-                            <label class="titulo-categoria">Categoría:</label>
-                            <select class="opciones-categoria" name="categoria">
-                                <option value="cat1" selected>Perros</option>
-                                <option value="cat2">Gatos</option>
-                                <option value="cat3">Perros y Gatos</option>
-                            </select>
-                        </form>
-                    </div>
-                    <div class="fechas-producto">
-                        <label>Desde:</label><input type="date" name="fechaIngreso" value="2022-04-22" min="2022-04-01"
-                            max="2023-12-31">
-                        <label>Hasta:</label><input type="date" name="fechaSalida" value="2022-04-27" min="2022-04-01"
-                            max="2023-12-31">
-                    </div>
-                    <div class="cantidad">
-                        <div class="mascota">
-                            <i class="fas fa-dog"></i>
-                            <i class="fas fa-plus"></i>
-                            <div>0</div>
-                            <i class="fas fa-minus"></i>
+            <!-- Main: Secciones Resumen Cart - Codigo Descuento y Total -->
+            <main>
+                <section class="resumen-cart-productos">
+                    <article class="producto1">
+                        <div class="prodcol1">
+                            <div class="info-producto">
+                                <div class="slider-producto"><img src="/img/guarderias/guarderia_2.jpg" alt="Guarderia">
+                                </div>
+                            </div>
+                            <div class="detalle-producto">
+                                <h4 class="titulo-producto">Guardería Catis</h4>
+                                <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Numquam vitae optio consequuntur nisi qui adipisci iure quis,
+                                    sequi quam voluptas dolorum quos, animi officiis sed.</p>
+                            </div>
                         </div>
-                        <div class="mascota">
-                            <i class="fas fa-cat"></i>
-                            <i class="fas fa-plus"></i>
-                            <div>1</div>
-                            <i class="fas fa-minus"></i>
+                        <div class="resumen-producto">
+                            <div class="categoria-producto">
+                                <form action="categoria" method="GET">
+                                    <label class="titulo-categoria">Categoría:</label>
+                                    <select class="opciones-categoria" name="categoria">
+                                        <option value="cat1" selected>Perros</option>
+                                        <option value="cat2">Gatos</option>
+                                        <option value="cat3">Perros y Gatos</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="fechas-producto">
+                                <label>Desde:</label><input type="date" name="fechaIngreso" value="2022-04-22"
+                                    min="2022-04-01" max="2023-12-31">
+                                <label>Hasta:</label><input type="date" name="fechaSalida" value="2022-04-27"
+                                    min="2022-04-01" max="2023-12-31">
+                            </div>
+                            <div class="cantidad">
+                                <div class="mascota">
+                                    <i class="fas fa-dog"></i>
+                                    <i class="fas fa-plus"></i>
+                                    <div>0</div>
+                                    <i class="fas fa-minus"></i>
+                                </div>
+                                <div class="mascota">
+                                    <i class="fas fa-cat"></i>
+                                    <i class="fas fa-plus"></i>
+                                    <div>1</div>
+                                    <i class="fas fa-minus"></i>
+                                </div>
+                            </div>
+                            <div class="resumen-tot-det">
+                                <h4 class="precio">Total: $123,56</h4>
+                                <i class="fas fa-trash-alt"></i>
+                            </div>
                         </div>
-                    </div>
-                    <h4 class="precio">Total: $100,99</h4>
-                    <div class="remover">
-                        <h6><i class="far fa-times-circle"></i>Remover</h6>
-                    </div>
-                </div>
-            </article>
+                    </article>
 
-            <article class="producto2">
-                <div class="info-producto">
-                    <div class="slider-producto"><img src="/img/guarderias/guarderia_canina_1.jpg" alt="Guarderia"></div>
-                    <div class="detalle-producto">
-                        <h4 class="titulo-producto">Guardería Wag Wag</h4>
-                        <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Numquam vitae optio consequuntur nisi qui adipisci iure quis,
-                            sequi quam voluptas dolorum quos, animi officiis sed.</p>
-                    </div>
-                </div>
-                <div class="resumen-producto">
-                    <div class="categoria-producto">
-                        <form action="categoria" method="GET">
-                            <label class="titulo-categoria">Categoría:</label>
-                            <select class="opciones-categoria" name="categoria">
-                                <option value="cat1">Perros</option>
-                                <option value="cat2" selected>Gatos</option>
-                                <option value="cat3">Perros y Gatos</option>
-                            </select>
-                        </form>
-                    </div>
-                    <div class="fechas-producto">
-                        <label>Desde:</label><input type="date" name="fechaIngreso" value="2022-08-18" min="2022-04-01"
-                            max="2023-12-31">
-                        <label>Hasta:</label><input type="date" name="fechaSalida" value="2022-08-26" min="2022-04-01"
-                            max="2023-12-31">
-                    </div>
-                    <div class="cantidad">
-                        <div class="mascota">
-                            <i class="fas fa-dog"></i>
-                            <i class="fas fa-plus"></i>
-                            <div>1</div>
-                            <i class="fas fa-minus"></i>
+                    <article class="producto1">
+                        <div class="prodcol1">
+                            <div class="info-producto">
+                                <div class="slider-producto"><img src="/img/guarderias/guarderia_2.jpg" alt="Guarderia">
+                                </div>
+                            </div>
+                            <div class="detalle-producto">
+                                <h4 class="titulo-producto">Guardería Catis</h4>
+                                <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Numquam vitae optio consequuntur nisi qui adipisci iure quis,
+                                    sequi quam voluptas dolorum quos, animi officiis sed.</p>
+                            </div>
                         </div>
-                        <div class="mascota">
-                            <i class="fas fa-cat"></i>
-                            <i class="fas fa-plus"></i>
-                            <div>0</div>
-                            <i class="fas fa-minus"></i>
+                        <div class="resumen-producto">
+                            <div class="categoria-producto">
+                                <form action="categoria" method="GET">
+                                    <label class="titulo-categoria">Categoría:</label>
+                                    <select class="opciones-categoria" name="categoria">
+                                        <option value="cat1" selected>Perros</option>
+                                        <option value="cat2">Gatos</option>
+                                        <option value="cat3">Perros y Gatos</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="fechas-producto">
+                                <label>Desde:</label><input type="date" name="fechaIngreso" value="2022-04-22"
+                                    min="2022-04-01" max="2023-12-31">
+                                <label>Hasta:</label><input type="date" name="fechaSalida" value="2022-04-27"
+                                    min="2022-04-01" max="2023-12-31">
+                            </div>
+                            <div class="cantidad">
+                                <div class="mascota">
+                                    <i class="fas fa-dog"></i>
+                                    <i class="fas fa-plus"></i>
+                                    <div>0</div>
+                                    <i class="fas fa-minus"></i>
+                                </div>
+                                <div class="mascota">
+                                    <i class="fas fa-cat"></i>
+                                    <i class="fas fa-plus"></i>
+                                    <div>1</div>
+                                    <i class="fas fa-minus"></i>
+                                </div>
+                            </div>
+                            <div class="resumen-tot-det">
+                                <h4 class="precio">Total: $123,56</h4>
+                                <i class="fas fa-trash-alt"></i>
+                            </div>
                         </div>
+                    </article>
+
+
+                </section>
+
+                <section class="codigo-descuento">
+                    <h4 class="titulo-descuento">Tengo un código <br> de descuento</h4>
+                    <div class="input-descuento">
+                        <input type="text" name="codigoDescuento">
+                        <button type="submit">Agregar código</button>
                     </div>
-                    <h4 class="precio">Total: $123,56</h4>
-                    <div class="remover">
-                        <h6><i class="far fa-times-circle"></i>Remover</h6>
                     </div>
-                </div>
-            </article>
 
-        </section>
+                </section>
 
-        <section class="codigo-descuento">
-            <h4 class="titulo-descuento">Tengo un código <br> de descuento</h4>
-            <div class="input-descuento">
-                <input type="text" name="codigoDescuento">
-                <button type="submit">Agregar código</button>
-            </div>
-            </div>
+                <section class="comentario">
+                    <label class="titulo-comentario" for="comentario">Comentarios<br>adicionales:</label>
+                    <textarea name="comentario" id="comentario" placeholder="Deje su comentario"></textarea>
+                </section>
 
-        </section>
+                <section class="resumen-cart-total">
+                    <div class="subtotal">
+                        <p class="subtotal-title">Subtotal:</p>
+                        <p class="subtotal-value">$224,55</p>
+                    </div>
+                    <div class="impuestos-tasas">
+                        <p class="impuestos-tasas-title">Impuestos y Tasas</p>
+                        <p class="impuestos-tasas-value">$0,00</p>
+                    </div>
+                    <div class="descuento">
+                        <p class="descuento-title">Descuento:</p>
+                        <p class="descuento-value">$100,00</p>
+                    </div>
+                    <div class="total">
+                        <p class="total-title">Total:</p>
+                        <p class="total-value">$124,55</p>
+                    </div>
+                    <div class="finalizar-compra">
+                        <button type="submit">FINALIZAR COMPRA</button>
+                    </div>
 
-        <section class="comentario">
-            <label class="titulo-comentario" for="comentario">Comentarios<br>adicionales:</label>
-            <textarea name="comentario" id="comentario" placeholder="Deje su comentario"></textarea>
-        </section>
+                </section>
+            </main>
+            <!-- Footer -->
+            <%- include('partials/footer') %>
 
-        <section class="resumen-cart-total">
-            <div class="subtotal">
-                <h5 class="subtotal-title">Subtotal:</h5>
-                <h5 class="subtotal-value">$224,55</h5>
-            </div>
-            <div class="impuestos-tasas">
-                <h5 class="impuestos-tasas-title">Impuestos y Tasas</h5>
-                <h5 class="impuestos-tasas-value">$0,00</h5>
-            </div>
-            <div class="descuento">
-                <h5 class="descuento-title">Descuento:</h5>
-                <h5 class="descuento-value">$100,00</h5>
-            </div>
-            <div class="total">
-                <h4 class="total-title">Total:</h4>
-                <h4 class="total-value">$124,55</h4>
-            </div>
-            <div class="finalizar-compra">
-               <button type="submit">FINALIZAR COMPRA</button>
-            </div>
-
-        </section>
-    </main>
-    <!-- Footer -->
-    <%- include('partials/footer') %>
-
-</body>
+    </body>
 
 </html>
