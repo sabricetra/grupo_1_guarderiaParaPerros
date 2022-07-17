@@ -63,14 +63,15 @@
       display: block;
       margin: auto;
       min-width: 15vw;
-      max-height: 12vh;
+      max-height: 11vh;
     }
     
     .icon-cart,
     .logo-cuenta {
       display: block;
       width: 20%;
-      text-align: right;
+      text-align: center;
+      padding-left: 20px;
     }
     
     .icon-cart{
@@ -102,14 +103,7 @@
       color: var(--verde-oscuro);
       opacity: 80%;
     }
-    
-    .subheader .iniciar-sesion {
-      width: 45%;
-      text-decoration: none;
-      color: var(--verde-oscuro);
-      opacity: 80%;
-    }
-    
+       
     
     /* Search bar */
     .searchbar {
@@ -254,4 +248,61 @@
       transform: rotate(-135deg);
       margin-top: -9px;
     }
+
+
+    @media(min-width:900px){
+
+      header {
+        background-color: #c7dae0;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        height: 7em;
+        
+      }
+
+      .logo {
+        display: block;
+        width: 20%;
+      }
+      
+      /* Imagen logo */
+      .logo-alojamascotas {
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+        
+        
+      }
+
+
+      .subheader .crear-cuenta {
+        position: relative;
+        top: -45px;
+        left: -85px;
+        width: 45%;
+        text-decoration: none;
+        color: var(--verde-oscuro);
+        opacity: 80%;
+      }
+
+      .searchbar {
+        position: relative;
+        top: -15px;
+        right: -20px;
+      }
+
+      .input-buscar-guarderia{
+        font-size: 10px;
+        padding: 0 5px;
+        border: none;
+        border-radius: 5px;
+        width: 220px;
+        min-width: 5px;
+        max-width: 400px;
+        height: 18px;
+      }
+
+    }
+
     

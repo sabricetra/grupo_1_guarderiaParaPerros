@@ -81,3 +81,15 @@ form input {
   height: 22px;
 }
 
+.form-control {
+  width: 200px;
+  height: 20px;
+  padding: 0;
+  display: inline;
+  
+}
+
+@media(min-width:768px){
+
+
+}

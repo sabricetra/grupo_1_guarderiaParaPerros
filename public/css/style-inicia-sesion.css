@@ -84,7 +84,7 @@ form button {
 .boton-crear-cuenta {
     display: block;
     margin: auto;
-    padding-top: 1px;
+    padding-top: 0px;
     text-decoration: none;
     font-size: 15px;
     background-color: grey;
