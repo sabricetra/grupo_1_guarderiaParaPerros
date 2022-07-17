@@ -38,10 +38,12 @@
 }
 
 .contenedor-registro {
-  margin: 30px;
+  margin: auto;
+  margin-bottom: 30px;
   text-align: center;
   background-color: var(--gris);
   border-radius: 10px;
+  max-width: 60vw;
 }
 
 .form-registro {
@@ -62,7 +64,7 @@ form label{
 form input {
   border: none;
   border-radius: 5px;
-  width: 200px;
+  width: 50vw;
   height: 20px;
 }
 
@@ -82,14 +84,17 @@ form input {
 }
 
 .form-control {
-  width: 200px;
+  width: 50vw;
   height: 20px;
   padding: 0;
   display: inline;
   
 }
 
-@media(min-width:768px){
-
+.inputs-register {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column;
 
 }
