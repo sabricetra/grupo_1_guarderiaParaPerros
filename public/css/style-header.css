@@ -278,11 +278,10 @@
         
       }
 
-
       .subheader .crear-cuenta {
         position: relative;
-        top: -45px;
-        right: -670px;
+        top: -5%;
+        right: -50%;
         width: 45%;
         text-decoration: none;
         color: var(--verde-oscuro);
@@ -291,8 +290,8 @@
 
       .searchbar {
         position: relative;
-        top: -40px;
-        left: -750px;
+        top: -160%;
+        left: -50%;
       }
 
       .input-buscar-guarderia{
@@ -300,7 +299,7 @@
         padding: 0 5px;
         border: none;
         border-radius: 5px;
-        width: 300px;
+        width: 250px;
         min-width: 5px;
         max-width: 450px;
         height: 18px;
