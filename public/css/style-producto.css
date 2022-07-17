@@ -6,6 +6,8 @@
   --gris: rgba(128, 128, 128, 0.151);
   --gris-oscuro: rgba(128, 128, 128, 0.247);
 }
+
+
 /* Buscador - Producto */
 /*
 .buscarPorNombre {
@@ -42,6 +44,10 @@
   text-align: center;
 }
 
+h1 {
+  font-size: 20px;
+}
+
 .articulos{
   display: flex;
   flex-direction: row;
@@ -60,10 +66,6 @@
   margin: 10px auto;
 }
 
-
-h1 {
-  font-size: 20px;
-}
 
 .nombre-guarderia {
   font-size: 20px;

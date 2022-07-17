@@ -1,49 +1,71 @@
 :root {
-      --verde-oscuro: #3f4e4a;
-      --verde-claro: #3f7552;
-      --celeste-oscuro: #9fb7bc;
-      --celeste-claro: #c7dae0;
-      --gris: rgba(128, 128, 128, 0.151);
-      --gris-oscuro: rgba(128, 128, 128, 0.247);
-    }
+  --verde-oscuro: #3f4e4a;
+  --verde-claro: #3f7552;
+  --celeste-oscuro: #9fb7bc;
+  --celeste-claro: #c7dae0;
+  --gris: rgba(128, 128, 128, 0.151);
+  --gris-oscuro: rgba(128, 128, 128, 0.247);
+}
+
+.boton-volver-home {
+  padding: 20px;
+}
+
+.boton-volver-home a {
+  text-decoration: none;
+  color: grey;
+}
 
 .profile-title {
   font-size: 18px;
-  text-align: center;
+  padding: 20px;
+  color: grey
+}
+
+.profileimg {
+  object-fit: cover;
+  width: 150px;
 }
 
 .infouser {
-  color:#3f7552;
-  font-weight:bold;
-  
+  color: black;
+  font-weight: bold;
+  opacity: 90%;
+  margin: 5px;
 }
 
-.datos{
-  color: #3f4e4a;
+.datos {
+  color: black;
+  opacity: 70%;
+}
 
+.btn-editar-perfil a{
+  text-decoration: none;
+  color: grey;
+  border: 1px grey solid;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .logout a {
- text-align: center;
- background-color: #c7dae0;
- padding: 5px 15px;
- border-radius: 5px;
- display: block;
- margin: 10px auto 10px auto;
-color:#3f4e4a;
-font-weight: bold;
+  text-align: center;
+  background-color: #c7dae0;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto 10px auto;
+  color: #3f4e4a;
+  font-weight: bold;
 }
 
 .profile-body {
-    text-align: center;
+  text-align: center;
 }
 
 .profile-text {
-    padding: 20px;
-    text-align: justify;
-    background-color: var(--gris);
-    border-radius: 10px;
-    margin-bottom: 10px;
-
+  padding: 20px;
+  text-align: justify;
+  background-color: var(--gris);
+  border-radius: 10px;
+  margin: 10px;
 }
-

@@ -3,86 +3,74 @@
 
 <!-- head  -->
 
-    <%- include('partials/headLinks') %>
+<%- include('partials/headLinks') %>
 
     <link rel="stylesheet" href="/css/style-producto.css">
 
-<body>
-    <!-- headerMain y headerSidebar-->
-    <%- include('partials/header') %>
+
+    <body>
+        <!-- headerMain y headerSidebar-->
+        <%- include('partials/header') %>
 
 
-    <!-- Main -->
+            <!-- Main -->
 
-    <main>
+            <main>
 
-        <% daycares.forEach(daycare => { %>
+                <h1 class="titulo-productos">Resultados de su busqueda</h1>
 
-                <img src= "/img/guarderias/<%= daycare.image %> " alt="guarderia1" class="imagen1">
-                <div class="nombre-guarderia">Guarderia <%= daycare.name %> </div>
-                <div class="precios">$<%= daycare.price %></div>
-                <div class="estrellas">
-                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
+                <section class="articulos">
 
-                <div class="cuerpo-detalle">
-
-                    <h3>Características</h3>
-                    <p><%= daycare.characteristics %> </p>
-                    <h3>Instalaciones</h3>
-                    <p><%= daycare.facilities %> </p>
-
-                </div>
-
-                <div class="reservar" strong>
-                    <a href="#">Reservar</a></strong>
-                    <i class="fas fa-paw huellita-reserva"></i>
-                </div>
-
-                <% }) %>
+                    <% daycares.forEach(daycare=> { %>
 
 
-        <div class="resumen-producto">
-            <div class="categoria-producto">
-                <form action="categoria" method="GET">
-                    <label class="titulo-categoria">Cat. :</label><br>
-                    <select class="opciones-categoria" name="categoria">
-                        <option value="cat1" selected>Categoria 1</option>
-                        <option value="cat2">Categoria 2</option>
-                        <option value="cat3">Categoria 3</option>
-                    </select>
-                </form>
-            </div>
+                            <div class="cuerpo-detalle">
 
-            <div class="fechas-producto">
-                <label>Desde:</label><input type="date" name="fechaIngreso" value="2022-04-22" min="2022-04-01"
-                    max="2023-12-31">
-                <label>Hasta:</label><input type="date" name="fechaSalida" value="2022-04-27" min="2022-04-01"
-                    max="2023-12-31">
-            </div>
-            <div class="cantidad">
-                <div class="mascota">
-                    <i class="fas fa-dog"></i>
-                    <i class="fas fa-plus"></i>
-                    <div>0</div>
-                    <i class="fas fa-minus"></i>
-                </div>
-                <div class="mascota">
-                    <i class="fas fa-cat"></i>
-                    <i class="fas fa-plus"></i>
-                    <div>1</div>
-                    <i class="fas fa-minus"></i>
-                </div>
-            </div>
-        </div>
+                                <div class="centrado">
+                                    <img src="/img/guarderias/<%= daycare.image %> " alt="guarderia1"
+                                        class="imagenGuarderia">
+                                </div>
+                                <div class="nombre-guarderia">Guarderia <%= daycare.name %></div>
+                                <div class="precios">$<%= daycare.price %></div>
+                                <div class="estrellas">
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
 
-    </main>
+                                <h3>Características</h3>
+                                <p>
+                                    <%= daycare.characteristics %>
+                                </p>
+                                <h3>Instalaciones</h3>
+                                <p>
+                                    <%= daycare.facilities %>
+                                </p>
+                                <h3>Categoria</h3>
+                                <p>
+                                    <%= daycare.category_id %>
+                                </p>
 
-    <!-- Footer -->
-    <%- include('partials/footer') %>
+                                <div class="reservar" strong>
+                                    <a href="/productos/detalle-producto/<%= daycare.id  %>">Ver Guarderia</a></strong>
+                                    <i class="fas fa-paw huellita-reserva"></i>
+                                </div>
 
 
-</body>
+                            </div>
+
+
+
+                        <% }) %>
+
+
+                </section>
+
+            </main>
+
+            <!-- Footer -->
+            <%- include('partials/footer') %>
+
+
+    </body>
 
 </html>

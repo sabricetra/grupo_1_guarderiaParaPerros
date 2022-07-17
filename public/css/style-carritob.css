@@ -6,6 +6,15 @@
       --gris-claro: #e0e7eb;
     }
 
+    .boton-volver-home {
+      padding: 20px;
+    }
+    
+    .boton-volver-home a{
+      text-decoration: none;
+      color: grey;
+    }
+
 
     /* Fondos */
 

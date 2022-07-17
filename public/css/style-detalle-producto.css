@@ -15,6 +15,15 @@
       --gris: rgba(128, 128, 128, 0.151);
     }
 
+    .boton-volver-home {
+      padding: 20px;
+    }
+    
+    .boton-volver-home a {
+      text-decoration: none;
+      color: grey;
+    }
+
     .detalleproducto {
           padding-top: 20px;
     }
