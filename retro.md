@@ -71,4 +71,18 @@
 5. Dejar de hacer:
 . Acumular tareas cerca a la fecha de entrega de sprints.
 
-
+<!-- Sprint 7 -->
+1. Comenzar a hacer:
+.  Mantener la comunicacion de las tareas a realizar.
+2. Hacer más:
+. pasar todo a un mismo idioma, tenemos palabras en ingles y otras en castellano, unificar.
+.  zoom grupales para que todos participemos y poder ayudar a los demas.
+.  Mantener la comunicacion de las tareas a realizar.
+3. Continuar haciendo:
+. asignar las tareas que tiene que hacer cada uno en Trello.
+. mejoras en el css al proyecto
+. Continuar usando Github.
+4. Hacer menos:
+. No delegar las tareas.
+5. Dejar de hacer:
+. No delegar las tareas.

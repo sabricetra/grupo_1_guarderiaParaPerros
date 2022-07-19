@@ -5,7 +5,8 @@
 
 <%- include('partials/headLinks') %>
 
-    <link rel="stylesheet" href="/css/style-producto.css">
+    <link rel="stylesheet" href="/css/style-detalle-producto.css">
+
 
 
     <body>
@@ -16,95 +17,73 @@
             <!-- Main -->
 
             <main>
-                <img src="/img/guarderias/<%= daycare.image %> " alt="guarderia1" class="imagen1">
-                <div class="nombre-guarderia">Guarderia <%= daycare.name %>
-                </div>
-                <div class="precios">$<%= daycare.price %>
-                </div>
-                <div class="estrellas">
-                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <div class="boton-volver-home">
+                    <a href="/productos/productos"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
                 </div>
 
-                <div class="cuerpo-detalle">
+                <section class="detalleproducto">
+                    <div class=imagenprod><img src="/img/guarderias/<%= daycare.image %> " alt="guarderia1"
+                            class="imagen1"></div>
+                    <div>
+                        <div class="nombre-guarderia">Guarderia <%= daycare.name %>
+                        </div>
+                        <div class="subtituloguarderia">
+                            <div class="precios">$<%= daycare.price %>
+                            </div>
+                            <div class="estrellas">
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
 
-                    <h3>Características</h3>
-                    <p>
-                        <%= daycare.characteristics %>
-                    </p>
-                    <h3>Instalaciones</h3>
-                    <p>
-                        <%= daycare.facilities %>
-                    </p>
+                        <div class="cuerpo-detalle">
 
-                </div>
+                            <h3>Características</h3>
+                            <p>
+                                <%= daycare.characteristics %>
+                            </p>
+                            <h3>Instalaciones</h3>
+                            <p>
+                                <%= daycare.facilities %>
+                            </p>
 
-                <div class="reservar" strong>
-                    <a href="#">Reservar</a></strong>
-                    <i class="fas fa-paw huellita-reserva"></i>
-                </div>
+                        </div>
+                    </div>
+                </section>
 
-                <div class="editar-producto" strong>
-                    <a href="/productos/editar-producto/<%= daycare.id %>">Editar producto</a></strong>
-                    <i class="fas fa-paw huellita-reserva"></i>
-                </div>
+                <div class="acciones-detalle-producto">
+                    <div class="reservar" strong>
+                        <a class="a-boton" href="#">Reservar</a></strong>
+                        <i class="fas fa-paw huellita-reserva"></i>
+                    </div>
 
-                <div class="crear-producto" strong>
-                    <a href="/productos/crear-producto">Crear Producto</a></strong>
-                    <i class="fas fa-paw huellita-reserva"></i>
-                </div>
+                    <div class="editar-producto" strong>
+                        <a class="a-boton" href="/productos/editar-producto/<%= daycare.id %>">Editar producto</a></strong>
+                        <i class="fas fa-paw huellita-reserva"></i>
+                    </div>
 
-                <div class="eliminar-producto" strong>
-                <form method="POST" action="/productos/eliminar-producto/<%= daycare.id %>/?_method=DELETE">
+                    <div class="crear-producto" strong>
+                        <a class="a-boton" href="/productos/crear-producto">Crear Producto</a></strong>
+                        <i class="fas fa-paw huellita-reserva"></i>
+                    </div>
 
-                    <button class="boton-eliminar" type="submit">Eliminar Producto</strong>
-                    </button>
-                    <i class="fas fa-paw huellita-reserva"></i>
-                </form>
+                    <div class="eliminar-producto" strong>
+                        <form method="POST" action="/productos/eliminar-producto/<%= daycare.id %>/?_method=DELETE">
+
+                            <button class="boton-eliminar a-boton" type="submit">Eliminar Producto</strong>
+                            </button>
+                            <i class="fas fa-paw huellita-reserva"></i>
+                        </form>
+                    </div>
                 </div>
 
 
                 </section>
 
-                <div class="resumen-producto">
-                    <div class="categoria-producto">
-                        <form action="categoria" method="GET">
-                            <label class="titulo-categoria">Cat. :</label><br>
-                            <select class="opciones-categoria" name="categoria">
-                                <option value="cat1" selected>Categoria 1</option>
-                                <option value="cat2">Categoria 2</option>
-                                <option value="cat3">Categoria 3</option>
-                            </select>
-                        </form>
-                    </div>
-
-                    <div class="fechas-producto">
-                        <label>Desde:</label><input type="date" name="fechaIngreso" value="2022-04-22" min="2022-04-01"
-                            max="2023-12-31">
-                        <label>Hasta:</label><input type="date" name="fechaSalida" value="2022-04-27" min="2022-04-01"
-                            max="2023-12-31">
-                    </div>
-                    <div class="cantidad">
-                        <div class="mascota">
-                            <i class="fas fa-dog"></i>
-                            <i class="fas fa-plus"></i>
-                            <div>0</div>
-                            <i class="fas fa-minus"></i>
-                        </div>
-                        <div class="mascota">
-                            <i class="fas fa-cat"></i>
-                            <i class="fas fa-plus"></i>
-                            <div>1</div>
-                            <i class="fas fa-minus"></i>
-                        </div>
-                    </div>
-                </div>
-
             </main>
 
             <!-- Footer -->
             <%- include('partials/footer') %>
-
 
     </body>
 

@@ -17,52 +17,26 @@
 
             <main>
 
-                <!--
-
-        <div class="buscarPorNombre">
-            <label>Buscar por nombre:</label>
-            <input type="text" name="nombreGuarderia">
-        </div>
-
-
-
-                <div class="container">
-                    <ul class="slider">
-                        <li id="slide1">
-                            <img src="/img/guarderia_canina_1.jpg" alt="guarderia1" class="imagen1">
-                        <li id="slide2">
-                            <img src="/img/guarderia1_slideb.jpg" alt="guarderiab" class="imagen2">
-                        <li id="slide3">
-                            <img src="/img/guarderia1_slidec.jpg" alt="guarderiac" class="imagen2">
-                        </li>
-                    </ul>
-                </div>
-
-                <ul class="menu-articulo1">
-                    <li><a href="#slide1">1</a></li>
-                    <li><a href="#slide2">2</a></li>
-                    <li><a href="#slide3">3</a></li>
-                </ul>
-
-                -->
+                <h1 class="titulo-productos">NUESTRAS GUARDERIAS</h1>
 
                 <section class="articulos">
 
                     <% daycares.forEach(daycare=> { %>
 
-                        <article class="articulo1">
 
-                            <p class="centrado">
-                                <img src="/img/guarderias/<%= daycare.image %> " alt="guarderia1"
-                                    class="imagenGuarderia">
-                            </p>
-                            <div class="nombre-guarderia">Guarderia <%= daycare.name %></div>
-                            <div class="precios">$<%= daycare.price %></div>
-                            <div class="estrellas">
-                                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
                             <div class="cuerpo-detalle">
+
+                                <div class="centrado">
+                                    <img src="/img/guarderias/<%= daycare.image %> " alt="guarderia1"
+                                        class="imagenGuarderia">
+                                </div>
+                                <div class="nombre-guarderia">Guarderia <%= daycare.name %></div>
+                                <div class="precios">$<%= daycare.price %></div>
+                                <div class="estrellas">
+                                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+
                                 <h3>Características</h3>
                                 <p>
                                     <%= daycare.characteristics %>
@@ -75,52 +49,21 @@
                                 <p>
                                     <%= daycare.category_id %>
                                 </p>
+
+                                <div class="reservar" strong>
+                                    <a href="/productos/detalle-producto/<%= daycare.id  %>">Ver Guarderia</a></strong>
+                                    <i class="fas fa-paw huellita-reserva"></i>
+                                </div>
+
+
                             </div>
 
-                            <div class="reservar" strong>
-                                <a href="/productos/detalle-producto/<%= daycare.id  %>">Ver Guarderia</a></strong>
-                                <i class="fas fa-paw huellita-reserva"></i>
-                            </div>
-                        </article>
+
 
                         <% }) %>
 
 
                 </section>
-
-                <div class="resumen-producto">
-                    <div class="categoria-producto">
-                        <form action="categoria" method="GET">
-                            <label class="titulo-categoria">Cat. :</label><br>
-                            <select class="opciones-categoria" name="categoria">
-                                <option value="cat1" selected>Perros</option>
-                                <option value="cat2">Gatos</option>
-                                <option value="cat3">Perros y Gatos</option>
-                            </select>
-                        </form>
-                    </div>
-
-                    <div class="fechas-producto">
-                        <label>Desde:</label><input type="date" name="fechaIngreso" value="2022-04-22" min="2022-04-01"
-                            max="2023-12-31">
-                        <label>Hasta:</label><input type="date" name="fechaSalida" value="2022-04-27" min="2022-04-01"
-                            max="2023-12-31">
-                    </div>
-                    <div class="cantidad">
-                        <div class="mascota">
-                            <i class="fas fa-dog"></i>
-                            <i class="fas fa-plus"></i>
-                            <div>0</div>
-                            <i class="fas fa-minus"></i>
-                        </div>
-                        <div class="mascota">
-                            <i class="fas fa-cat"></i>
-                            <i class="fas fa-plus"></i>
-                            <div>1</div>
-                            <i class="fas fa-minus"></i>
-                        </div>
-                    </div>
-                </div>
 
             </main>
 

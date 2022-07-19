@@ -11,12 +11,16 @@
       --gris-oscuro: rgba(128, 128, 128, 0.247);
     }
 
+    .logo img{
+      object-fit: contain
+    }
+
     header {
       background-color: #c7dae0;
       position: fixed;
       top: 0;
       z-index: 9999;
-      height: 10em;
+      height: 8em;
       
     }
     
@@ -63,14 +67,15 @@
       display: block;
       margin: auto;
       min-width: 15vw;
-      max-height: 12vh;
+      max-height: 10vh;
     }
     
     .icon-cart,
     .logo-cuenta {
       display: block;
       width: 20%;
-      text-align: right;
+      text-align: center;
+      padding-left: 20px;
     }
     
     .icon-cart{
@@ -102,14 +107,7 @@
       color: var(--verde-oscuro);
       opacity: 80%;
     }
-    
-    .subheader .iniciar-sesion {
-      width: 45%;
-      text-decoration: none;
-      color: var(--verde-oscuro);
-      opacity: 80%;
-    }
-    
+       
     
     /* Search bar */
     .searchbar {
@@ -204,7 +202,7 @@
       height: 100%;
       width: 100%;
       top: 40px;
-      left: 20px;
+      left: 40px;
       height: 22px;
       width: 22px;
     }
@@ -254,4 +252,57 @@
       transform: rotate(-135deg);
       margin-top: -9px;
     }
-    
+
+
+@media(min-width:768px){
+
+      header {
+        background-color: #c7dae0;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        height: 7em;
+        
+      }
+
+      .logo {
+        display: block;
+        width: 20%;
+      }
+      
+      .logo-alojamascotas {
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+        
+        
+      }
+
+      .subheader .crear-cuenta {
+        position: relative;
+        top: -5%;
+        right: -50%;
+        width: 45%;
+        text-decoration: none;
+        color: var(--verde-oscuro);
+        opacity: 80%;
+      }
+
+      .searchbar {
+        position: relative;
+        top: -160%;
+        left: -50%;
+      }
+
+      .input-buscar-guarderia{
+        font-size: 12px;
+        padding: 0 5px;
+        border: none;
+        border-radius: 5px;
+        width: 250px;
+        min-width: 5px;
+        max-width: 450px;
+        height: 18px;
+      }
+
+    }

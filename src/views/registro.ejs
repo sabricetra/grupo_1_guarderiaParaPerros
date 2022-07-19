@@ -5,7 +5,7 @@
 
 <%- include('partials/headLinks') %>
 
-<link rel="stylesheet" href="/css/style-registro.css">
+    <link rel="stylesheet" href="/css/style-registro.css">
 
     <body>
         <!-- headers -->
@@ -13,19 +13,19 @@
         <%- include('partials/header') %>
 
 
-                <main>
+            <main>
 
-                    <div class="boton-volver-home">
-                        <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
-                    </div>
-                    <h3 class="titulo-registro">CREA TU CUENTA</h3>
+                <div class="boton-volver-home">
+                    <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
+                </div>
+                <h3 class="titulo-registro">CREA TU CUENTA</h3>
 
-                    <div class="contenedor-registro">
-
-
-                        <form class="form-registro" action="/users/registro" method="POST" enctype="multipart/form-data">
+                <div class="contenedor-registro">
 
 
+                    <form class="form-registro" action="/users/registro" method="POST" enctype="multipart/form-data">
+
+                        <div class="inputs-register">
                             <div>
                                 <label>Nombre:</label>
                                 <input type="text" name="first_name" required>
@@ -70,28 +70,30 @@
                                 <label> Confirmar Contraseña:</label>
                                 <input name="passwordConfirm" type="password" value="" class="form-control">
                             </div>
-
-                            <div>
-                                <label for="">Recordame</label>
-                                <input type="checkbox" name="recordame">
-                            </div>
-
-                            <div class="div-enviar">
-                                <button type="submit">Enviar</button>
-
-                            </div>
+                        </div>
 
 
+                        <div>
+                            <label for="">Recordame</label>
+                            <input type="checkbox" name="recordame">
+                        </div>
 
-                        </form>
+                        <div class="div-enviar">
+                            <button type="submit">Enviar</button>
+
+                        </div>
 
 
-                    </div>
 
-                </main>
+                    </form>
 
-                <!-- Footer -->
-                <%- include('partials/footer') %>
+
+                </div>
+
+            </main>
+
+            <!-- Footer -->
+            <%- include('partials/footer') %>
 
 
     </body>
