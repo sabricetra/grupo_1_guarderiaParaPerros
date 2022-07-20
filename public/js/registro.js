@@ -1,7 +1,11 @@
 window.addEventListener("load",function(){
     console.log("codigo enlazado")
     let form=document.querySelector(".form-registro");
+<<<<<<< HEAD
    /*  form.name.focus(); */
+=======
+   
+>>>>>>> bcaef14f0192d252044aba46229ba95441105920
     form.addEventListener("submit",function(e){
         let errors=[];
 
@@ -12,7 +16,6 @@ window.addEventListener("load",function(){
         let email=document.querySelector("#email");
         //let image=document.querySelector("#imagenUsuario");//
         let password=document.querySelector("#elige_contraseña");   
-
 
 
 
