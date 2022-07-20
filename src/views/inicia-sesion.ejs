@@ -21,15 +21,16 @@
                     <h3 class="titulo-iniciar-sesion">INICIA SESION</h3>
 
                     <div class="contenedor-iniciar-sesion">
-                        <form action="/users/inicia-sesion" method="POST">
+                        <ul class="errores"></ul>
+                        <form action="/users/inicia-sesion" method="POST" class="form-login">
                             <div>
                                 <label class="label-email">CORREO ELECTRONICO:</label>
-                                <input class="input-datos" type="email" name="email" required>
+                                <input class="input-datos" type="email" name="email" id="email">
                             </div>
 
                             <div>
                                 <label>CONTRASEÑA:</label>
-                                <input class="input-datos" type="password" name="password" required>
+                                <input class="input-datos" type="password" name="password" id="password">
                             </div>
                             <% if (locals.errors && errors.email) { %>
                              <div style="color: red;">
@@ -61,7 +62,7 @@
 
                 <!-- Footer -->
                 <%- include('partials/footer') %>
-
+                <script src="/js/login.js"></script>
     </body>
 
 </html>

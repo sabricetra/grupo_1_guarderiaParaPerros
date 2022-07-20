@@ -1,51 +1,14 @@
 window.addEventListener("load",function(){
     console.log("codigo enlazado")
-    let form=document.querySelector(".form-registro");
-    form.name.focus()
+    let form=document.querySelector(".form-login");
+ 
     form.addEventListener("submit",function(e){
         let errors=[];
-
-        let firstname=document.querySelector("#first_name");
-        let lastname=document.querySelector("#last_name"); 
-        //let date=document.querySelector("#date");
-        //let adress=document.querySelector("#adress");
+    
         let email=document.querySelector("#email");
-        //let image=document.querySelector("#imagenUsuario");//
-        let password=document.querySelector("#elige_contraseña");   
-      
-        if (firstname.value==""){
-            errors.push("El campo Nombre no puede estar vacío");
-            firstname.classList.remove("is-valid")
-            firstname.classList.add("is-invalid");
-            
-
-        }else if(firstname.value.length<2){
-            errors.push("El campo Nombre debe tener mínimo 2 caracteres");
-            firstname.classList.add("is-invalid")
-             
-
-        }else{
-            firstname.classList.add("is-valid");
-            firstname.classList.remove("is-invalid");
-            form.lastname.focus();
-
-        }
-        if (lastname.value==""){
-            errors.push(" El campo Apellido no puede estar vacío");
-            lastname.classList.remove("is-valid")
-            lastname.classList.add("is-invalid");
-
-        }else if(lastname.value.length<2){
-            errors.push("El campo Apellido debe tener mínimo 2 caracteres");
-            lastname.classList.add("is-invalid")
-                 
-
-        }else{
-            lastname.classList.add("is-valid");
-            lastname.classList.remove("is-invalid");
-            form.email.focus();
-
-        }  
+        let password=document.querySelector("#password");   
+        
+        
         //validación email
         // Regex simple
         let reg1 = /\S+@\S+\.\S+/;
@@ -81,11 +44,7 @@ window.addEventListener("load",function(){
             form.password.focus(); 
 
         }  
-
-
-
-        
-        
+              
 
 // Validación de errores
 
