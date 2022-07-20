@@ -1,11 +1,7 @@
 window.addEventListener("load",function(){
     console.log("codigo enlazado")
     let form=document.querySelector(".form-registro");
-<<<<<<< HEAD
    /*  form.name.focus(); */
-=======
-   
->>>>>>> bcaef14f0192d252044aba46229ba95441105920
     form.addEventListener("submit",function(e){
         let errors=[];
 
@@ -89,7 +85,7 @@ window.addEventListener("load",function(){
         }  
 
         //validacion extension imagen 
-        function fileValidation(){
+     /*    function fileValidation(){
             var fileInput = document.getElementById('file');
             var filePath = fileInput.value;
             var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
@@ -110,7 +106,7 @@ window.addEventListener("load",function(){
         }
 
         
-        
+         */
 
 // Validación de errores
 
