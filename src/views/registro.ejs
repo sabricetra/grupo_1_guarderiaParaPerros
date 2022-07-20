@@ -52,7 +52,12 @@
 
                             <div>
                                 <label>Imagen de perfil</label>
-                                <input type="file" name="imagenUsuario" id="imagenUsuario">
+                                <!-- <input type="file" name="imagenUsuario" id="imagenUsuario" > -->
+                                <!-- File input field -->
+                                <input type="file" id="file" onchange="return fileValidation()"/>
+                                <!-- Image preview -->
+                                <div id="imagePreview"></div>
+
                             </div>
 
                             <div>
@@ -97,6 +102,28 @@
             <%- include('partials/footer') %>
 
     <script src="/js/registro.js"></script>
+
+    <script>
+            function fileValidation(){
+            var fileInput = document.getElementById('file');
+            var filePath = fileInput.value;
+            var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+            if(!allowedExtensions.exec(filePath)){
+                alert('Utiliza por favor, un formato admitido .jpeg/.jpg/.png/.gif ');
+                fileInput.value = '';
+                return false;
+            }else{
+                //Image preview
+                if (fileInput.files && fileInput.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById('imagePreview').innerHTML = '<img src="'+e.target.result+'"/>';
+                    };
+                    reader.readAsDataURL(fileInput.files[0]);
+                }
+            }
+        }
+    </script>
     </body>
 
 </html>

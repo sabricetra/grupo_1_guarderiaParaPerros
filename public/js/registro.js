@@ -1,7 +1,7 @@
 window.addEventListener("load",function(){
     console.log("codigo enlazado")
     let form=document.querySelector(".form-registro");
-    form.name.focus()
+   /*  form.name.focus(); */
     form.addEventListener("submit",function(e){
         let errors=[];
 
@@ -12,7 +12,10 @@ window.addEventListener("load",function(){
         let email=document.querySelector("#email");
         //let image=document.querySelector("#imagenUsuario");//
         let password=document.querySelector("#elige_contraseña");   
-      
+
+
+
+
         if (firstname.value==""){
             errors.push("El campo Nombre no puede estar vacío");
             firstname.classList.remove("is-valid")
@@ -82,7 +85,26 @@ window.addEventListener("load",function(){
 
         }  
 
-
+        //validacion extension imagen 
+        function fileValidation(){
+            var fileInput = document.getElementById('file');
+            var filePath = fileInput.value;
+            var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+            if(!allowedExtensions.exec(filePath)){
+                alert('Please upload file having extensions .jpeg/.jpg/.png/.gif only.');
+                fileInput.value = '';
+                return false;
+            }else{
+                //Image preview
+                if (fileInput.files && fileInput.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById('imagePreview').innerHTML = '<img src="'+e.target.result+'"/>';
+                    };
+                    reader.readAsDataURL(fileInput.files[0]);
+                }
+            }
+        }
 
         
         
