@@ -1,6 +1,6 @@
 window.addEventListener("load",function(){
     console.log("codigo enlazado")
-    let form=document.querySelector(".form-login");
+    let form=document.querySelector(".formLogin");
  
     form.addEventListener("submit",function(e){
         let errors=[];
@@ -19,7 +19,12 @@ window.addEventListener("load",function(){
         console.log(reg2.test(email.value)); 
 
         let regEmail = /\S+@\S+\.\S+/;
-        if (!regEmail.test(email.value)) {
+        if (regEmail.value==""){
+            errors.push("El campo Nombre no puede estar vacío");
+            regEmail.classList.remove("is-valid")
+            regEmail.classList.add("is-invalid");
+           
+        }else if (!regEmail.test(email.value)) {
             errors.push("Debe ingresar un email válido");
             email.classList.add("is-invalid");
         } else {
@@ -33,10 +38,6 @@ window.addEventListener("load",function(){
             errors.push(" El campo Contraseña no puede estar vacío");
             password.classList.remove("is-valid")
             password.classList.add("is-invalid");
-
-        }else if(password.value.length<8){
-            errors.push("El campo Contraseña debe tener mínimo 8 caracteres");
-            password.classList.add("is-invalid")
          
         }else{
             password.classList.add("is-valid");

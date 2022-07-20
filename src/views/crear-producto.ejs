@@ -22,12 +22,12 @@
                 <div class="contenedor-registro">
 
                     <ul class="errores"></ul>
-                    <form action="/productos/crear-producto" method="POST" enctype="multipart/form-data">
+                    <form action="/productos/crear-producto" method="POST" enctype="multipart/form-data" class="formCrear">
 
 
                         <div>
                             <label>Nombre de la Guarderia:</label>
-                            <input type="text" name="nombre" required>
+                            <input type="text" name="nombre" required class="nombreGuarderia">
                         </div>
 
                         <div>
@@ -37,7 +37,7 @@
 
                         <div>
                             <label>Características:</label>
-                            <input type="text" name="caracteristicas" required>
+                            <input type="text" name="caracteristicas" id="descripcion">
                         </div>
 
                         <div>
