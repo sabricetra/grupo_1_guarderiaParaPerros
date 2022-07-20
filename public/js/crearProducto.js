@@ -1,4 +1,4 @@
-/* Se plantea código pero no funciona */
+
 window.addEventListener("load",function(){
     console.log("codigo enlazado")
     let form=document.querySelector(".form-producto");
@@ -43,9 +43,9 @@ window.addEventListener("load",function(){
 
 // Validación de errores
 
-e.preventDefault();
+;
         if (errors.length>0){
-           
+            e.preventDefault()
             let ulErrors=document.querySelector(".errores");
             ulErrors.classList.add("alert-warning");
             ulErrors.innerHTML="";
