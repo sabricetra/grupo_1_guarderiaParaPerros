@@ -18,16 +18,16 @@
                     <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
                 </div>
                 <h3 class="titulo-registro">CREAR PRODUCTO</h3>
-
+              
                 <div class="contenedor-registro">
 
                     <ul class="errores"></ul>
-                    <form action="/productos/crear-producto" method="POST" enctype="multipart/form-data" class="formCrear">
+                    <form class="form-producto" action="/productos/crear-producto" method="POST" enctype="multipart/form-data" >
 
 
                         <div>
                             <label>Nombre de la Guarderia:</label>
-                            <input type="text" name="nombre" required class="nombreGuarderia">
+                            <input type="text" name="nombre"  id="nombreGuarderia">
                         </div>
 
                         <div>

@@ -1,49 +1,51 @@
+/* Se plantea código pero no funciona */
 window.addEventListener("load",function(){
     console.log("codigo enlazado")
-    let form=document.querySelector("formCrear");
+    let form=document.querySelector(".form-producto");
+   /*  form.name.focus() */
     form.addEventListener("submit",function(e){
         let errors=[];
     
-        let nombreGuarderia=document.querySelector("#nombreGuarderia");
-        let descripcion=document.querySelector("#descripcion");   
+        let guarderia=document.querySelector("#nombreGuarderia");
+   /*      let descripcion=document.querySelector("#descripcion");  */  
         
       
-        if (nombreGuarderia.value==""){
+        if (guarderia.value==""){
             errors.push(" El campo Nombre de la Guarderia no puede estar vacío");
-            nombreGuarderia.classList.remove("is-valid")
-            nombreGuarderia.classList.add("is-invalid");
+            guarderia.classList.remove("is-valid")
+            guarderia.classList.add("is-invalid");
 
-        }else if(nombreGuarderia.value.length<5){
+        }else if(guarderia.value.length<5){
             errors.push("El campo Nombre de la Guarderia debe tener mínimo 5 caracteres");
-            nombreGuarderia.classList.add("is-invalid")
+            guarderia.classList.add("is-invalid")
          
         }else{
-            nombreGuarderia.classList.add("is-valid");
-            nombreGuarderia.classList.remove("is-invalid");
+            guarderia.classList.add("is-valid");
+            guarderia.classList.remove("is-invalid");
             form.descripcion.focus(); 
 
         }  
         if (descripcion.value==""){
             errors.push(" El campo Caracteristicas no puede estar vacío");
-            nombreGuarderia.classList.remove("is-valid")
-            nombreGuarderia.classList.add("is-invalid");
+            descripcion.classList.remove("is-valid")
+            descripcion.classList.add("is-invalid");
 
-        }else if(nombreGuarderia.value.length<20){
+        }else if(descripcion.value.length<20){
             errors.push("El campo Caracteristicas debe tener mínimo 20 caracteres");
-            nombreGuarderia.classList.add("is-invalid")
+           descripcion.classList.add("is-invalid")
          
         }else{
-            nombreGuarderia.classList.add("is-valid");
-            nombreGuarderia.classList.remove("is-invalid");
+            descripcion.classList.add("is-valid");
+            descripcion.classList.remove("is-invalid");
             form.descripcion.focus(); 
 
         }  
 
 // Validación de errores
 
-          
+e.preventDefault();
         if (errors.length>0){
-            e.preventDefault();
+           
             let ulErrors=document.querySelector(".errores");
             ulErrors.classList.add("alert-warning");
             ulErrors.innerHTML="";
