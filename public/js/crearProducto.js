@@ -1,6 +1,6 @@
 window.addEventListener("load",function(){
     console.log("codigo enlazado")
-    let form=document.querySelector(".formCrear");
+    let form=document.querySelector("formCrear");
     form.addEventListener("submit",function(e){
         let errors=[];
     
