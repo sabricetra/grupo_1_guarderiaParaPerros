@@ -19,40 +19,40 @@
                     <a href="/"><i class="far fa-arrow-alt-circle-left"></i> VOLVER</a>
                 </div>
                 <h3 class="titulo-registro">CREA TU CUENTA</h3>
-
+                
                 <div class="contenedor-registro">
-
-
+                    
+                    <ul class="errores"></ul>
                     <form class="form-registro" action="/users/registro" method="POST" enctype="multipart/form-data">
 
                         <div class="inputs-register">
                             <div>
                                 <label>Nombre:</label>
-                                <input type="text" name="first_name" required>
+                                <input type="text" name="first_name" id="first_name">
                             </div>
 
                             <div>
                                 <label>Apellido:</label>
-                                <input type="text" name="last_name" required>
+                                <input type="text" name="last_name" id="last_name">
                             </div>
                             <div>
                                 <label>Fecha de nacimiento:</label>
-                                <input type="date" name="date" required>
+                                <input type="date" name="date" >
                             </div>
 
                             <div>
                                 <label>Domicilio:</label>
-                                <input type="text" name="adress" placeholder=" Calle y numero" required>
+                                <input type="text" name="adress" placeholder=" Calle y numero" >
                             </div>
 
                             <div>
                                 <label>E-mail:</label>
-                                <input type="email" name="email" required>
+                                <input type="email" name="email" id="email">
                             </div>
 
                             <div>
                                 <label>Imagen de perfil</label>
-                                <input type="file" name="imagenUsuario">
+                                <input type="file" name="imagenUsuario" id="imagenUsuario">
                             </div>
 
                             <div>
@@ -63,7 +63,8 @@
                             <div>
                                 <label>Contraseña:</label>
                                 <input name="password" type="password" value="" class="form-control"
-                                    id="elige contraseña" placeholder=" Elige tu contraseña">
+                                    id="elige_contraseña" placeholder=" Elige tu contraseña">
+                                    <!-- se coloca "_"  en elige contraseña por no tomar la identificación del id con espacios-->
                             </div>
 
                             <div class="div-confirmar-clave">
@@ -95,7 +96,7 @@
             <!-- Footer -->
             <%- include('partials/footer') %>
 
-
+    <script src="/js/registro.js"></script>
     </body>
 
 </html>
