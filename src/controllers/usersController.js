@@ -61,7 +61,7 @@ const usersController = {
 
     //Función para guardar el usuario, tener en cuenta que los campos deben ser los mismos
     //que el campo del formulario y del json!//
-    
+
     newRegister: function (req, res){
 
         // let nuevoUsuario = {
@@ -83,12 +83,12 @@ const usersController = {
         // fs.writeFileSync(registroFilePath, JSON.stringify(registro,null, " "))
 
         const resultValidation = validationResult(req);
-            
+
         if (resultValidation.errors.length > 0) {
                 // console.log(resultValidation.errors)
                 res.render("registro")
             } else {
-        
+
                 db.User.create({
 
             firstName: req.body.first_name,
@@ -137,7 +137,7 @@ const usersController = {
         let userId = req.params.id;
 
         const resultValidation = validationResult(req);
-            
+
         if (resultValidation.errors.length > 0) {
                 // console.log(resultValidation.errors)
                 res.redirect("/")
@@ -167,6 +167,29 @@ const usersController = {
         })
         .catch(error => res.send(error))
     }
+    },
+    apiUsers: function(req, res){
+        db.User.findAll(
+            {
+                attributes: ["id","firstName","lastName","email"]
+            }
+        )
+        .then(users =>{
+            return res.json({
+                count: users.length,
+                users: users
+            })
+        })
+    },
+    apiShowUser: function(req, res){
+        db.User.findByPk(req.params.id, {
+            attributes: { exclude: [ "password"]}
+        })
+        .then(user =>{
+            return res.json({
+                user: user,
+                image: "http://localhost:8000/img/guarderias/"+ user.image})
+        })
     }
 
 
