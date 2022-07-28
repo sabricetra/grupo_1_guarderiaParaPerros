@@ -188,7 +188,7 @@ const usersController = {
         .then(user =>{
             return res.json({
                 user: user,
-                image: "http://localhost:8000/img/guarderias/"+ user.image})
+                image: "http://localhost:8000/img/users/"+ user.image})
         })
     }
 
