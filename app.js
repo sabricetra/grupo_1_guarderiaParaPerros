@@ -6,6 +6,7 @@ const app = express()
 const mainRouter = require("./src/routes/mainRouter.js")
 const productosRouter = require("./src/routes/productosRouter.js")
 const usersRouter = require("./src/routes/usersRouter.js")
+const apiRouter = require("./src/routes/apiRouter.js")
 const recordameMiddleware=require('./middlewares/recordameMiddleware')
 
 
@@ -35,6 +36,8 @@ app.use(session({
 }));
 
 app.use("/users", usersRouter);
+
+app.use("/api", apiRouter);
 
 app.use("/productos", productosRouter);
 

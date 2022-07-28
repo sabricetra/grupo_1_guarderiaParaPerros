@@ -55,9 +55,9 @@ const productosController = {
     //     }
     //     productos.push(nuevaGuarderia)
     //     fs.writeFileSync(productosFilePath, JSON.stringify(productos,null, " "))
-    
+
     const resultValidation = validationResult(req);
-            
+
         if (resultValidation.errors.length > 0) {
                 console.log(resultValidation.errors)
                 res.render("crear-producto")
@@ -110,10 +110,10 @@ const productosController = {
         // fs.writeFileSync(productosFilePath, JSON.stringify(productos,null, " "))
         // res.redirect("/productos/productos")
 
-        
+
 
         const resultValidation = validationResult(req);
-            
+
         if (resultValidation.errors.length > 0) {
                res.redirect('/productos/productos')
             } else {
@@ -149,6 +149,23 @@ const productosController = {
             return res.redirect('/')})
         .catch(error => res.send(error))
 
+    },
+    apiProducts: function(req, res){
+        db.Daycare.findAll()
+        .then(daycares =>{
+            return res.json({
+                count: daycares.length,
+                products: daycares
+            })
+        })
+    },
+    apiShowProducts: function(req, res){
+        db.Daycare.findByPk(req.params.id)
+        .then(daycare =>{
+            return res.json({
+                daycare: daycare,
+                image: "http://localhost:8000/img/guarderias/"+ daycare.image})
+        })
     }
 
 

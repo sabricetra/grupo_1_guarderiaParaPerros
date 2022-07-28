@@ -112,4 +112,6 @@ router.put("/editar-perfil/:id/" ,  upload.single("imagenUsuario"), validateData
 
 router.get("/logout" , usersController.logout)
 
+
+
 module.exports = router
