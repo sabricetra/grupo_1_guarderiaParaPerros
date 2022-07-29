@@ -13,7 +13,7 @@ const productosController = {
        // let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
        //res.render('productos', {productos : productos})
         db.Daycare.findAll({
-
+            
         })
             .then(daycares => {
                 res.render('productos.ejs', {daycares})
