@@ -12,9 +12,7 @@ const productosController = {
     productos: function(req,res){
        // let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
        //res.render('productos', {productos : productos})
-        db.Daycare.findAll({
-            
-        })
+        db.Daycare.findAll()
             .then(daycares => {
                 res.render('productos.ejs', {daycares})
             })
@@ -165,7 +163,8 @@ const productosController = {
             return res.json({
                 daycare: daycare,
                 image: "http://localhost:8000/img/guarderias/"+ daycare.image})
-        })
+        }) .catch(error => res.send(error))
+
     }
 
 
