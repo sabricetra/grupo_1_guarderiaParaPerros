@@ -157,7 +157,9 @@ const productosController = {
             // attributes: {
             //     include: [
             //       [sequelize.fn('COUNT', sequelize.col('name')), 'n_category_id']
-            //     ]
+            //     ],
+            //     group: ["categoty_id"],
+            //     raw:true
             //   }
         })
         .then(daycares =>{
