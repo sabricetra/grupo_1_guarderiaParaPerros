@@ -6,13 +6,13 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        category: {
+        categorydesc: {
             type: dataTypes.STRING,
             allowNull: false
         }
     };
     let config = {
-        timestamps: true,
+        timestamps: false,
         createdAt: 'created_at',
         updatedAt: 'updated_at',
         deletedAt: false,
@@ -21,14 +21,7 @@ module.exports = (sequelize, dataTypes) => {
     const Category = sequelize.define(alias, cols, config);
 
     Category.associate = function (models) {
-        Category.belongsToMany(models.User, {
-            as: "users",
-            through: 'usersDaycares',
-            foreignKey: 'daycares_id',
-            otherKey: 'users_id',
-            timestamps: false
-        }),
-        Category.hasMany(models.Daycare, {
+       Category.hasMany(models.Daycare, {
             as: "daycares",
             foreignKey: 'category_id',
             timestamps: false

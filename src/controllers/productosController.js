@@ -5,6 +5,8 @@ const productosFilePath = path.join(__dirname , "../data/products.json")
 const productos = JSON.parse(fs.readFileSync(productosFilePath, "utf-8"))
 const db = require("../database/models")
 const {validationResult} = require('express-validator');
+const Op = db.Sequelize.Op;
+const sequelize = require('sequelize')
 
 
 const productosController = {
@@ -12,9 +14,7 @@ const productosController = {
     productos: function(req,res){
        // let guarderia = productos.find(guarderia => guarderia.id == req.params.id)
        //res.render('productos', {productos : productos})
-        db.Daycare.findAll({
-
-        })
+        db.Daycare.findAll()
             .then(daycares => {
                 res.render('productos.ejs', {daycares})
             })
@@ -150,14 +150,25 @@ const productosController = {
         .catch(error => res.send(error))
 
     },
+    
     apiProducts: function(req, res){
-        db.Daycare.findAll()
+        db.Daycare.findAll(
+        { 
+            // attributes: {
+            //     include: [
+            //       [sequelize.fn('COUNT', sequelize.col('name')), 'n_category_id']
+            //     ]
+            //   }
+        })
         .then(daycares =>{
             return res.json({
                 count: daycares.length,
                 products: daycares
+                
             })
         })
+
+        
     },
     apiShowProducts: function(req, res){
         db.Daycare.findByPk(req.params.id)
@@ -165,7 +176,8 @@ const productosController = {
             return res.json({
                 daycare: daycare,
                 image: "http://localhost:8000/img/guarderias/"+ daycare.image})
-        })
+        }) .catch(error => res.send(error))
+
     }
 
 
