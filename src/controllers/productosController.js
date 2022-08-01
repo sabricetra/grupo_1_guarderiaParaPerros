@@ -150,13 +150,13 @@ const productosController = {
         .catch(error => res.send(error))
 
     },
-    
+
     apiProducts: function(req, res){
         db.Daycare.findAll(
-        { 
+        {
             // attributes: {
             //     include: [
-            //       [sequelize.fn('COUNT', sequelize.col('name')), 'n_category_id']
+            //       [sequelize.fn('COUNT', sequelize.col('category_id')), 'n_category_id']
             //     ]
             //   }
         })
@@ -164,11 +164,11 @@ const productosController = {
             return res.json({
                 count: daycares.length,
                 products: daycares
-                
+
             })
         })
 
-        
+
     },
     apiShowProducts: function(req, res){
         db.Daycare.findByPk(req.params.id)
