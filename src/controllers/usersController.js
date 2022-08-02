@@ -175,6 +175,9 @@ const usersController = {
             }
         )
         .then(users =>{
+           users.forEach((user, i) => {
+                user.dataValues.detail = "http://localhost:8000/api/users/"+user.dataValues.id
+            });
             return res.json({
                 count: users.length,
                 users: users

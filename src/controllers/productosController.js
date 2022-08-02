@@ -151,41 +151,47 @@ const productosController = {
 
     },
     
+    apiProducts: async(req, res)=>{
+        const groupCategory = await db.Daycare.findAll(
+            {
+               attributes: ['category_id', [sequelize.fn('count', sequelize.col('id')), 'count']],
+               group: ['category_id'],
+            })
+            db.Daycare
+            .findAll()
+            .then(daycares =>{
+                return res.json({
+                    count: daycares.length,
+                    products: daycares.lenght,
+                    countByCategory: groupCategory
+            })
+            })
+
+    },
+
    /*  apiProducts: function(req, res){
         db.Daycare.findAll(
-        { 
+        {
             // attributes: {
             //     include: [
             //       [sequelize.fn('COUNT', sequelize.col('name')), 'n_category_id']
-            //     ]
+            //     ],
+            //     group: ["categoty_id"],
+            //     raw:true
             //   }
         })
         .then(daycares =>{
             return res.json({
                 count: daycares.length,
                 products: daycares
-                
+
             })
         })
- */
+  */
 
-        apiProducts: async(req, res)=>{
-            const groupCategory = await db.Daycare.findAll(
-                {
-                    attributes: ['category_id', [sequelize.fn('count', sequelize.col('id')),'count']],
-                    group: ['category_id'],
-                })
-                db.Daycare
-                   .findAll()
-                   .then(daycares =>{
-                    return res.json({
-                        count: daycares.length,
-                        products: daycares,
-                        countByCategory: groupCategory
-                    })
-                   })
-        },
-        
+
+    
+
     apiShowProducts: function(req, res){
         db.Daycare.findByPk(req.params.id)
         .then(daycare =>{
