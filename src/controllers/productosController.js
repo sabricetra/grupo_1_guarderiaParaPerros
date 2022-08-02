@@ -151,7 +151,7 @@ const productosController = {
 
     },
     
-    apiProducts: function(req, res){
+   /*  apiProducts: function(req, res){
         db.Daycare.findAll(
         { 
             // attributes: {
@@ -167,9 +167,25 @@ const productosController = {
                 
             })
         })
+ */
 
+        apiProducts: async(req, res)=>{
+            const groupCategory = await db.Daycare.findAll(
+                {
+                    attributes: ['category_id', [sequelize.fn('count', sequelize.col('id')),'count']],
+                    group: ['category_id'],
+                })
+                db.Daycare
+                   .findAll()
+                   .then(daycares =>{
+                    return res.json({
+                        count: daycares.length,
+                        products: daycares,
+                        countByCategory: groupCategory
+                    })
+                   })
+        },
         
-    },
     apiShowProducts: function(req, res){
         db.Daycare.findByPk(req.params.id)
         .then(daycare =>{
