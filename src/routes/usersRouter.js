@@ -44,7 +44,7 @@ const validateDataUsers = [
         .notEmpty().withMessage("Debe ingresar un dni").bail()
         .isLength({min:8, max: 10}).withMessage("Debe ingresar un dni válido"),
     body("password")
-        .notEmpty().withMessage("Debe ingresar una contraseña").bail()
+        .notEmpty().withMessage("Debe ingresar un   a contraseña").bail()
         .isLength({min:8}).withMessage("La contraseña debe tener como minimo 8 caracteres"),
     body("imagenUsuario")
         .custom((value, {req}) => {

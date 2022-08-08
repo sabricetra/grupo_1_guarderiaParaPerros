@@ -37,6 +37,15 @@
   justify-content: space-evenly;
 } */
 
+.boton-volver-home {
+  padding: 20px;
+}
+
+.boton-volver-home a{
+  text-decoration: none;
+  color: grey;
+}
+
 .titulo-productos{
   font-size: 30px;
   color: rgb(117, 115, 115);
